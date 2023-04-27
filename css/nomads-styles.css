@@ -1,5 +1,6 @@
 @charset "UTF-8";
 * {margin:0;padding:0;}
+/* testing deploy desde git a vercel */
 html{
     scroll-behavior:smooth;
   }
@@ -17,7 +18,7 @@ header .logo {width: 156px;}
 header nav {display:flex;align-content: center;align-items: center;}
 header nav ul {display:flex;width: 630px;justify-content: space-between;margin: 0;padding: 0;}
 header nav ul li {list-style: none;}
-header nav ul li a, header nav .nav-link,  header nav .nav-link:hover {color:#fff;transition: color .35s ease;position: relative;}
+header nav ul li a, header nav .nav-link,  header nav .nav-link:hover {color: #fff !important;transition: color .35s ease;position: relative;}
 header nav li a.active {color:#fff !important}
 header nav li a.active:after {
     content: '';
@@ -140,7 +141,7 @@ header .contact:hover {background:#E0FF73;animation-name: wobble-horizontal;anim
     top: -125px;
     transform: rotate(22.27deg);}
 
-.shape2 {position: absolute;width: 630px;height: 496px;left: 340px;top: 1396.17px;background: linear-gradient(49.08deg, rgba(213, 255, 64, 0.21) 3.31%, rgba(200, 80, 192, 0.21) 57.52%, rgba(201, 245, 106, 0.21) 91.12%);filter: blur(75px);transform: rotate(-12.58deg);z-index: -1;}
+.shape2 {position: absolute;width: 630px;height: 496px;left: 340px;top: 1256.17px;background: linear-gradient(49.08deg, rgba(213, 255, 64, 0.21) 3.31%, rgba(200, 80, 192, 0.21) 57.52%, rgba(201, 245, 106, 0.21) 91.12%);filter: blur(75px);transform: rotate(-12.58deg);z-index: -1;}
 .black-box {background: #151515;border-radius: 20px;/*transform: rotate(2.7deg);*/color:#fff;text-align:right;padding:20px;margin:50px 0 0 50px;}
 
 
