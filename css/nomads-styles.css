@@ -1,16 +1,21 @@
 @charset "UTF-8";
 * {margin:0;padding:0;}
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Poppins:wght@300;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;700&family=Poppins:wght@300;500;700;900&display=swap');
 
 html{scroll-behavior:smooth;}
-body {overflow: hidden;font-family: 'Montserrat', sans-serif;
+body {overflow: hidden;
     overflow-y: scroll;}
 img {max-width: 100%;}
 a {text-decoration: none;}
 p {font-size: 20px;font-family: 'Montserrat', sans-serif;}
+.d-flex-center {
+  display: flex!important;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;}
 h1, h2, h3 {font-family: 'Poppins', sans-serif;}
 h2 {font-size: 38px;}
-h2 span {color:#D5FF40;}
+h2 span {color:#D5FF40;font-weight: 800;}
 header {background:#151515;height: 80px;width: 100%;display: flex;align-items: center;}
 header .container {display: flex;justify-content: space-between;/* align-items: center; */}
 header .logo {width: 156px;}
@@ -55,7 +60,7 @@ header nav ul li a:before {
     background: #D5FF40;
     transition: width .35s ease;
   }
-header .contact {
+header .contactButton {
     width: 145px;
     height: 40px;
     background: #D5FF40;
@@ -90,7 +95,8 @@ header .contact:hover {background:#E0FF73;animation-name: wobble-horizontal;anim
             } }
 
 .hero {background:#151515;width:100%;height:615px;border-radius:0 0 50px 50px;position: relative;margin: 80px auto 0;}
-.hero .hero-text {width: 450px;}
+.hero .hero-bg {width: 980px;height:504px;position: absolute;z-index: 0;right: -123px;top: 24px;}
+.hero .hero-text {width: 450px;position: relative;z-index: 1;top: 50%;}
 .hero .hero-text h1 {font-size:60px;color:#fff}
 .hero .hero-text h1 span {font-weight: bold;color:#D5FF40;display: block;}
 .hero .hero-text p {color:#fff;font-size:18px;line-height: 28px;}
@@ -101,11 +107,13 @@ header .contact:hover {background:#E0FF73;animation-name: wobble-horizontal;anim
 .float-right {float: right;margin-right: 40px;}
 .about-us .oyster {width: 668px;margin:174px auto 120px; text-align: center;}
 .about-us .box {padding:20px;width: 390px;background: #fff;border-radius: 12px;}
+.about-us h3 {font-weight:bold;}
+.about-us .affordable h3 {color:#D5FF40;}
 .about-us .affordable {
     background: linear-gradient(180deg, #292929 0%, #151515 100%);
     box-shadow: 7px 11px 19px rgba(0, 0, 0, 0.16);
     border-radius: 12px;
-    width: 100%;
+    width: 422px;
     padding:20px;
     color:#fff;
     position:relative;
@@ -125,48 +133,96 @@ header .contact:hover {background:#E0FF73;animation-name: wobble-horizontal;anim
   z-index: -2;
 }
 
+.why-h2 {margin: 0 100px 90px 0;text-align: right;}
 
 /* our services */
-.our-services {background: #151515;height: 550px;color:#fff;padding: 80px 0;}
+.our-services {background: #151515;color:#fff;padding: 80px 0 20px;position: relative;}
 .our-services h2 {text-align: center;}
-.our-services h4 {font-size:60px}
-.our-services h4 span {font-size:35px}
-.our-services .text-services {font-size:24px;}
+.our-services h4 {font-size:60px;margin-bottom: 40px;}
+.our-services strong {color:#D5FF40}
+.our-services h4 span {font-size:35px;display: block;/* margin-bottom: 40px; */}
+.our-services .text-services {font-size:24px;width: 68%;}
+.green-belt {width: 92%;height: 176px;background:#eee;position: relative;bottom: -90px;display: flex;z-index: 2;right: -8%;background: linear-gradient(90deg, #D5FF40 0%, #AFDC0F 100%);border-radius: 20px 0px 0px 0px;align-items: center;justify-content: space-between;padding: 0 14%;}
+.green-belt .item {text-align:center}
+.green-belt h5 {font-size:64px;font-weight:bold;color: #151515;}
+.green-belt h5 span{font-size:40px;display:block;font-weight:100;margin-top: -12px;}
 
 /* our company*/
-.our-company {margin:0 0 50px 0;position: relative;}
-.our-company .shape1 {    background-image: url(../img/shape1.png);
+.our-company {margin:0 0 50px 0;position: relative;background: #fff;color: #000;padding: 150px 0;}
+.our-company p {font-size:18px}
+.our-company img {margin-top:80px}
+.our-company .shape1 {
+    background-image: url(../img/shape1.png);
     position: absolute;
     width: 835px;
-    height: 743.54px;
-    right: -301px;
-    top: -125px;
-    transform: rotate(22.27deg);}
+    height: 743px;
+    right: -220px;
+    top: -57px;
+    /* transform: rotate(22.27deg); */
+    }
 
 .shape2 {position: absolute;width: 630px;height: 496px;left: 340px;top: 1256.17px;background: linear-gradient(49.08deg, rgba(213, 255, 64, 0.21) 3.31%, rgba(200, 80, 192, 0.21) 57.52%, rgba(201, 245, 106, 0.21) 91.12%);filter: blur(75px);transform: rotate(-12.58deg);z-index: -1;}
-.black-box {background: #151515;border-radius: 20px;/* transform: rotate(2.7deg); */color:#fff;text-align:right;padding:20px;margin:50px 0 0 50px;}
+.our-nomads {width: 480px;}
+.black-box {background: #151515;border-radius: 20px;/* transform: rotate(2.7deg); */color:#fff;text-align:right;padding:20px;margin:50px 0 0 50px;width: 527px;}
 
 
 
 /* contact */
-.contact {width: 100%;height:750px;background:#151515;color: #fff;}
-
-
+.contact {width: 100%;/* height:750px; */background:#151515;color: #fff;padding: 40px 0;}
+.home-textinput {width:100%;height:60px;border:1px solid #fff;border-radius:10px;background: transparent;padding: 15px;margin-bottom: 20px;}
+.home-form {display:flex;flex-direction: column;align-items: flex-end;margin-top:40px;}
+textarea {background:transparent;border:1px solid #fff;border-radius:10px;padding:15px;width:100%;margin-bottom:20px;}
+button {
+    width: 145px;
+    height: 40px;
+    background: #D5FF40;
+    border-radius: 120px;
+    color: #000;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    border: none;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    }
 footer {background:#000;height:70px;width: 100%;}
 
 @media(max-width:768px){
   p {font-size:16px;}
+  h2 {font-size:24px}
     header .contact,header nav {display: none;}
     .hero .hero-text {width: 100%; text-align: center;padding:0 20px}
     .hero .hero-text h1 {font-size:32px}
     .hero .hero-text p {font-size:16px;line-height: 24px;}
     .hero .brands-slider {width: 94%;margin: auto;display: block;left: 0;right: 0;}
-.shape2, .shape1 {display:none}
+ .shape2 {/* display:none; */top: 1336px;left: 197px;}
   section {padding:20px;}
+  .why-h2 {
+    margin: 0 0 30px 0;
+    text-align: center;
+}.about-us {margin-bottom:40px;}
   .about-us .oyster {width:100%}
   .about-us .affordable:after {width: 90%;height: 165px;left: 46px;top: 17px;}
   .about-us .box {width:100%}
-  .about-us .affordable {margin-left:-5px}
+  .about-us .affordable {margin-left:-5px;width: 98%;margin-top: 40px;}
+  .our-services {padding:30px 0}
+  .our-services h4 {font-size:30px;text-align: center;}
+  .our-services h4 span {font-size:20px}
+  .our-services .text-services {font-size:18px; width:100%; text-align:center}
   .float-right {margin:0;}
-  .black-box {margin:0}
+  .black-box {margin: 40px 0 0 0;width:100%;}
+  .our-company {padding:100px 20px}
+  .our-company img {margin:20px 0 40px 0}
+  .our-company p {font-size:16px}
+  .green-belt {padding:0 20px;height:100px;bottom: -44px;right: -9%;}
+  .green-belt h5 {font-size:30px;font-weight:bold;color: #151515;}
+.green-belt h5 span{font-size:18px;display:block;font-weight:100;margin-top: 0px;}
+  .contact {padding: 20px 40px}
+  .shape1 {display:none}
+  .tabs-tab-list {display: none !important;}
+  .tabs-panel {
+
+    margin:0 !important;
+}
 }
