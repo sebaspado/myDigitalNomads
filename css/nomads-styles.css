@@ -1,15 +1,14 @@
 @charset "UTF-8";
 * {margin:0;padding:0;}
-/* testing deploy desde git a vercel */
-html{
-    scroll-behavior:smooth;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Poppins:wght@300;500;700;900&display=swap');
 
-body {overflow: hidden;
+html{scroll-behavior:smooth;}
+body {overflow: hidden;font-family: 'Montserrat', sans-serif;
     overflow-y: scroll;}
 img {max-width: 100%;}
 a {text-decoration: none;}
-p {font-size: 20px;}
+p {font-size: 20px;font-family: 'Montserrat', sans-serif;}
+h1, h2, h3 {font-family: 'Poppins', sans-serif;}
 h2 {font-size: 38px;}
 h2 span {color:#D5FF40;}
 header {background:#151515;height: 80px;width: 100%;display: flex;align-items: center;}
@@ -106,7 +105,7 @@ header .contact:hover {background:#E0FF73;animation-name: wobble-horizontal;anim
     background: linear-gradient(180deg, #292929 0%, #151515 100%);
     box-shadow: 7px 11px 19px rgba(0, 0, 0, 0.16);
     border-radius: 12px;
-    width: 417px;
+    width: 100%;
     padding:20px;
     color:#fff;
     position:relative;
@@ -130,6 +129,9 @@ header .contact:hover {background:#E0FF73;animation-name: wobble-horizontal;anim
 /* our services */
 .our-services {background: #151515;height: 550px;color:#fff;padding: 80px 0;}
 .our-services h2 {text-align: center;}
+.our-services h4 {font-size:60px}
+.our-services h4 span {font-size:35px}
+.our-services .text-services {font-size:24px;}
 
 /* our company*/
 .our-company {margin:0 0 50px 0;position: relative;}
@@ -142,7 +144,7 @@ header .contact:hover {background:#E0FF73;animation-name: wobble-horizontal;anim
     transform: rotate(22.27deg);}
 
 .shape2 {position: absolute;width: 630px;height: 496px;left: 340px;top: 1256.17px;background: linear-gradient(49.08deg, rgba(213, 255, 64, 0.21) 3.31%, rgba(200, 80, 192, 0.21) 57.52%, rgba(201, 245, 106, 0.21) 91.12%);filter: blur(75px);transform: rotate(-12.58deg);z-index: -1;}
-.black-box {background: #151515;border-radius: 20px;/*transform: rotate(2.7deg);*/color:#fff;text-align:right;padding:20px;margin:50px 0 0 50px;}
+.black-box {background: #151515;border-radius: 20px;/* transform: rotate(2.7deg); */color:#fff;text-align:right;padding:20px;margin:50px 0 0 50px;}
 
 
 
@@ -153,9 +155,18 @@ header .contact:hover {background:#E0FF73;animation-name: wobble-horizontal;anim
 footer {background:#000;height:70px;width: 100%;}
 
 @media(max-width:768px){
+  p {font-size:16px;}
     header .contact,header nav {display: none;}
     .hero .hero-text {width: 100%; text-align: center;padding:0 20px}
     .hero .hero-text h1 {font-size:32px}
     .hero .hero-text p {font-size:16px;line-height: 24px;}
     .hero .brands-slider {width: 94%;margin: auto;display: block;left: 0;right: 0;}
+.shape2, .shape1 {display:none}
+  section {padding:20px;}
+  .about-us .oyster {width:100%}
+  .about-us .affordable:after {width: 90%;height: 165px;left: 46px;top: 17px;}
+  .about-us .box {width:100%}
+  .about-us .affordable {margin-left:-5px}
+  .float-right {margin:0;}
+  .black-box {margin:0}
 }

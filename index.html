@@ -9,6 +9,7 @@
         <link rel="canonical" href="https://mydigitalnomads.co.uk/">
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/nomads-styles.css" rel="stylesheet">
+        <link href="css/tabs.css" rel="stylesheet">
     </head>
     <body>
         <header class="fixed-top bg-dark">
@@ -62,6 +63,7 @@
 
                     <div class="row d-flex">
                         <div class="col-sm-12 col-lg-6 ">
+                            <h2>Why MyDigitalNomads</h2>
                             <div class="box float-right"><h3>Professional</h3><p>Our
                                     candidates undergo a rigorous selection
                                     process to ensure that your projects will be
@@ -90,8 +92,63 @@
             </section>
             <section class="our-services">
                 <h2>Our <span>Services</span></h2>
+
+
+
+
+
+                <section class="accordion-tabs js-tabs" data-tabs-allowed="true" data-breakpoint="400" data-start-collapsed="false">
+                    <ul role="tablist" class="tabs-tab-list">
+                        <li role="presentation"><a id="tab1"  role="tab" aria-controls="section1" aria-selected="true" class="tabs-trigger js-tabs-trigger">Call Center (Sales and Service)</a></li>
+                        <li role="presentation"><a id="tab2" role="tab" aria-controls="section2" class="tabs-trigger js-tabs-trigger">Marketing Services</a></li>
+                        <li role="presentation"><a id="tab3"  role="tab" aria-controls="section3" class="tabs-trigger js-tabs-trigger">It Development</a></li>
+                    </ul>
+                    <section id="section1" role="tabpanel" aria-labelledby="tab1" class="tabs-panel js-tabs-panel" tabindex="0">
+                      <div class="accordeon-trigger js-accordeon-trigger" aria-controls="section1" aria-expanded="true" tabindex="0">Section 1 <div class="accordeon-trigger-icon"><span class="label--open">Open</span><span class="label--close">Close</span>
+                        <svg aria-hidden="true" focusable="false" viewBox="0 0 20 20">
+                          <rect class="vert" height="18" width="2" fill="currentColor" y="1" x="9"></rect>
+                          <rect height="2" width="18" fill="currentColor" y="9" x="1"></rect>
+                        </svg>
+                      </div></div>
+                      <div class="content" aria-hidden="false">
+                        <div class="row">
+                            <div class="col-sm-12 col-lg-6">
+                                <img style="float:right" src="img/example.png">
+                            </div>
+                            <div class="col-sm-12 col-lg-6">
+                                <h4>Call <strong>Center</strong><span> (Sales and Service)</span></h4>
+                                <p class="text-services">If you want a BIG company presence with exceptional phone support we are experts. We speak the language of your customer, literally.
+
+                                </p>
+                            </div>
+                        </div>
+                      </div>
+                    </section>
+                    <section id="section2" role="tabpanel" aria-labelledby="tab2" class="tabs-panel js-tabs-panel">
+                      <div class="accordeon-trigger js-accordeon-trigger" aria-controls="section2" aria-expanded="false" tabindex="0">Section 2 <div class="accordeon-trigger-icon"><span class="label--open">Open</span><span class="label--close">Close</span><svg aria-hidden="true" focusable="false" viewBox="0 0 20 20">
+                          <rect class="vert" height="18" width="2" fill="currentColor" y="1" x="9"></rect>
+                          <rect height="2" width="18" fill="currentColor" y="9" x="1"></rect>
+                        </svg></div></div>
+                      <div class="content" aria-hidden="true">
+                        
+                    </div>
+                    </section>
+                    <section id="section3" role="tabpanel" aria-labelledby="tab3" class="tabs-panel js-tabs-panel">
+                      <div class="accordeon-trigger js-accordeon-trigger" aria-controls="section3" aria-expanded="false" tabindex="0">Section 3 <div class="accordeon-trigger-icon"><span class="label--open">Open</span><span class="label--close">Close</span><svg aria-hidden="true" focusable="false" viewBox="0 0 20 20">
+                          <rect class="vert" height="18" width="2" fill="currentColor" y="1" x="9"></rect>
+                          <rect height="2" width="18" fill="currentColor" y="9" x="1"></rect>
+                        </svg></div></div>
+                      <div class="content" aria-hidden="true">
+                    
+                    </div>
+                    </section>
+
+
+
+
                 <div class="green-belt"></div>
             </section>
+
             <section class="our-company">
                 <div class="shape1"></div>
                 <div class="row">
@@ -156,6 +213,7 @@
         <footer></footer>
         <script src="js/jquery-3.6.4.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/tabs.js"></script>
         <script>
 $('a[href*="#"]')
 .not('[href="#"]')
