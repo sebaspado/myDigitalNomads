@@ -16,7 +16,7 @@ p {font-size: 20px;font-family: 'Montserrat', sans-serif;}
 h1, h2, h3 {font-family: 'Poppins', sans-serif;}
 h2 {font-size: 38px;}
 h2 span {color:#D5FF40;font-weight: 800;}
-header {background:#151515;height: 80px;width: 100%;display: flex;align-items: center;}
+header {background:#151515;height: 80px;/* width: 100%; */display: flex;align-items: center;}
 header .container {display: flex;justify-content: space-between;/* align-items: center; */}
 header .logo {width: 156px;}
 header nav {display:flex;align-content: center;align-items: center;}
@@ -73,7 +73,7 @@ header .contactButton {
     }
 
 /* contact button animation */
-header .contact:hover {background:#E0FF73;animation-name: wobble-horizontal;animation-duration: 1s;animation-timing-function: ease-in-out;animation-iteration-count: 1;}
+header .contactButton:hover {background:#E0FF73;animation-name: wobble-horizontal;animation-duration: 1s;animation-timing-function: ease-in-out;animation-iteration-count: 1;}
 @keyframes wobble-horizontal {
             16.65% {
               transform: translateX(8px);
@@ -95,18 +95,24 @@ header .contact:hover {background:#E0FF73;animation-name: wobble-horizontal;anim
             } }
 
 .hero {background:#151515;width:100%;height:615px;border-radius:0 0 50px 50px;position: relative;margin: 80px auto 0;}
-.hero .hero-bg {width: 980px;height:504px;position: absolute;z-index: 0;right: -123px;top: 24px;}
+.hero .hero-bg {max-width: 1080px;height:504px;position: absolute;z-index: 0;right: 30px;top: 27px;}
 .hero .hero-text {width: 450px;position: relative;z-index: 1;top: 50%;}
 .hero .hero-text h1 {font-size:60px;color:#fff}
 .hero .hero-text h1 span {font-weight: bold;color:#D5FF40;display: block;}
 .hero .hero-text p {color:#fff;font-size:18px;line-height: 28px;}
-.hero .brands-slider {width: 85%;height:150px;background: #fff;position: absolute;bottom: -80px;filter: drop-shadow(0px 17px 60px rgba(0, 0, 0, 0.07));border-radius:16px;margin: auto;left: 0;right: 0;}
+.hero .brands-slider {width: 85%;height: 110px;background: #fff;position: absolute;bottom: -54px;filter: drop-shadow(0px 17px 60px rgba(0, 0, 0, 0.07));border-radius:16px;margin: auto;left: 0;right: 0;}
 
 /* about us */
 .about-us {margin:0 auto 100px}
 .float-right {float: right;margin-right: 40px;}
-.about-us .oyster {width: 668px;margin:174px auto 120px; text-align: center;}
-.about-us .box {padding:20px;width: 390px;background: #fff;border-radius: 12px;}
+.about-us .oyster {width: 668px;margin:174px auto 120px; text-align: center;position: relative;}
+.about-us .oyster h2 {margin-bottom:20px;}
+.about-us .oyster-underline {width: 149px;height:11px;position: absolute;top: 31px;right: 95px;background-image: url(../img/underline-oyster.png);z-index: -1;}
+.about-us .box {padding:20px;width: 390px;background: #fff;border-radius: 12px;position: relative;}
+.about-us .professional-icon {width:82px;height:95px;position: absolute;right: 32px;top: -46px;}
+.about-us .haslee-icon {width: 62px;height: 84px;position: absolute;right: 32px;top: -46px;}
+.about-us .affordable-icon {width: 74px;height: 92px;position: absolute;right: 32px;top: -46px;}
+
 .about-us h3 {font-weight:bold;}
 .about-us .affordable h3 {color:#D5FF40;}
 .about-us .affordable {
@@ -117,7 +123,7 @@ header .contact:hover {background:#E0FF73;animation-name: wobble-horizontal;anim
     padding:20px;
     color:#fff;
     position:relative;
-    margin-bottom: 70px;
+    margin: -148px 0 140px 75px;
 }
 .about-us .affordable:after {
   position:absolute;
@@ -132,6 +138,10 @@ header .contact:hover {background:#E0FF73;animation-name: wobble-horizontal;anim
   top: 25px;
   z-index: -2;
 }
+
+
+
+
 
 .why-h2 {margin: 0 100px 90px 0;text-align: right;}
 
@@ -148,9 +158,10 @@ header .contact:hover {background:#E0FF73;animation-name: wobble-horizontal;anim
 .green-belt h5 span{font-size:40px;display:block;font-weight:100;margin-top: -12px;}
 
 /* our company*/
-.our-company {margin:0 0 50px 0;position: relative;background: #fff;color: #000;padding: 150px 0;}
+.our-company {margin: 0;position: relative;background: #fff;color: #000;padding: 150px 0;}
 .our-company p {font-size:18px}
-.our-company img {margin-top:80px}
+.our-company img {margin-top:80px;position: relative;z-index: 1;}
+.our-company-box {width:500px;}
 .our-company .shape1 {
     background-image: url(../img/shape1.png);
     position: absolute;
@@ -161,17 +172,22 @@ header .contact:hover {background:#E0FF73;animation-name: wobble-horizontal;anim
     /* transform: rotate(22.27deg); */
     }
 
-.shape2 {position: absolute;width: 630px;height: 496px;left: 340px;top: 1256.17px;background: linear-gradient(49.08deg, rgba(213, 255, 64, 0.21) 3.31%, rgba(200, 80, 192, 0.21) 57.52%, rgba(201, 245, 106, 0.21) 91.12%);filter: blur(75px);transform: rotate(-12.58deg);z-index: -1;}
-.our-nomads {width: 480px;}
+.shape2 {position: absolute;width: 630px;height: 496px;left: 440px;top: 1256.17px;background: linear-gradient(49.08deg, rgba(213, 255, 64, 0.21) 3.31%, rgba(200, 80, 192, 0.21) 57.52%, rgba(201, 245, 106, 0.21) 91.12%);filter: blur(75px);transform: rotate(-12.58deg);z-index: -1;}
+.our-nomads {width: 480px;/* background: #faffea; */position: relative;z-index: 1;/* border-radius: 12px; *//* padding: 20px; */}
 .black-box {background: #151515;border-radius: 20px;/* transform: rotate(2.7deg); */color:#fff;text-align:right;padding:20px;margin:50px 0 0 50px;width: 527px;}
+.nomads-underline {width: 225px;height: 44px;position: absolute;top: 3px;left: 62px;background-image: url(../img/nomads-underline.png);z-index: -1;}
+
+.shape3 {position: absolute;width: 630px;height: 496px;left: 226px;top: 375px;background: linear-gradient(49.08deg, rgba(213, 255, 64, 0.21) 3.31%, rgba(200, 80, 192, 0.21) 57.52%, rgba(201, 245, 106, 0.21) 91.12%);filter: blur(75px);transform: rotate(-12.58deg);}
 
 
 
 /* contact */
-.contact {width: 100%;/* height:750px; */background:#151515;color: #fff;padding: 40px 0;}
-.home-textinput {width:100%;height:60px;border:1px solid #fff;border-radius:10px;background: transparent;padding: 15px;margin-bottom: 20px;}
+.contact {width: 100%;/* height:750px; */background:#151515;color: #fff;padding: 80px 0 140px;}
+.home-textinput {width:100%;height:60px;border:1px solid #fff;border-radius:10px;background: transparent;padding: 15px;margin-bottom: 20px;color: #fff;}
 .home-form {display:flex;flex-direction: column;align-items: flex-end;margin-top:40px;}
-textarea {background:transparent;border:1px solid #fff;border-radius:10px;padding:15px;width:100%;margin-bottom:20px;}
+.social-icons {margin:0 10px;}
+.social-icons:hover {opacity: 0.6;animation-name: wobble-horizontal;animation-duration: 1s;animation-timing-function: ease-in-out;animation-iteration-count: 1;}
+textarea {background:transparent;border:1px solid #fff;border-radius:10px;padding:15px;width:100%;margin-bottom:20px;color: #fff;}
 button {
     width: 145px;
     height: 40px;
@@ -186,43 +202,101 @@ button {
     flex-direction: row;
     justify-content: center;
     }
-footer {background:#000;height:70px;width: 100%;}
+footer {background:#000;width: 100%;position:relative;display: flex;align-items: flex-start;justify-content: center;flex-direction: column;padding: 40px 20px;}
+footer p {font-size: 14px;color: #d5ff40;}
+footer .logo {
+    width: 146px;
+}
+footer nav {width: 344px;}
+footer nav ul {padding: 0;display:flex;flex-direction: row;justify-content: space-between;margin: 34px 0;}
+footer nav ul li {list-style:none;}
+footer nav ul li a {color:#fff;font-size: 15px;}
+footer .shape-footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+@media (max-width:1024px) {
+    header nav ul {width:500px;}
+  .about-us .box, .about-us .affordable {margin:auto;}
+  .affordable {margin: 80px auto 100px;}
+.float-right {float:none;}  
+    .why-h2 {
+    margin: 0 0 60px;
+    text-align: center;}
+}
+
+@media(max-width:1000px){
+  header nav {display: none;}
+  .mobile-nav-button {display: block !important;}
+}
 
 @media(max-width:768px){
+  footer .shape-footer {width:450px}
+      header nav ul {width: 100%;}
   p {font-size:16px;}
   h2 {font-size:24px}
-    header .contact,header nav {display: none;}
+  .nomads-underline {
+    left: -32px;
+    top: -9px;
+    display: none;
+}
+  header .contact,header nav {display: none;}
+  .hero .hero-bg {display:none;}
     .hero .hero-text {width: 100%; text-align: center;padding:0 20px}
     .hero .hero-text h1 {font-size:32px}
     .hero .hero-text p {font-size:16px;line-height: 24px;}
-    .hero .brands-slider {width: 94%;margin: auto;display: block;left: 0;right: 0;}
- .shape2 {/* display:none; */top: 1336px;left: 197px;}
+    .hero .brands-slider {width: 94%;margin: auto;display: block;left: 0;right: 0;height: 100px;bottom: -40px;}
+ .shape2 {/* display:none; */top: 1336px;left: -180px;width: 100%;}
   section {padding:20px;}
   .why-h2 {
     margin: 0 0 30px 0;
-    text-align: center;
-}.about-us {margin-bottom:40px;}
-  .about-us .oyster {width:100%}
+    text-align: center;}
+    .about-us {margin-bottom: 20px;}
+ .about-us h2 {margin-bottom: 20px;}
+  .about-us .oyster {width:100%;margin: 94px 0 66px;}
   .about-us .affordable:after {width: 90%;height: 165px;left: 46px;top: 17px;}
   .about-us .box {width:100%}
-  .about-us .affordable {margin-left:-5px;width: 98%;margin-top: 40px;}
+  .about-us .haslee-box {display:flex;width: 90%;margin: 0 0 65px 18px;}
+  .about-us .haslee-box p {margin:0}
+  .about-us .affordable {margin-left:-5px;width: 98%;margin: 40px 0 64px;}
   .our-services {padding:30px 0}
-  .our-services h4 {font-size:30px;text-align: center;}
+  .our-services h4 {font-size: 28px;text-align: center;margin: 20px;}
   .our-services h4 span {font-size:20px}
   .our-services .text-services {font-size:18px; width:100%; text-align:center}
   .float-right {margin:0;}
-  .black-box {margin: 40px 0 0 0;width:100%;}
-  .our-company {padding:100px 20px}
-  .our-company img {margin:20px 0 40px 0}
+  .black-box {margin: 40px -0 0 22px !important;width:100%;border-radius: 12px 0 0 12px;display: block;}
+  .our-company {padding: 60px 20px 50px;}
+  .our-company img {margin:20px 0 40px 0;}
   .our-company p {font-size:16px}
   .green-belt {padding:0 20px;height:100px;bottom: -44px;right: -9%;}
   .green-belt h5 {font-size:30px;font-weight:bold;color: #151515;}
 .green-belt h5 span{font-size:18px;display:block;font-weight:100;margin-top: 0px;}
-  .contact {padding: 20px 40px}
+  .contact {padding: 20px 40px;flex-direction: column-reverse;display: flex;}
   .shape1 {display:none}
   .tabs-tab-list {display: none !important;}
-  .tabs-panel {
+  .tabs-panel {margin:0 !important;}
+ a.contactButton {display:none;}
+ .contact h2 {text-align: center;margin-top: 20px;}
+  .home-form {margin:20px 0}
+  .reverse-mobile {display:flex;flex-direction: column-reverse;}
+  form button {width:100%;}
+  .home-form {margin-bottom:50px; display:block;}
+  textarea {margin-bottom:15px}
+  .about-us .oyster-underline {
+    width: 149px;
+    height: 11px;
+    position: absolute;
+    top: 16px;
+    right: -10px;
+    background-image: url(../img/underline-oyster.png);
+    z-index: -1;}
+.about-us .professional-icon {width: 62px;height:95px;position: absolute;right: 32px;top: -23px;}
+.about-us .haslee-icon {width: 163px;height: 84px;position: static;left: -33px;top: 43px;position: relative;}
+.about-us .affordable-icon {width: 55px;height: 92px;position: absolute;right: 32px;top: -24px;}
+.d-flex {display:flex;flex-direction: column-reverse;}
+.shape3 {left: 0;display: none;}
 
-    margin:0 !important;
-}
+
 }

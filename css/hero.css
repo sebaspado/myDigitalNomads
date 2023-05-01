@@ -1,0 +1,64 @@
+.dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    -webkit-animation: pulse 1.5s infinite ease-out;
+    animation: pulse 1.5s infinite ease-out;
+    background: #00c733;
+    position: absolute;
+    z-index: 1;
+
+    cursor: pointer;
+  }
+  .dot:before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: rgb(255 255 255 / 40%);
+  }
+  .dot:nth-child(odd) {
+    -webkit-animation: pulse 1.5s infinite ease-out 0.3s;
+    animation: pulse 1.5s infinite ease-out 0.3s;
+  }
+
+  @-webkit-keyframes pulse {
+    0% {
+      box-shadow: 0px 0px 0px 0px #52ff00;
+    }
+    100% {
+      box-shadow: 0px 0px 0px 7px rgba(52, 106, 180, 0);
+    }
+  }
+  @keyframes pulse {
+    0% {
+      box-shadow: 0px 0px 0px 0px #06af07;
+    }
+    100% {
+      box-shadow: 0px 0px 0px 7px rgba(52, 106, 180, 0);
+    }
+  }
+  
+  .dot-1 {
+    top: 334px;
+    left: 311px;
+  }
+  .dot-2 {
+    top: 123px;
+    left: 480px;
+  }
+  .dot-3 {
+    top: 150px;
+    left: 208px;
+  }
+  .dot-4 {
+    top: 263px;
+    right: 227px;
+  }
+  
