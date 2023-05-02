@@ -156,8 +156,9 @@ header .contactButton:hover {background:#E0FF73;animation-name: wobble-horizonta
 /* our company*/
 .our-company {margin: 0;position: relative;background: #fff;color: #000;padding: 150px 0;}
 .our-company p {font-size:18px}
-.our-company img {margin-top:80px;position: relative;z-index: 1;}
-.our-company-box {width:500px;}
+.our-company img {/* margin-top:80px; */position: relative;z-index: 1;}
+.our-company-box {width:500px;margin: 0 auto 120px;text-align: center;position: relative;height: auto;}
+.our-company-box h2 {position:relative}
 .our-company .shape1 {
     background-image: url(../img/shape1.png);
     position: absolute;
@@ -170,8 +171,8 @@ header .contactButton:hover {background:#E0FF73;animation-name: wobble-horizonta
 
 .shape2 {position: absolute;width: 630px;height: 496px;left: 440px;top: 1256.17px;background: linear-gradient(49.08deg, rgba(213, 255, 64, 0.21) 3.31%, rgba(200, 80, 192, 0.21) 57.52%, rgba(201, 245, 106, 0.21) 91.12%);filter: blur(75px);transform: rotate(-12.58deg);z-index: -1;}
 .our-nomads {width: 480px;/* background: #faffea; */position: relative;z-index: 1;/* border-radius: 12px; *//* padding: 20px; */}
-.black-box {background: #151515;border-radius: 20px;/* transform: rotate(2.7deg); */color:#fff;text-align:right;padding:20px;margin:50px 0 0 50px;width: 527px;}
-.nomads-underline {width: 225px;height: 44px;position: absolute;top: 3px;left: 62px;background-image: url(../img/nomads-underline.png);z-index: -1;}
+.black-box {background: #151515;border-radius: 20px;/* transform: rotate(2.7deg); */color:#fff;text-align:right;padding:20px;margin: 50px 0 0 0;width: 527px;}
+.nomads-underline {width: 225px;height: 44px;position: absolute;top: -1px;left: 185px;background-image: url(../img/nomads-underline.png);z-index: 0;}
 
 .shape3 {position: absolute;width: 630px;height: 496px;left: 226px;top: 375px;background: linear-gradient(49.08deg, rgba(213, 255, 64, 0.21) 3.31%, rgba(200, 80, 192, 0.21) 57.52%, rgba(201, 245, 106, 0.21) 91.12%);filter: blur(75px);transform: rotate(-12.58deg);}
 
@@ -322,6 +323,7 @@ footer .shape-footer {
 }
 
 @media(max-width:1000px){
+  a.contactButton,
   header nav {display: none;}
   .mobile-nav-button {
     /* display: none; */
@@ -338,6 +340,14 @@ footer .shape-footer {
 }
 
 @media(max-width:768px){
+
+.hero {height:auto;}
+.dot-6 {bottom: 222px;left: 28%;}
+.hero-boxes {display: none !important;}
+
+
+  
+  .our-company-box {width:90%;margin:0 auto 40px}
   footer .container {display:flex;flex-direction: column;justify-content: center;align-items: center;}
   footer nav {width:100%}
   footer .shape-footer {width:450px}
@@ -348,10 +358,10 @@ footer .shape-footer {
     left: -32px;
     top: -9px;
     display: none;
-}
+}.dot {display:none}
   header .contact,header nav {display: none;}
-  .hero .hero-bg {display:none;}
-    .hero .hero-text {width: 100% !important;text-align: center;padding:0 20px}
+  .hero .hero-bg {/* display:none; */position: static;width: 100%;height: auto;padding: 14px 0 40px;}
+    .hero .hero-text {width: 100% !important;text-align: center;padding: 0px 40px;top: 0%;}
     .hero .hero-text h1 {font-size:32px}
     .hero .hero-text p {font-size:16px;line-height: 24px;}
     .hero .brands-slider {width: 94%;margin: auto;display: block;left: 0;right: 0;height: 100px;bottom: -40px;padding: 8px;}
