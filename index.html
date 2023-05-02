@@ -499,6 +499,13 @@
             AOS.init({
                 duration: 1200,
                 })
+                
+                AOS.init({
+  disable: function() {
+    var maxWidth = 800;
+    return window.innerWidth < maxWidth;
+  }
+});
 
             $('a[href*="#"]')
             .not('[href="#"]')

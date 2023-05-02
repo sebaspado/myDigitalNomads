@@ -214,18 +214,7 @@ footer .shape-footer {
 }
 
 
-.mobile-nav-button {
-  /* display: none; */
-  /* width: 35px; */
-  position: absolute;
-  margin: 2rem;
-  right: 75px;
-  top: 0;
-  z-index: 9999;
-  cursor: pointer;
-  width: 29px;
-  height: 30px;
-}
+
 .mobile-nav-button .mobile-nav-button__line {
   width: 100%;
   height: 3px;
@@ -334,7 +323,18 @@ footer .shape-footer {
 
 @media(max-width:1000px){
   header nav {display: none;}
-  .mobile-nav-button {display: block !important;}
+  .mobile-nav-button {
+    /* display: none; */
+    /* width: 35px; */
+    position: absolute;
+    margin: 2rem;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+    cursor: pointer;
+    width: 29px;
+    height: 30px;
+  }
 }
 
 @media(max-width:768px){
@@ -368,16 +368,16 @@ footer .shape-footer {
   .about-us .haslee-box {display:flex;width: 90%;margin: 0 0 65px 18px;}
   .about-us .haslee-box p {margin:0}
   .about-us .affordable {margin-left:-5px;width: 98%;margin: 40px 0 64px;}
-  .our-services {padding:30px 0}
+  .our-services {padding: 30px 0 0;}
   .our-services h4 {font-size: 28px;text-align: center;margin: 20px;}
   .our-services h4 span {font-size:20px}
   .our-services .text-services {font-size:18px; width:100%; text-align:center}
   .float-right {margin:0;}
-  .black-box {margin: 40px -0 0 22px !important;width:100%;border-radius: 12px 0 0 12px;display: block;}
+  .black-box {margin: 40px -0 0 21px !important;width:100%;border-radius: 12px 0 0 12px;display: block;}
   .our-company {padding: 60px 20px 50px;}
   .our-company img {margin:20px 0 40px 0;}
   .our-company p {font-size:16px}
-  .green-belt {padding:0 20px;height:100px;bottom: -44px;right: -9%;}
+  .green-belt {margin-top: 40px;padding:0 20px;height:100px;bottom: -44px;right: -8%;position: static;width: 100%;border-radius: 0;}
   .green-belt h5 {font-size:30px;font-weight:bold;color: #151515;}
 .green-belt h5 span{font-size:18px;display:block;font-weight:100;margin-top: 0px;}
   .contact {padding: 20px 40px;flex-direction: column-reverse;display: flex;}
