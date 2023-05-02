@@ -198,7 +198,7 @@ button {
     flex-direction: row;
     justify-content: center;
     }
-footer {background:#000;width: 100%;position:relative;display: flex;align-items: flex-start;justify-content: center;flex-direction: column;padding: 40px 20px;}
+footer {background:#000;width: 100%;position:relative;display: flex;justify-content: center;flex-direction: column;padding: 40px 20px;align-items: flex-start;}
 footer p {font-size: 14px;color: #d5ff40;}
 footer .logo {
     width: 146px;
@@ -229,6 +229,8 @@ footer .shape-footer {
 }
 
 @media(max-width:768px){
+  footer .container {display:flex;flex-direction: column;justify-content: center;align-items: center;}
+  footer nav {width:100%}
   footer .shape-footer {width:450px}
       header nav ul {width: 100%;}
   p {font-size:16px;}
@@ -243,7 +245,7 @@ footer .shape-footer {
     .hero .hero-text {width: 100%; text-align: center;padding:0 20px}
     .hero .hero-text h1 {font-size:32px}
     .hero .hero-text p {font-size:16px;line-height: 24px;}
-    .hero .brands-slider {width: 94%;margin: auto;display: block;left: 0;right: 0;height: 100px;bottom: -40px;}
+    .hero .brands-slider {width: 94%;margin: auto;display: block;left: 0;right: 0;height: 100px;bottom: -40px;padding: 8px;}
  .shape2 {/* display:none; */top: 1336px;left: -180px;width: 100%;}
   section {padding:20px;}
   .why-h2 {
