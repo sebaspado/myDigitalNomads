@@ -72,7 +72,7 @@
 
 .hero {background:#151515;width:100%;height:615px;border-radius:0 0 50px 50px;position: relative;margin: 80px auto 0;}
 .hero .hero-bg {max-width: 1080px;height:504px;position: absolute;z-index: 0;right: 30px;top: 27px;}
-.hero .hero-text {width: 450px;position: relative;z-index: 1;top: 50%;}
+.hero .hero-text {width: 450px;position: relative;z-index: 1;top: 15%;}
 .hero .hero-text h1 {font-size:60px;color:#fff}
 .hero .hero-text h1 span {font-weight: bold;color:#D5FF40;display: block;}
 .hero .hero-text p {color:#fff;font-size:18px;line-height: 28px;}

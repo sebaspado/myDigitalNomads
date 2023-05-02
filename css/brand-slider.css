@@ -1,7 +1,6 @@
 /* Logo Slider */
 
 .logo-slider {
-
 	margin: auto;
 	overflow: hidden;
 	position: relative;
@@ -9,7 +8,6 @@
 }
 
 .logo-slider .logo-slide-track {
-	/* -webkit-animation: logo-scroll 60s linear infinite; */
 	animation: logo-scroll 60s linear infinite;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -54,14 +52,7 @@
 }
 
 @media (max-width:768px) {
-	  .logo-slider .logo-slide-track {
-    width: calc(150px * 10) !important;
-    }
-
-	.logo-slider .slide {
-	height: 100px;
-	width: 150px;
-	padding:0 10px;
-}
-	
+.hero .brands-slider {height: 80px !important;}	
+.logo-slider .logo-slide-track {width: calc(135px * 8) !important;}
+.logo-slider .slide {height: 62px;width: 200px;padding: 0 23px;margin-right: 20px;}	
 }

@@ -377,7 +377,7 @@ footer .shape-footer {
   .our-company {padding: 60px 20px 50px;}
   .our-company img {margin:20px 0 40px 0;}
   .our-company p {font-size:16px}
-  .green-belt {margin-top: 40px;padding:0 20px;height:100px;bottom: -44px;right: -8%;position: static;width: 100%;border-radius: 0;}
+  .green-belt {margin-top: 40px;padding:0 20px;height:100px;bottom: -44px;right: -8%;position: static;width: 100%;border-radius: 0 30px 0 0;}
   .green-belt h5 {font-size:30px;font-weight:bold;color: #151515;}
 .green-belt h5 span{font-size:18px;display:block;font-weight:100;margin-top: 0px;}
   .contact {padding: 20px 40px;flex-direction: column-reverse;display: flex;}
