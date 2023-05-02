@@ -102,7 +102,7 @@
   z-index: -7;
   display: none;
   }
-.hero .hero-boxes div:first-child {width: 68px;margin-right: 12px;}
+.hero .hero-boxes div:first-child {width: 52px;}
 .hero .hero-boxes p {font-size:11px;color:#fff;margin: 0;}
 .hero .hero-boxes p strong {display:block}
 .hero .hero-boxes p span {font-style:italic}
