@@ -313,13 +313,39 @@ footer .shape-footer {
 }
 
 @media (max-width:1024px) {
-    header nav ul {width:500px;}
-  .about-us .box, .about-us .affordable {margin:auto;}
-  .affordable {margin: 80px auto 100px;}
+header nav ul {width:500px;}
+ /* .about-us .box, .about-us .affordable {margin:auto;}
+  .affordable {margin: 80px auto 100px;}*/
+
+
+  .hero {height:auto;}
+.dot-6 {bottom: 222px;left: 28%;}
+.hero-boxes {display: none !important;}
+    .hero .hero-bg {/* display:none; */position: static;width: 100%;height: auto;padding: 14px 0 40px;}
+    .hero .hero-text {width: 100% !important;text-align: center;padding: 0px 40px;top: 18%;margin-bottom: 12%;}
+    .hero .hero-text h1 {font-size:32px}
+    .hero .hero-text p {font-size:16px;line-height: 24px;}
+    .dot {display:none}
+
+.about-us {margin-bottom: 20px;padding:0 20px;}
+ .about-us h2 {margin-bottom: 20px;}
+  .about-us .oyster {width:100%;margin: 94px 0 66px;}
+  .about-us .affordable:after {width: 90%;height: 165px;left: 46px;top: 17px;}
+  .about-us .box {width:100%}
+  .about-us .haslee-box {display:flex;width: 90%;margin: 0 0 65px 18px;}
+  .about-us .haslee-box p {margin:0}
+  .about-us .affordable {margin-left:-5px;width: 98%;margin: 40px 0 64px;}
+  .about-us .professional-icon {width: 62px;height:95px;position: absolute;right: 32px;top: -23px;}
+.about-us .haslee-icon {width: 163px;height: 84px;position: static;left: -33px;top: 43px;position: relative;}
+.about-us .affordable-icon {width: 55px;height: 92px;position: absolute;right: 32px;top: -24px;}
+  
 .float-right {float:none;}  
-    .why-h2 {
-    margin: 0 0 60px;
-    text-align: center;}
+.our-company img  {margin:20px auto 40px ;left:0;right:0;display:block;}
+  .why-h2 {margin: 0 0 60px; text-align: center;}
+    .black-box {margin: 40px -0 0 21px !important;width:100%;border-radius: 12px 0 0 12px;display: block;}
+.shape2 {left:0}
+.shape3 {left: 0;display: none;}
+.contact {width: 100%;/* height:750px; */background:#151515;color: #fff;padding: 80px 20px 140px;}
 }
 
 @media(max-width:1000px){
@@ -337,65 +363,56 @@ footer .shape-footer {
     width: 29px;
     height: 30px;
   }
+
+.our-company {padding:120px 20px}
+.our-nomads {width:100%;text-align: center;}
+.our-company-box {width:90%;margin:0 auto 40px}
+  
 }
 
 @media(max-width:768px){
-
-.hero {height:auto;}
-.dot-6 {bottom: 222px;left: 28%;}
-.hero-boxes {display: none !important;}
-
-
-  
-  .our-company-box {width:90%;margin:0 auto 40px}
-  footer .container {display:flex;flex-direction: column;justify-content: center;align-items: center;}
-  footer nav {width:100%}
-  footer .shape-footer {width:450px}
-      header nav ul {width: 100%;}
+header nav ul {width: 100%;}
   p {font-size:16px;}
   h2 {font-size:24px}
-  .nomads-underline {
-    left: -32px;
-    top: -9px;
-    display: none;
-}.dot {display:none}
+  .nomads-underline {left: -32px;top: -9px; display: none;}
+
+  
   header .contact,header nav {display: none;}
-  .hero .hero-bg {/* display:none; */position: static;width: 100%;height: auto;padding: 14px 0 40px;}
-    .hero .hero-text {width: 100% !important;text-align: center;padding: 0px 40px;top: 0%;}
-    .hero .hero-text h1 {font-size:32px}
-    .hero .hero-text p {font-size:16px;line-height: 24px;}
+
     .hero .brands-slider {width: 94%;margin: auto;display: block;left: 0;right: 0;height: 100px;bottom: -40px;padding: 8px;}
  .shape2 {/* display:none; */top: 1336px;left: -180px;width: 100%;}
   section {padding:20px;}
   .why-h2 {
     margin: 0 0 30px 0;
     text-align: center;}
-    .about-us {margin-bottom: 20px;}
- .about-us h2 {margin-bottom: 20px;}
-  .about-us .oyster {width:100%;margin: 94px 0 66px;}
-  .about-us .affordable:after {width: 90%;height: 165px;left: 46px;top: 17px;}
-  .about-us .box {width:100%}
-  .about-us .haslee-box {display:flex;width: 90%;margin: 0 0 65px 18px;}
-  .about-us .haslee-box p {margin:0}
-  .about-us .affordable {margin-left:-5px;width: 98%;margin: 40px 0 64px;}
+
+
   .our-services {padding: 30px 0 0;}
   .our-services h4 {font-size: 28px;text-align: center;margin: 20px;}
   .our-services h4 span {font-size:20px}
   .our-services .text-services {font-size:18px; width:100%; text-align:center}
+  
   .float-right {margin:0;}
-  .black-box {margin: 40px -0 0 21px !important;width:100%;border-radius: 12px 0 0 12px;display: block;}
+
+ 
   .our-company {padding: 60px 20px 50px;}
-  .our-company img {margin:20px 0 40px 0;}
   .our-company p {font-size:16px}
   .green-belt {margin-top: 40px;padding:0 20px;height:100px;bottom: -44px;right: -8%;position: static;width: 100%;border-radius: 0 30px 0 0;}
   .green-belt h5 {font-size:30px;font-weight:bold;color: #151515;}
-.green-belt h5 span{font-size:18px;display:block;font-weight:100;margin-top: 0px;}
+  .green-belt h5 span{font-size:18px;display:block;font-weight:100;margin-top: 0px;}
   .contact {padding: 20px 40px;flex-direction: column-reverse;display: flex;}
   .shape1 {display:none}
   .tabs-tab-list {display: none !important;}
   .tabs-panel {margin:0 !important;}
  a.contactButton {display:none;}
- .contact h2 {text-align: center;margin-top: 20px;}
+
+  
+  footer .container {display:flex;flex-direction: column;justify-content: center;align-items: center;}
+  footer nav {width:100%}
+  footer .shape-footer {width:450px}
+  
+  .contact h2 {text-align: center;margin-top: 20px;}
+  
   .home-form {margin:20px 0}
   .reverse-mobile {display:flex;flex-direction: column-reverse;}
   form button {width:100%;}
@@ -409,11 +426,8 @@ footer .shape-footer {
     right: -10px;
     background-image: url(../img/underline-oyster.png);
     z-index: -1;}
-.about-us .professional-icon {width: 62px;height:95px;position: absolute;right: 32px;top: -23px;}
-.about-us .haslee-icon {width: 163px;height: 84px;position: static;left: -33px;top: 43px;position: relative;}
-.about-us .affordable-icon {width: 55px;height: 92px;position: absolute;right: 32px;top: -24px;}
 .d-flex {display:flex;flex-direction: column-reverse;}
-.shape3 {left: 0;display: none;}
+
 
 
 }

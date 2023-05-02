@@ -99,7 +99,7 @@ background: #D5FF40;
   pointer-events: none;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 768px) {
   .tabs-allowed .accordeon-trigger {
     display: none;
   }
