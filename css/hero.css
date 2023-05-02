@@ -1,64 +1,117 @@
 .dot {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    -webkit-animation: pulse 1.5s infinite ease-out;
-    animation: pulse 1.5s infinite ease-out;
-    background: #00c733;
-    position: absolute;
-    z-index: 1;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  -webkit-animation: pulse 1.5s infinite ease-out;
+  animation: pulse 1.5s infinite ease-out;
+  background: #00c733;
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+}
+.dot:before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  background: rgb(255 255 255 / 40%);
+}
+.dot:nth-child(odd) {
+  -webkit-animation: pulse 1.5s infinite ease-out 0.3s;
+  animation: pulse 1.5s infinite ease-out 0.3s;
+}
 
-    cursor: pointer;
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0px 0px 0px 0px #52ff00;
   }
-  .dot:before {
-    content: "";
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    background: rgb(255 255 255 / 40%);
+  100% {
+    box-shadow: 0px 0px 0px 7px rgba(52, 106, 180, 0);
   }
-  .dot:nth-child(odd) {
-    -webkit-animation: pulse 1.5s infinite ease-out 0.3s;
-    animation: pulse 1.5s infinite ease-out 0.3s;
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0px 0px 0px 0px #06af07;
   }
+  100% {
+    box-shadow: 0px 0px 0px 15px rgba(52, 106, 180, 0);
+  }
+}
 
-  @-webkit-keyframes pulse {
-    0% {
-      box-shadow: 0px 0px 0px 0px #52ff00;
-    }
-    100% {
-      box-shadow: 0px 0px 0px 7px rgba(52, 106, 180, 0);
-    }
+.dot-1 {
+  top: 334px;
+  left: 311px;
+}
+.dot-2 {
+  top: 123px;
+  left: 480px;
+}
+.dot-3 {
+  top: 153px;
+  left: 208px;
+}
+.dot-4 {
+  top: 227px;
+  right: 235px;
+}
+.dot-5 {
+  bottom: 145px;
+  right: 65px;
+}
+.dot-6 {
+  bottom: 213px;
+  right: 451px;
+}
+
+
+.hero {background:#151515;width:100%;height:615px;border-radius:0 0 50px 50px;position: relative;margin: 80px auto 0;}
+.hero .hero-bg {max-width: 1080px;height:504px;position: absolute;z-index: 0;right: 30px;top: 27px;}
+.hero .hero-text {width: 450px;position: relative;z-index: 1;top: 50%;}
+.hero .hero-text h1 {font-size:60px;color:#fff}
+.hero .hero-text h1 span {font-weight: bold;color:#D5FF40;display: block;}
+.hero .hero-text p {color:#fff;font-size:18px;line-height: 28px;}
+.hero .hero-boxes {
+  background: rgba(255, 255, 255, 0.22);
+  width: 174px;
+  padding: 10px;
+  height:70px;
+  border:1px solid #D5FF40;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  z-index: 1;
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
   }
-  @keyframes pulse {
-    0% {
-      box-shadow: 0px 0px 0px 0px #06af07;
-    }
-    100% {
-      box-shadow: 0px 0px 0px 7px rgba(52, 106, 180, 0);
-    }
+.hero .hero-boxes:after {
+  position:absolute;
+  content:" ";
+  background: #D5FF40;
+  transform: rotate(-51.24deg);
+  width: 15px;
+  height: 15px;
+  left: 27px;
+  top: 62px;
+  z-index: -7;
+  display: none;
   }
-  
-  .dot-1 {
-    top: 334px;
-    left: 311px;
-  }
-  .dot-2 {
-    top: 123px;
-    left: 480px;
-  }
-  .dot-3 {
-    top: 150px;
-    left: 208px;
-  }
-  .dot-4 {
-    top: 263px;
-    right: 227px;
-  }
-  
+.hero .hero-boxes div:first-child {width: 68px;margin-right: 12px;}
+.hero .hero-boxes p {font-size:11px;color:#fff;margin: 0;}
+.hero .hero-boxes p strong {display:block}
+.hero .hero-boxes p span {font-style:italic}
+
+.hero .box1 {position:absolute;top: 91px;left: 178px;}
+
+.hero .box2 {position:absolute;top: 270px;left: 287px;}
+
+.hero .box3 {position:absolute;top: 61px;left: 438px;}
+.hero .box4 {position:absolute;top: 164px;right: 207px;}
+.hero .box5 {position:absolute;top: 380px;right: 207px;}
+.hero .brands-slider {width: 85%;height: 110px;background: #fff;position: absolute;bottom: -54px;filter: drop-shadow(0px 17px 60px rgba(0, 0, 0, 0.07));border-radius:16px;margin: auto;left: 0;right: 0;}

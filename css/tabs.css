@@ -29,7 +29,8 @@
   padding: 15px 20px;
   text-decoration: none;
   border: 1px solid #D5FF40;
-border-radius: 121px;
+  border-radius: 121px;
+  cursor: pointer;
 }
 
 .tabs-trigger:hover {
@@ -69,6 +70,7 @@ background: #D5FF40;
 .tabs-panel .content {
   margin-top: 10px;
   padding: 20px;
+  transition: all 500ms ease;
 }
 
 .tabs-panel.is-hidden .content {
@@ -103,6 +105,7 @@ background: #D5FF40;
   }
   .tabs-allowed .tabs-trigger {
     display: block;
+    transition: all 500ms ease;
   }
   .tabs-allowed .tabs-panel {
     display: none;

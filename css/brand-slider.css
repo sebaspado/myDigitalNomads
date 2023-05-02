@@ -9,23 +9,24 @@
 }
 
 .logo-slider .logo-slide-track {
-	-webkit-animation: logo-scroll 60s linear infinite;
+	/* -webkit-animation: logo-scroll 60s linear infinite; */
 	animation: logo-scroll 60s linear infinite;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	width: calc(330px * 14);
+	width: calc(150px * 16);
 	animation-duration: 50s;
 	animation-iteration-count: infinite;
 }
 
 .logo-slider .slide {
 	height: 110px;
-	width: 400px;
-	padding: 20px;
+	width: 150px;
+	padding: 30px;
 	display: flex;
 	align-content: center;
 	align-items: center;
+	margin-right: 100px;
 }
 
 @-webkit-keyframes logo-scroll {
@@ -35,8 +36,8 @@
 	}
 
 	100% {
-		-webkit-transform: translateX(calc(-250px * 7));
-		transform: translateX(calc(-250px * 7));
+		-webkit-transform: translateX(calc(-150px * 8));
+		transform: translateX(calc(-150px * 8));
 	}
 }
 
@@ -47,14 +48,14 @@
 	}
 
 	100% {
-		-webkit-transform: translateX(calc(-250px * 7));
-		transform: translateX(calc(-250px * 7));
+		-webkit-transform: translateX(calc(-150px * 4));
+		transform: translateX(calc(-150px * 4));
 	}
 }
 
 @media (max-width:768px) {
 	  .logo-slider .logo-slide-track {
-    width: calc(210px * 14) !important;}
+    width: calc(150px * 2) !important;}
 
 	.logo-slider .slide {
 	height: 100px;

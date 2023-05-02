@@ -94,13 +94,6 @@ header .contactButton:hover {background:#E0FF73;animation-name: wobble-horizonta
               transform: translateX(0);
             } }
 
-.hero {background:#151515;width:100%;height:615px;border-radius:0 0 50px 50px;position: relative;margin: 80px auto 0;}
-.hero .hero-bg {max-width: 1080px;height:504px;position: absolute;z-index: 0;right: 30px;top: 27px;}
-.hero .hero-text {width: 450px;position: relative;z-index: 1;top: 50%;}
-.hero .hero-text h1 {font-size:60px;color:#fff}
-.hero .hero-text h1 span {font-weight: bold;color:#D5FF40;display: block;}
-.hero .hero-text p {color:#fff;font-size:18px;line-height: 28px;}
-.hero .brands-slider {width: 85%;height: 110px;background: #fff;position: absolute;bottom: -54px;filter: drop-shadow(0px 17px 60px rgba(0, 0, 0, 0.07));border-radius:16px;margin: auto;left: 0;right: 0;}
 
 /* about us */
 .about-us {margin:0 auto 100px}
@@ -108,7 +101,10 @@ header .contactButton:hover {background:#E0FF73;animation-name: wobble-horizonta
 .about-us .oyster {width: 668px;margin:174px auto 120px; text-align: center;position: relative;}
 .about-us .oyster h2 {margin-bottom:20px;}
 .about-us .oyster-underline {width: 149px;height:11px;position: absolute;top: 31px;right: 95px;background-image: url(../img/underline-oyster.png);z-index: -1;}
-.about-us .box {padding:20px;width: 390px;background: #fff;border-radius: 12px;position: relative;}
+.about-us .box { transform: translateY(0px);
+    transition: all 500ms ease;padding:20px;width: 390px;background: #fff;border-radius: 12px;position: relative;}
+.about-us .box:hover { box-shadow: 0 5px 20px rgb(0 0 0 / 6%);
+    transform: translateY(-10px) !important}
 .about-us .professional-icon {width:82px;height:95px;position: absolute;right: 32px;top: -46px;}
 .about-us .haslee-icon {width: 62px;height: 84px;position: absolute;right: 32px;top: -46px;}
 .about-us .affordable-icon {width: 74px;height: 92px;position: absolute;right: 32px;top: -46px;}
