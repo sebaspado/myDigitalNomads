@@ -148,6 +148,7 @@ header .contactButton:hover {background:#E0FF73;animation-name: wobble-horizonta
 .our-services strong {/* color:#D5FF40; */background: linear-gradient(90deg, #D7FF47 39.57%, #658200 100.13%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;background-clip: text;text-fill-color: transparent;}
 .our-services h4 span {font-size:35px;display: block;/* margin-bottom: 40px; */}
 .our-services .text-services {font-size:24px;width: 68%;}
+.our-services .callCenterImg {float:right;margin-right: -32px;}
 .green-belt {width: 92%;height: 176px;background:#eee;position: relative;bottom: -90px;display: flex;z-index: 2;right: -8%;background: linear-gradient(90deg, #D5FF40 0%, #AFDC0F 100%);border-radius: 20px 0px 0px 0px;align-items: center;justify-content: space-between;padding: 0 14%;}
 .green-belt .item {text-align:center}
 .green-belt h5 {font-size:64px;font-weight:bold;color: #151515;}
@@ -338,7 +339,7 @@ header nav ul {width:500px;}
   .about-us .professional-icon {width: 62px;height:95px;position: absolute;right: 32px;top: -23px;}
 .about-us .haslee-icon {width: 163px;height: 84px;position: static;left: -33px;top: 43px;position: relative;}
 .about-us .affordable-icon {width: 55px;height: 92px;position: absolute;right: 32px;top: -24px;}
-  
+.our-services .callCenterImg {/* float:right; */margin-right:0;}  
 .float-right {float:none;}  
 .our-company img  {margin:20px auto 40px ;left:0;right:0;display:block;}
   .why-h2 {margin: 0 0 60px; text-align: center;}
@@ -388,7 +389,7 @@ header nav ul {width: 100%;}
 
 
   .our-services {padding: 30px 0 0;}
-  .our-services h4 {font-size: 28px;text-align: center;margin: 20px;}
+  .our-services h4 {font-size: 28px;text-align: center;margin: 8px 20px 20px;}
   .our-services h4 span {font-size:20px}
   .our-services .text-services {font-size:18px; width:100%; text-align:center}
   
