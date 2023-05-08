@@ -1,10 +1,25 @@
+body {background: #151515;}
 .bgBecome {background: #151515;}
 .bg-202020 {background: #202020;border-radius: 150px 0 0 0;}
 h2 {color:white;font-size: 78px;}
 h2 strong {color:#D5FF40;}
 
-.our-areas {margin-top: 170px;position: relative;}
-.our-areas .col-up {margin-top:-80px}
+.apply-now {width: 145px;height: 40px;background: #D5FF40;border-radius:6px;color:#000;display: flex;align-content: center;align-items: center;justify-content: center;margin:auto;}
+.apply-now:hover {background:#E0FF73;animation-name: wobble-horizontal;animation-duration: 1s;animation-timing-function: ease-in-out;animation-iteration-count: 1;}
+
+.hero {text-align: center;color:#fff;    border-radius: 0 0 262px 412px;}
+.hero .nomad-logo {margin: -30px 0 40px;}
+.hero h1 {font-size:78px;margin-top: 50px;}
+.hero h1 span {text-indent: -2000px;position: absolute;}
+.hero p {width:50%; margin:auto; margin-bottom:20px;}
+.hero-image {float: right;}
+
+.our-areas {margin-top: 225px;position: relative;}
+.our-areas .col-up {margin-top:-80px;display: flex;flex-direction: column;align-content: flex-end;align-items: flex-end;}
+.our-areas .col-down {display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: flex-end;}
 
 .our-areas h2 {width: 205px;text-align:center;margin: auto;}
 .our-area-box {background:white;border-radius:16px;padding:20px;width: 320px;text-align: center;margin: 0 0 90px 0;}
@@ -12,16 +27,40 @@ h2 strong {color:#D5FF40;}
 .our-area-box .icon-cont {border-radius:20px;background:#D5FF40;width:100px;height:100px;display:flex;justify-content: center;margin: -70px auto 40px;}
 .our-area-box .icon-cont img {width:50px;}
 .our-area-box p {font-size:18px;}
-.bg-areas {background: #ff9b9b;width: 1010px;height: 620px;position: absolute;top: 0;right: -20px;z-index: -1;border-radius: 150px 0 0 0;}
+.our-areas .shape-areas {position: relative;top:0;left:0;margin: 50px -61px 0 0;z-index: -1;}
+.bg-areas {background: #202020;width: 1010px;height: 620px;position: absolute;top: 60px;right: -20px;z-index: -1;border-radius: 150px 0 0 0;}
+
+.our-services h2 {text-align:left;width: 318px;}
+
+.roles { background:#222221;position:relative}
+.roles:before {position:absolute;content:" "; height:200px;width:100%;background:#D5FF40;z-index:-1; transform: rotate(-3.3deg);top:-100px;}
+#BambooHR-ATS {background:#222221;color:#fff !important;position:relative;z-index:9;padding:20px;}
+#BambooHR-ATS a {color:#fff;font-weight: 500;font-size: 30px;}
+.roles .BambooHR-ATS-board ul {padding: 12px 0 !important;border:none !important}
+.roles .BambooHR-ATS-Department-Item {border-bottom: 1px solid #343434 !important;}
+
+.contact h2 {text-align:center}
+.contact .p-contact {margin-top:32px;}
+.contact button {width:100%;border-radius:10px;height: 52px;font-weight: 500;}
+.contact .p-contact-mobile {display:none;}
+.shape4 {display:none;}
 
 @media (max-width:1024px) {
+.bg-areas {display:none;}
+.contact .p-contact {display: none;}
+.contact .p-contact-mobile {display: block;text-align: center;margin-top: 20px;} 
+.contact .p-contact-mobile p {font-size:18px;}
+#BambooHR-ATS a {font-size:20px;}
 }
 
 @media(max-width:1000px){
-  
+.roles:before {display:none}  
+.contact {padding: 20px 40px;flex-direction: column;display: flex;}
+.roles .BambooHR-ATS-Department-Item {padding: 16px 0 !important;}
+
 }
 
 @media(max-width:768px){
 
-
+.BambooHR-ATS-Jobs-Item {margin-bottom:20px !important;}
 } 
