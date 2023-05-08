@@ -1,7 +1,7 @@
 @charset "UTF-8";
 * {margin:0;padding:0;}
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;700&family=Poppins:wght@300;500;700;900&display=swap');
-
+.fixed-top {z-index: 99999999999999;}
 html{scroll-behavior:smooth;}
 body {overflow: hidden;
     overflow-y: scroll;}
@@ -14,7 +14,7 @@ p {font-size: 20px;font-family: 'Montserrat', sans-serif;}
   flex-direction: column;
   justify-content: center;}
 h1, h2, h3 {font-family: 'Poppins', sans-serif;}
-h2 {font-size: 38px;}
+h2 {font-size: 38px;margin: 0 0 16px;}
 h2 span {color:#D5FF40;font-weight: 800;}
 header {background:#151515;height: 80px;width: 100%;display: flex;align-items: center;}
 header .container {display: flex;justify-content: space-between;/* align-items: center; */width: 100%;}
@@ -157,8 +157,8 @@ header .contactButton:hover {background:#E0FF73;animation-name: wobble-horizonta
 /* our company*/
 .our-company {margin: 0;position: relative;background: #fff;color: #000;padding: 150px 0;}
 .our-company p {font-size:18px}
-.our-company img {/* margin-top:80px; */position: relative;z-index: 1;}
-.our-company-box {width:500px;margin: 0 auto 120px;text-align: center;position: relative;height: auto;}
+.our-company img {margin-right: 8%;position: relative;z-index: 1;float: right;}
+.our-company-box {width:500px;margin: 0 auto 80px;text-align: center;position: relative;height: auto;}
 .our-company-box h2 {position:relative}
 .our-company .shape1 {
     background-image: url(../img/shape1.png);
@@ -172,7 +172,7 @@ header .contactButton:hover {background:#E0FF73;animation-name: wobble-horizonta
 
 .shape2 {position: absolute;width: 630px;height: 496px;left: 440px;top: 1256.17px;background: linear-gradient(49.08deg, rgba(213, 255, 64, 0.21) 3.31%, rgba(200, 80, 192, 0.21) 57.52%, rgba(201, 245, 106, 0.21) 91.12%);filter: blur(75px);transform: rotate(-12.58deg);z-index: -1;}
 .our-nomads {width: 480px;/* background: #faffea; */position: relative;z-index: 1;/* border-radius: 12px; *//* padding: 20px; */}
-.black-box {background: #151515;border-radius: 20px;/* transform: rotate(2.7deg); */color:#fff;text-align:right;padding:20px;margin: 50px 0 0 0;width: 527px;}
+.black-box {background: #151515;border-radius: 20px;/* transform: rotate(2.7deg); */color:#fff;text-align:right;padding: 20px;margin: 68px 0 0 0;width: 527px;}
 .nomads-underline {width: 225px;height: 44px;position: absolute;top: -1px;left: 185px;background-image: url(../img/nomads-underline.png);z-index: 0;}
 
 .shape3 {position: absolute;width: 630px;height: 496px;left: 226px;top: 375px;background: linear-gradient(49.08deg, rgba(213, 255, 64, 0.21) 3.31%, rgba(200, 80, 192, 0.21) 57.52%, rgba(201, 245, 106, 0.21) 91.12%);filter: blur(75px);transform: rotate(-12.58deg);}
@@ -183,7 +183,7 @@ header .contactButton:hover {background:#E0FF73;animation-name: wobble-horizonta
 /* contact */
 .contact {width: 100%;/* height:750px; */background:#151515;color: #fff;padding: 80px 0 140px;position: relative;}
 .social-container {margin-top:20px;}
-.home-textinput {width:100%;height:60px;border:1px solid #fff;border-radius:10px;background: transparent;padding: 15px;margin-bottom: 20px;color: #fff;}
+.home-textinput {width:100%;height: 52px;border:1px solid #fff;border-radius:10px;background: transparent;padding: 15px;margin-bottom: 20px;color: #fff;}
 .home-form {display:flex;flex-direction: column;align-items: flex-end;margin-top:40px;position: relative;z-index: 999999999;}
 .social-icons {margin:0 10px;}
 .social-icons:hover {opacity: 0.6;animation-name: wobble-horizontal;animation-duration: 1s;animation-timing-function: ease-in-out;animation-iteration-count: 1;}
@@ -316,6 +316,7 @@ footer .shape-footer {
 }
 
 @media (max-width:1024px) {
+  h2 {margin:0 0 8px 0}
   .shape4{display:none}
 header nav ul {width:500px;}
  /* .about-us .box, .about-us .affordable {margin:auto;}
@@ -332,7 +333,7 @@ header nav ul {width:500px;}
     .dot {display:none}
 
 .about-us {margin-bottom: 20px;padding:0 20px;}
- .about-us h2 {margin-bottom: 20px;}
+ .about-us h2 {margin-bottom: 16px !important;}
   .about-us .oyster {width:100%;margin: 94px 0 66px;}
   .about-us .affordable:after {width: 90%;height: 165px;left: 46px;top: 17px;}
   .about-us .box {width:100%}
@@ -346,7 +347,7 @@ header nav ul {width:500px;}
 .float-right {float:none;}  
 .our-company img  {margin:20px auto 40px ;left:0;right:0;display:block;}
   .why-h2 {margin: 0 0 60px; text-align: center;}
-    .black-box {margin: 40px -0 0 21px !important;width:100%;border-radius: 12px 0 0 12px;display: block;}
+    .black-box {margin: 40px -0 0 22px !important;width:100%;border-radius: 12px 0 0 12px;display: block;}
 .shape2 {left:0}
 .shape3 {left: 0;display: none;}
 .contact {width: 100%;/* height:750px; */background:#151515;color: #fff;padding: 80px 20px 140px;}
@@ -356,8 +357,6 @@ header nav ul {width:500px;}
   a.contactButton,
   header nav {display: none;}
   .mobile-nav-button {
-    /* display: none; */
-    /* width: 35px; */
     position: absolute;
     margin: 2rem;
     right: 0;
@@ -383,24 +382,24 @@ header nav ul {width: 100%;}
   
   header .contact,header nav {display: none;}
 
-    .hero .brands-slider {width: 94%;margin: auto;display: block;left: 0;right: 0;height: 100px;bottom: -40px;padding: 8px;}
- .shape2 {/* display:none; */top: 1336px;left: -180px;width: 100%;}
-  section {padding:20px;}
-  .why-h2 {
+.hero .brands-slider {width: 94%;margin: auto;display: block;left: 0;right: 0;height: 100px;bottom: -40px;padding: 8px;}
+.shape2 {/* display:none; */top: 1336px;left: -180px;width: 100%;}
+section {padding:20px;}
+.why-h2 {
     margin: 0 0 30px 0;
     text-align: center;}
 
 
   .our-services {padding: 30px 0 0;}
-  .our-services h4 {font-size: 28px;text-align: center;margin: 8px 20px 20px;}
+  .our-services h4 {font-size: 28px;text-align: center;margin: 12px 20px 20px;}
   .our-services h4 span {font-size:20px}
-  .our-services .text-services {font-size:18px; width:100%; text-align:center}
+  .our-services .text-services {font-size: 16px;width:100%;text-align:center}
   
   .float-right {margin:0;}
 
  
   .our-company {padding: 60px 20px 50px;}
-  .our-company p {font-size:16px}
+  .our-company p {font-size: 16px;}
   .green-belt {margin-top: 40px;padding:0 20px;height:100px;bottom: -44px;right: -8%;position: static;width: 100%;border-radius: 0 30px 0 0;}
   .green-belt h5 {font-size:30px;font-weight:bold;color: #151515;}
   .green-belt h5 span{font-size:18px;display:block;font-weight:100;margin-top: 0px;}
@@ -419,9 +418,9 @@ header nav ul {width: 100%;}
   
   .home-form {margin:20px 0}
   .reverse-mobile {display:flex;flex-direction: column-reverse;}
-  form button {width:100%;}
+  form button {width:100%;height: 52px;}
   .home-form {margin-bottom:50px; display:block;}
-  textarea {margin-bottom:15px}
+  textarea {margin-bottom:15px;}
   .about-us .oyster-underline {
     width: 149px;
     height: 11px;

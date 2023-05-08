@@ -1,0 +1,27 @@
+.bgBecome {background: #151515;}
+.bg-202020 {background: #202020;border-radius: 150px 0 0 0;}
+h2 {color:white;font-size: 78px;}
+h2 strong {color:#D5FF40;}
+
+.our-areas {margin-top: 170px;position: relative;}
+.our-areas .col-up {margin-top:-80px}
+
+.our-areas h2 {width: 205px;text-align:center;margin: auto;}
+.our-area-box {background:white;border-radius:16px;padding:20px;width: 320px;text-align: center;margin: 0 0 90px 0;}
+.our-area-box h3 {font-size:24px}
+.our-area-box .icon-cont {border-radius:20px;background:#D5FF40;width:100px;height:100px;display:flex;justify-content: center;margin: -70px auto 40px;}
+.our-area-box .icon-cont img {width:50px;}
+.our-area-box p {font-size:18px;}
+.bg-areas {background: #ff9b9b;width: 1010px;height: 620px;position: absolute;top: 0;right: -20px;z-index: -1;border-radius: 150px 0 0 0;}
+
+@media (max-width:1024px) {
+}
+
+@media(max-width:1000px){
+  
+}
+
+@media(max-width:768px){
+
+
+} 
