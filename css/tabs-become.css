@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;700&family=Poppins:wght@300;500;700;900&display=swap');
 .accordion-tabs {
+    min-height: 426px;
     color: #fff;
     /* background-color: #fff; */
     border-radius: 6px;

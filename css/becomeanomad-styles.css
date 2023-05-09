@@ -5,7 +5,14 @@ h2 {color:white;font-size: 78px;}
 h2 strong {color:#D5FF40;}
 .p-relative {position:relative;}
 
-.apply-now {width: 145px;height: 40px;background: #D5FF40;border-radius:6px;color:#000;display: flex;align-content: center;align-items: center;justify-content: center;margin:auto;}
+@media screen and (max-width: 767px) {
+  .mobile-hide {display: none;}
+  .section--slider-mobile .row {
+    display: block;
+  }
+}
+
+.apply-now {width: 145px;height: 40px;border-radius:6px;color:#000;display: flex;align-content: center;align-items: center;justify-content: center;margin:auto;background: #D5FF40;background: linear-gradient(90deg, #D7FF47 39.57%, #9ac700 100.13%);}
 .apply-now:hover {background:#E0FF73;animation-name: wobble-horizontal;animation-duration: 1s;animation-timing-function: ease-in-out;animation-iteration-count: 1;}
 
 .hero {text-align: center;color:#fff;    border-radius: 0 0 262px 412px;}
@@ -15,7 +22,7 @@ h2 strong {color:#D5FF40;}
 .hero p {width:50%; margin:auto; margin-bottom:20px;}
 .hero-image {float: right;}
 
-.our-areas {margin-top: 225px;position: relative;}
+.our-areas {margin-top: 250px;position: relative;}
 .our-areas .col-up {margin-top:-80px;display: flex;flex-direction: column;align-content: flex-end;align-items: flex-end;}
 .our-areas .col-down {display: flex;
     flex-direction: column;
@@ -23,13 +30,20 @@ h2 strong {color:#D5FF40;}
     align-items: flex-end;}
 
 .our-areas h2 {width: 205px;text-align:center;margin: auto;}
-.our-area-box {background:white;border-radius:16px;padding:20px;width: 320px;text-align: center;margin: 0 0 90px 0;}
+.our-area-box {background:white;border-radius:16px;padding:20px;width: 278px;text-align: center;margin: 0 0 100px 0;}
 .our-area-box h3 {font-size:24px}
-.our-area-box .icon-cont {border-radius:20px;background:#D5FF40;width:100px;height:100px;display:flex;justify-content: center;margin: -70px auto 40px;}
+.our-area-box .icon-cont {border-radius:20px;background:#D5FF40;width: 80px;height: 80px;display:flex;justify-content: center;margin: -70px auto 24px;}
 .our-area-box .icon-cont img {width:50px;}
 .our-area-box p {font-size:18px;}
 .our-areas .shape-areas {position: relative;top:0;left:0;margin: 50px -61px 0 0;z-index: -1;}
-.bg-areas {background: #202020;width: 1010px;height: 620px;position: absolute;top: 60px;right: -20px;z-index: -1;border-radius: 150px 0 0 0;}
+.bg-areas {background: #202020;width: 70%;height: 517px;position: absolute;top: 60px;right: -20px;z-index: -1;border-radius: 150px 0 0 0;}
+
+.img-types {position: absolute;top: 208px;right: 104px;width: 640px;}
+.our-services .text-services {
+    font-size: 20px;
+    width: 80%;
+}
+
 
 .our-services h2 {text-align:left;width: 440px;font-size: 70px;font-weight: 600;margin-top: -64px;line-height: 78px;}
 .our-services h4 {
@@ -37,11 +51,11 @@ h2 strong {color:#D5FF40;}
     margin-bottom: 40px;
 }
 
-.our-services h4 span {font-weight:100;font-size: 28px;}
+.our-services h4 span {font-weight:100;font-size: 28px;display: inline-block;}
 .our-services {margin-bottom:80px;background:transparent;}
 
-.our-culture {padding: 66px 0 250px;}
-.our-culture h2 {text-align:right;}
+.our-culture {padding: 80px 0 200px;}
+.our-culture h2 {text-align:right;margin: 80px 0 48px 0;}
 .our-culture p { color:#fff; font-size:18px; text-align:right}
 .our-culture .culture-circle {position:absolute;left: -17px;top: -61px;animation: float 7s linear infinite;}
 
@@ -64,7 +78,7 @@ h2 strong {color:#D5FF40;}
 
 
 .roles { background:#222221;position:relative;padding-top:50px;}
-.roles:before {position:absolute;content:" ";height:200px;width:100%;background:#D5FF40;z-index:-1;transform: rotate(3deg);top: 8px;left: -10px;}
+.roles:before {position:absolute;content:" ";height:200px;width:100%;background:#D5FF40;z-index:-1;transform: rotate(-3deg);top: 8px;left: 8px;}
 .roles:after {position:absolute;content:" ";height:200px;width:100%;background:#D5FF40;z-index:-1;transform: rotate(3deg);bottom: 8px;right: -8px;}
 
 #BambooHR-ATS h2 {/* text-align:center; */color:#fff;font-size: 78px;padding: 20px 0 40px !important;border-bottom: 1px solid #343434 !important;}
@@ -117,6 +131,10 @@ h2 strong {color:#D5FF40;}
 }
 
 @media(max-width:768px){
+  .roles:before,.roles:after {display:none;}
+ 
+
+  .our-services .text-services {width:100%}
   .accordion-tabs {padding:0;}
     .accordion-tabs img {display:none}
   .accordeon-trigger {padding:20px}
@@ -136,3 +154,129 @@ h2 strong {color:#D5FF40;}
 .our-areas .shape-areas {display:none}
 .BambooHR-ATS-Jobs-Item {margin-bottom:20px !important;}
 } 
+
+
+
+
+
+
+
+
+section .section-label {
+  margin-bottom: 30px;
+}
+section .cards-holder {
+  font-size: 0;
+  letter-spacing: 0;
+  position: relative;
+  height: 236px;
+}
+section .card-image {
+  display: block;
+}
+section .description {
+  color: black;
+  font-size: 18px;
+  padding: 25px 20px;
+}
+section .description .duration, section .description .price {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+section .description .duration {
+  position: relative;
+  padding-bottom: 13px;
+}
+section .description .duration:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 4px;
+  display: block;
+  background: #000;
+  height: 2px;
+  width: 16px;
+}
+section .description .info {
+  margin-top: 13px;
+}
+section .description .btn, section .description button {
+  margin-top: 22px;
+  display: block;
+  font-size: 13px;
+  letter-spacing: 0;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+}
+section .card {
+  background: #fff;
+  border: 1px solid #ccc;
+  left: -10px;
+  position: absolute;
+  transform-origin: 0 50%;
+  transform: scale(0.8);
+  transition: none;
+  width: 100%;
+  z-index: 1;
+}
+section .card.active {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  left: 0;
+  transform-origin: 50% 50%;
+  transform: scale(1);
+  z-index: 3;
+}
+section .card.active ~ .card {
+  left: 10px;
+  transform-origin: 100% 50%;
+  z-index: 2;
+}
+section .card.active ~ .card + .card {
+  z-index: 1;
+}
+section .card.active ~ .card + .card + .card {
+  z-index: 0;
+}
+
+.controls {
+  text-align: center;
+}
+
+.page {
+  background-color: #aaa;
+  border: 0.2rem solid #666;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0.4rem;
+  height: 1rem;
+  vertical-align: middle;
+  width: 1rem;
+}
+.page.active {
+  background-color: #666;
+}
+
+.arrow-left,
+.arrow-right {
+  display: block;
+  font-size: 4rem;
+  font-weight: bold;
+  color: #eee;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 4rem;
+}
+.arrow-left:before,
+.arrow-right:before {
+  pointer-events: none;
+}
+
+.arrow-left:before {
+  content: "<";
+}
+
+.arrow-right:after {
+  content: ">";
+}

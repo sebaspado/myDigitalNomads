@@ -14,6 +14,7 @@
         <link href="css/aos.css" rel="stylesheet">
         <link href="css/nomads-styles.css" rel="stylesheet">
         <link href="css/becomeanomad-styles.css" rel="stylesheet">
+        <link href="css/mobile-areas.css" rel="stylesheet">
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -32,8 +33,7 @@
                         <li><a class="nav-link" href="#our-culture">Our culture</a></li>
                         <li><a class="nav-link" href="#open-positions">Open positions</a></li>
                     </ul></nav>
-
-                <a href="#contact" class="contactButton" href="">Work with us</a>
+                <div style="width: 0;"><a href="#contact" class="contactButton" href="">Work with us</a></div>
                 <!-- MENU MOBILE -->
                 <div class="mobile-nav-button">
                     <div class="mobile-nav-button__line"></div>
@@ -116,7 +116,7 @@
             </section>
 
             <section class="our-areas" id="our-areas">
-                <div class="row">
+                <div class="row mobile-hide">
 
                     <div class="col-lg-1"></div>
                     <div class="col-lg-3 text-center">
@@ -187,10 +187,62 @@
                     <div class="col-lg-1"></div>
 
                 </div><!-- row end -->
+          
+                <section class="cards-slider">
+                    <div class="container">
+                      <div class="content-holder">
+                        <ul class="cards-holder">
+                                <li class="card" data-name="UI+UX">
+                                  <!--
+                                  .image-holder.card-image
+                                      .img(style="background-image:url(" + image + ")")
+                                  -->
+                                  <div class="description">
+                                    <div class="duration">SLIDE 1</div>
+                                    <div class="info">Some text / image</div><a class="btn" href="#">read more</a>
+                                  </div>
+                                </li>
+                                <li class="card" data-name="UX+UI">
+                                  <!--
+                                  .image-holder.card-image
+                                      .img(style="background-image:url(" + image + ")")
+                                  -->
+                                  <div class="description">
+                                    <div class="duration">SLIDE 2</div>
+                                    <div class="info">Some text / image</div><a class="btn" href="#">read more</a>
+                                  </div>
+                                </li>
+                                <li class="card" data-name="FX+UX">
+                                  <!--
+                                  .image-holder.card-image
+                                      .img(style="background-image:url(" + image + ")")
+                                  -->
+                                  <div class="description">
+                                    <div class="duration">SLIDE 3</div>
+                                    <div class="info">Some text / image</div><a class="btn" href="#">подробнее о видеокурсе</a>
+                                  </div>
+                                </li>
+                                <li class="card" data-name="2+2">
+                                  <!--
+                                  .image-holder.card-image
+                                      .img(style="background-image:url(" + image + ")")
+                                  -->
+                                  <div class="description">
+                                    <div class="duration">SLIDE 4</div>
+                                    <div class="info">Some text / image</div><a class="btn" href="#">read more</a>
+                                  </div>
+                                </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </section>
+
+
+
                 <div class="bg-areas"></div>
             </section>
 
-            <section id="services" class="our-services"> 
+            <section id="types" class="our-services"> 
                  
                 <div class="row bg-202020">
                     
@@ -252,9 +304,9 @@
                                         </div>
                                         <div class="col-sm-12 col-md-6 col-lg-6"
                                             data-aos="slide-up">
-                                            <img class="callCenterImg"
+                                          <!-- <img class="callCenterImg"
                                                 src="img/call-center.png"
-                                                alt="call center image">
+                                                alt="call center image">--> 
                                         </div>
                                     </div>
                                 </div>
@@ -297,9 +349,9 @@
                                         </div>
                                         <div class="col-sm-12 col-md-6
                                         col-lg-6">
-                                        <img class="callCenterImg"
+                                       <!-- <img class="callCenterImg"
                                             src="img/marketing-bg2.png"
-                                            alt="marketing image">
+                                            alt="marketing image">-->
                                     </div>
                                     </div>
                                 </div>
@@ -340,9 +392,9 @@
                                         </div>
                                         <div class="col-sm-12 col-md-6
                                             col-lg-6">
-                                            <img class="callCenterImg" alt="it
+                                            <!--<img class="callCenterImg" alt="it
                                                 development image"
-                                                src="img/itdevelopment.png">
+                                                src="img/itdevelopment.png">-->
                                         </div>
                                     </div>
                                 </div>
@@ -383,9 +435,9 @@
                                         </div>
                                         <div class="col-sm-12 col-md-6
                                         col-lg-6">
-                                        <img class="callCenterImg" alt="it
+                                       <!-- <img class="callCenterImg" alt="it
                                             development image"
-                                            src="img/itdevelopment.png">
+                                            src="img/itdevelopment.png">-->
                                     </div>
                                     </div>
                                 </div>
@@ -396,6 +448,7 @@
 
                         <div class="col-lg-1 col-md-12 col-sm-12"></div>
                     </div><!--col lg 12 end -->
+                   <!-- <div class="img-types"> <img src="img/types-img.png" alt="nomads image"></div>-->
                 </div><!--row end -->
             </section>
 
@@ -553,17 +606,19 @@
         <script src="js/tabs.js"></script>
         <script src="js/menu.js"></script>
         <script src="js/aos.js"></script>
+        <script src="js/areas-mobile.js"></script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
         <script>
             AOS.init({
                 duration: 1200,
                 })
 
                 AOS.init({
-  disable: function() {
-    var maxWidth = 1000;
-    return window.innerWidth < maxWidth;
-  }
-});
+            disable: function() {
+                var maxWidth = 1000;
+                return window.innerWidth < maxWidth;
+            }
+            });
 
             $('a[href*="#"]')
             .not('[href="#"]')
@@ -586,9 +641,6 @@
                     return false;    
                 }
             });
-
-
-
         </script>
     </body>
 </html>

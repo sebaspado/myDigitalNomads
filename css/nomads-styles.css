@@ -17,7 +17,7 @@ h1, h2, h3 {font-family: 'Poppins', sans-serif;}
 h2 {font-size: 38px;margin: 0 0 16px;}
 h2 span {color:#D5FF40;font-weight: 800;}
 header {background:#151515;height: 80px;width: 100%;display: flex;align-items: center;}
-header .container {display: flex;justify-content: space-between;/* align-items: center; */width: 100%;}
+header .container {display: flex;justify-content: space-between;/* align-items: center; */width: 100%;/* padding:0; */}
 header .logo {width: 156px;}
 header nav {display:flex;align-content: center;align-items: center;}
 header nav ul {display:flex;width: 630px;justify-content: space-between;margin: 0;padding: 0;}
@@ -63,13 +63,14 @@ header nav ul li a:before {
 header .contactButton {
     width: 145px;
     height: 40px;
-    background: #D5FF40;
     border-radius:120px;
     color:#000;
     display: flex;
     align-content: center;
     align-items: center;
     justify-content: center;
+    background: #D5FF40;
+    background: linear-gradient(90deg, #D7FF47 39.57%, #9ac700 100.13%);
     }
 
 /* contact button animation */
