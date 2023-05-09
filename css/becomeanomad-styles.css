@@ -31,7 +31,7 @@ h2 strong {color:#D5FF40;}
 .our-areas .shape-areas {position: relative;top:0;left:0;margin: 50px -61px 0 0;z-index: -1;}
 .bg-areas {background: #202020;width: 1010px;height: 620px;position: absolute;top: 60px;right: -20px;z-index: -1;border-radius: 150px 0 0 0;}
 
-.our-services h2 {text-align:left;width: 318px;}
+.our-services h2 {text-align:left;width: 440px;font-size: 70px;font-weight: 600;margin-top: -64px;line-height: 78px;}
 .our-services h4 {
     font-size: 28px;
     margin-bottom: 40px;
@@ -79,11 +79,11 @@ h2 strong {color:#D5FF40;}
 .roles h2 {display:none;}
 .roles h3 {font-size:78px;color:#fff;}
 .roles h3 strong {color:#D5FF40;}
-
+.contact .home-form {display: block;}
 .contact {z-index:0}
 .contact h2 strong {display:block;}
-.contact p {width: 350px;margin:auto;text-align: center;}
-.contact h2 {text-align:center;line-height: 90px;font-size: 94px;}
+.contact p {width: 385px;margin:auto;text-align: center;font-size: 20px;}
+.contact h2 {text-align:center;line-height: 70px;font-size: 70px;}
 .contact .p-contact {margin-top:32px;}
 .contact .p-contact p {text-align: left !important; width:auto;}
 .contact button {width:100%;border-radius:10px;height: 52px;font-weight: 500;}
