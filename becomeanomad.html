@@ -188,54 +188,61 @@
 
                 </div><!-- row end -->
           
-                <section class="cards-slider">
+  
+
+
+
+
+
+
+                <section class="section section--slider-mobile">
                     <div class="container">
-                      <div class="content-holder">
-                        <ul class="cards-holder">
-                                <li class="card" data-name="UI+UX">
-                                  <!--
-                                  .image-holder.card-image
-                                      .img(style="background-image:url(" + image + ")")
-                                  -->
-                                  <div class="description">
-                                    <div class="duration">SLIDE 1</div>
-                                    <div class="info">Some text / image</div><a class="btn" href="#">read more</a>
-                                  </div>
-                                </li>
-                                <li class="card" data-name="UX+UI">
-                                  <!--
-                                  .image-holder.card-image
-                                      .img(style="background-image:url(" + image + ")")
-                                  -->
-                                  <div class="description">
-                                    <div class="duration">SLIDE 2</div>
-                                    <div class="info">Some text / image</div><a class="btn" href="#">read more</a>
-                                  </div>
-                                </li>
-                                <li class="card" data-name="FX+UX">
-                                  <!--
-                                  .image-holder.card-image
-                                      .img(style="background-image:url(" + image + ")")
-                                  -->
-                                  <div class="description">
-                                    <div class="duration">SLIDE 3</div>
-                                    <div class="info">Some text / image</div><a class="btn" href="#">подробнее о видеокурсе</a>
-                                  </div>
-                                </li>
-                                <li class="card" data-name="2+2">
-                                  <!--
-                                  .image-holder.card-image
-                                      .img(style="background-image:url(" + image + ")")
-                                  -->
-                                  <div class="description">
-                                    <div class="duration">SLIDE 4</div>
-                                    <div class="info">Some text / image</div><a class="btn" href="#">read more</a>
-                                  </div>
-                                </li>
-                        </ul>
-                      </div>
+                        <div class="row js-mobile-slider">
+                            <div class="col-11 col-md-3">
+                                <div class="box">
+                                    <span class="box__tag">tag one</span>
+                                    <h2 class="box__title">Hi! I'm box one</h2>
+                                </div>
+                            </div>
+                            <div class="col-11 col-md-3">
+                                <div class="box">
+                                    <span class="box__tag">tag two</span>
+                                    <h2 class="box__title">Hi! I'm box two</h2>
+                                </div>
+                            </div>
+                            <div class="col-11 col-md-3">
+                                <div class="box">
+                                    <span class="box__tag">tag three</span>
+                                    <h2 class="box__title">Hi! I'm box three</h2>
+                                </div>
+                            </div>
+                            <div class="col-11 col-md-3">
+                                <div class="box">
+                                    <span class="box__tag">tag four</span>
+                                    <h2 class="box__title">Hi! I'm box four</h2>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </section>
+                </section>
+
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -606,7 +613,6 @@
         <script src="js/tabs.js"></script>
         <script src="js/menu.js"></script>
         <script src="js/aos.js"></script>
-        <script src="js/areas-mobile.js"></script>
         <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
         <script>
             AOS.init({
@@ -641,6 +647,51 @@
                     return false;    
                 }
             });
+
+            const mobileBreakpoint = 768;
+let iScreenWidth = document.body.getBoundingClientRect().width; 
+
+initSlider();
+
+function initSlider() {
+	const sliders = document.querySelectorAll('.js-mobile-slider');
+	let aFlickitySliders = [];
+	
+	function initFlickity(slider) {
+		return new Flickity( slider, {
+			cellAlign: 'left',
+			prevNextButtons: false
+		});
+	}
+
+	for(let i = 0; i < sliders.length; i += 1){
+		const slider = sliders[i];
+		if(iScreenWidth < mobileBreakpoint) {
+			let oSlider = initFlickity(slider);
+			aFlickitySliders.push(oSlider);
+		}
+	}
+
+	window.addEventListener('resize', () => {
+		iScreenWidth = document.body.getBoundingClientRect().width;
+
+		for(let i = 0; i < sliders.length; i += 1){
+			const oSlider = sliders[i];
+			const oFlickSlider = aFlickitySliders[i];
+			if(iScreenWidth < mobileBreakpoint){
+				if(!oFlickSlider) {
+					let createdFlickSlider = initFlickity(oSlider);
+					aFlickitySliders.push(createdFlickSlider);
+				}
+			} else {
+				if(oFlickSlider) {
+					oFlickSlider.destroy();
+					aFlickitySliders.splice(0, 1);
+				}
+			}
+		}
+	});	
+}
         </script>
     </body>
 </html>

@@ -1,121 +1,117 @@
+.carousel-showmanymoveone .carousel-inner {
+    height: 360px;
+  }
 
 
-
-section .section-label {
-  margin-bottom: 30px;
+.carousel-showmanymoveone a {
+    display: inline-block;
+    background-size: cover!important;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    min-height: 360px;
+    width: 100%;
 }
-section .cards-holder {
-  font-size: 0;
-  letter-spacing: 0;
-  position: relative;
-  height: 236px;
+.carousel-showmanymoveone a.offer-1 {
+    background: #b5ffe4 url(https://bellymelly.com/images/usa/usa-1.jpg) no-repeat center bottom;
 }
-section .card-image {
-  display: block;
+.carousel-showmanymoveone a.offer-3 {
+    background: #b5ffe4 url(https://bellymelly.com/images/usa/usa-3.png) no-repeat center bottom;
 }
-section .description {
-  color: black;
-  font-size: 18px;
-  padding: 25px 20px;
-}
-section .description .duration, section .description .price {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-section .description .duration {
-  position: relative;
-  padding-bottom: 13px;
-}
-section .description .duration:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 4px;
-  display: block;
-  background: #000;
-  height: 2px;
-  width: 16px;
-}
-section .description .info {
-  margin-top: 13px;
-}
-section .description .btn, section .description button {
-  margin-top: 22px;
-  display: block;
-  font-size: 13px;
-  letter-spacing: 0;
-  padding-left: 0;
-  padding-right: 0;
-  width: 100%;
-}
-section .card {
-  background: #fff;
-  border: 1px solid #ccc;
-  left: -10px;
-  position: absolute;
-  transform-origin: 0 50%;
-  transform: scale(0.8);
-  transition: none;
-  width: 100%;
-  z-index: 1;
-}
-section .card.active {
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  left: 0;
-  transform-origin: 50% 50%;
-  transform: scale(1);
-  z-index: 3;
-}
-section .card.active ~ .card {
-  left: 10px;
-  transform-origin: 100% 50%;
-  z-index: 2;
-}
-section .card.active ~ .card + .card {
-  z-index: 1;
-}
-section .card.active ~ .card + .card + .card {
-  z-index: 0;
+.carousel-showmanymoveone a.offer-2 {
+    background: #b5ffe4 url(https://bellymelly.com/images/usa/usa-2.jpg) no-repeat center bottom;
 }
 
-.controls {
-  text-align: center;
+.carousel-showmanymoveone .carousel-control {
+    display: none; background-image:linear-gradient(to right,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
 }
 
-.page {
-  background-color: #aaa;
-  border: 0.2rem solid #666;
-  border-radius: 50%;
-  display: inline-block;
-  margin: 0.4rem;
-  height: 1rem;
-  vertical-align: middle;
-  width: 1rem;
+@media all and (max-width: 768px){
+  
+.carousel-showmanymoveone .carousel-control {
+    display: block;
 }
-.page.active {
-  background-color: #666;
+}
+@media all and (min-width: 768px) {
+  body.usa-content .carousel-showmanymoveone .carousel-inner > .active.left,
+  body.usa-content .carousel-showmanymoveone .carousel-inner > .prev {
+    left: -50%;
+  }
+  body.usa-content .carousel-showmanymoveone .carousel-inner > .active.right,
+  body.usa-content .carousel-showmanymoveone .carousel-inner > .next {
+    left: 50%;
+  }
+  body.usa-content .carousel-showmanymoveone .carousel-inner > .left,
+  body.usa-content .carousel-showmanymoveone .carousel-inner > .prev.right,
+  body.usa-content .carousel-showmanymoveone .carousel-inner > .active {
+    left: 0;
+  }
+  body.usa-content .carousel-showmanymoveone .carousel-inner .cloneditem-1 {
+    display: block;
+  }
+}
+@media all and (min-width: 768px) and (transform-3d), all and (min-width: 768px) and (-webkit-transform-3d) {
+  body.usa-content .carousel-showmanymoveone .carousel-inner > .item.active.right,
+  body.usa-content .carousel-showmanymoveone .carousel-inner > .item.next {
+    -webkit-transform: translate3d(50%, 0, 0);
+            transform: translate3d(50%, 0, 0);
+    left: 0;
+  }
+  body.usa-content .carousel-showmanymoveone .carousel-inner > .item.active.left,
+  body.usa-content .carousel-showmanymoveone .carousel-inner > .item.prev {
+    -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
+    left: 0;
+  }
+  body.usa-content .carousel-showmanymoveone .carousel-inner > .item.left,
+  body.usa-content .carousel-showmanymoveone .carousel-inner > .item.prev.right,
+  body.usa-content .carousel-showmanymoveone .carousel-inner > .item.active {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    left: 0;
+  }
+}
+@media all and (min-width: 992px) {
+  body.usa-content .carousel-showmanymoveone .carousel-inner > .active.left,
+  body.usa-content .carousel-showmanymoveone .carousel-inner > .prev {
+    left: -25%;
+  }
+  body.usa-content .carousel-showmanymoveone .carousel-inner > .active.right,
+  body.usa-content .carousel-showmanymoveone .carousel-inner > .next {
+    left: 25%;
+  }
+  .carousel-showmanymoveone .carousel-inner > .left,
+  .carousel-showmanymoveone .carousel-inner > .prev.right,
+  .carousel-showmanymoveone .carousel-inner > .active {
+    left: 0;
+  }
+  .carousel-showmanymoveone .carousel-inner .cloneditem-2,
+  .carousel-showmanymoveone .carousel-inner .cloneditem-3 {
+    display: block;
+  }
+}
+@media all and (min-width: 992px) and (transform-3d), all and (min-width: 992px) and (-webkit-transform-3d) {
+  .carousel-showmanymoveone .carousel-inner > .item.active.right,
+ .carousel-showmanymoveone .carousel-inner > .item.next {
+    -webkit-transform: translate3d(25%, 0, 0);
+            transform: translate3d(25%, 0, 0);
+    left: 0;
+  }
+  .carousel-showmanymoveone .carousel-inner > .item.active.left,
+  .carousel-showmanymoveone .carousel-inner > .item.prev {
+    -webkit-transform: translate3d(-25%, 0, 0);
+            transform: translate3d(-25%, 0, 0);
+    left: 0;
+  }
+  .carousel-showmanymoveone .carousel-inner > .item.left,
+  .carousel-showmanymoveone .carousel-inner > .item.prev.right,
+ .carousel-showmanymoveone .carousel-inner > .item.active {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    left: 0;
+  }
 }
 
-.arrow-left,
-.arrow-right {
-  display: block;
-  font-size: 4rem;
-  font-weight: bold;
-  color: #eee;
-  display: inline-block;
-  vertical-align: middle;
-  padding: 0 4rem;
-}
-.arrow-left:before,
-.arrow-right:before {
-  pointer-events: none;
-}
-
-.arrow-left:before {
-  content: "<";
-}
-
-.arrow-right:after {
-  content: ">";
+.carousel-showmanymoveone .carousel-control {
+    width: 4%;
+    background-image: none;
 }
