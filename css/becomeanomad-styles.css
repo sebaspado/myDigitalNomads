@@ -106,8 +106,22 @@ h2 strong {color:#D5FF40;}
     margin: 0 10px 0 0;
 }
 .shape4 {display:none;}
+.carousel {display: none;}
+
+
 
 @media (max-width:1024px) {
+  .mobile-hide {display:none}
+ .carousel {display:block} 
+
+/*.flickity-page-dots {display:none}*/
+.carousel-cell {background:white;border-radius:16px;padding:20px;width: 278px;text-align: center;margin: 66px 0 100px 0;height: 250px;}
+.carousel-cell h3 {font-size:24px}
+.carousel-cell .icon-cont {border-radius:20px;background:#D5FF40;width: 65px;height: 65px;display:flex;justify-content: center;margin: -53px auto 24px;}
+.carousel-cell .icon-cont img {width:30px;}
+.carousel-cell p {font-size:18px;}
+
+  
 .bg-areas {display:none;}
 .contact .p-contact {display: none;}
 .contact .p-contact-mobile {display: block;text-align: center;margin-top: 20px;} 
@@ -159,18 +173,13 @@ h2 strong {color:#D5FF40;}
 
 
 
-
+.flickity-page-dots {display: none;}
 
 .carousel-cell {
-  width: 66%;
-  height: 200px;  margin-right: 10px;
-  background: white;
-  border-radius: 5px;
-
+  width: 85%;
+  margin-right: 10px;
 }
 
-/* cell number */
 .carousel-cell:before {
   display: block;
-
 }
