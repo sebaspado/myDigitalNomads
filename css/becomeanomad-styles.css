@@ -20,7 +20,8 @@ h2 strong {color:#D5FF40;}
 .hero h1 {font-size:78px;margin-top: 50px;}
 .hero h1 span {text-indent: -2000px;position: absolute;}
 .hero p {width:50%; margin:auto; margin-bottom:20px;}
-.hero-image {float: right;}.our-areas {margin-top: 250px;position: relative;}
+.hero-image {float: right}
+.our-areas {margin-top: 250px;position: relative;}
 .our-areas .col-up {margin-top:-80px;display: flex;flex-direction: column;align-content: flex-end;align-items: flex-end;}
 .our-areas .col-down {display: flex;flex-direction: column;align-content: flex-end;align-items: flex-end;}
 .our-areas h2 {width: 205px;text-align:center;margin: auto;}
@@ -54,6 +55,7 @@ h2 strong {color:#D5FF40;}
     transform: translatey(0px);
   }
 }
+
 
 .roles { background:#222221;position:relative;padding-top:50px;}
 .roles:before {position:absolute;content:" ";height:200px;width:100%;background:#D5FF40;z-index:-1;transform: rotate(-3deg);top: 8px;left: 8px;}
@@ -120,7 +122,8 @@ h2 strong {color:#D5FF40;}
 
 @media(max-width:768px){
   .hero {padding: 0;}
-  .bg-hero-mobile {margin-bottom:40px}
+  .bg-hero-mobile {margin-bottom:40px;}
+
 .roles:before,.roles:after {display:none;}
 .our-services .text-services {width:100%;font-size: 18px;}
 .accordion-tabs {padding:0;}
