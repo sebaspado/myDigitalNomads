@@ -195,38 +195,54 @@
 
 
 
-                <section class="section section--slider-mobile">
-                    <div class="container">
-                        <div class="row js-mobile-slider">
-                            <div class="col-11 col-md-3">
-                                <div class="box">
-                                    <span class="box__tag">tag one</span>
-                                    <h2 class="box__title">Hi! I'm box one</h2>
-                                </div>
-                            </div>
-                            <div class="col-11 col-md-3">
-                                <div class="box">
-                                    <span class="box__tag">tag two</span>
-                                    <h2 class="box__title">Hi! I'm box two</h2>
-                                </div>
-                            </div>
-                            <div class="col-11 col-md-3">
-                                <div class="box">
-                                    <span class="box__tag">tag three</span>
-                                    <h2 class="box__title">Hi! I'm box three</h2>
-                                </div>
-                            </div>
-                            <div class="col-11 col-md-3">
-                                <div class="box">
-                                    <span class="box__tag">tag four</span>
-                                    <h2 class="box__title">Hi! I'm box four</h2>
-                                </div>
-                            </div>
+                <div class="carousel"
+                data-flickity='{ "draggable": false }'>
+           
+                    <div class="carousel-cell">
+                        <div class="icon-cont">
+                            <img class="callCenterImg"
+                                src="img/icon-code.svg" alt="code icon
+                                image">
                         </div>
+                        <h3>It Development</h3>
+                        <p>Developers, testers, project managers, designers
+                            and beyond
+                            are all huge parts of our team - so, get in
+                            touch.</p>
                     </div>
-                </section>
+                    
+                    <div class="carousel-cell">
+                        <div class="icon-cont">
+                            <img class="callCenterImg"
+                                src="img/icon-code.svg" alt="code icon
+                                image">
+                        </div>
+                        <h3>It Development</h3>
+                        <p>Developers, testers, project managers, designers
+                            and beyond
+                            are all huge parts of our team - so, get in
+                            touch.</p>
+                    </div>
 
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+
+                    <div class="our-area-box">
+                        <div class="icon-cont">
+                            <img class="callCenterImg"
+                                src="img/icon-code.svg" alt="code icon
+                                image">
+                        </div>
+                        <h3>It Development</h3>
+                        <p>Developers, testers, project managers, designers
+                            and beyond
+                            are all huge parts of our team - so, get in
+                            touch.</p>
+                    </div>
+        
+
+
+
+              </div>
 
 
 
@@ -613,7 +629,7 @@
         <script src="js/tabs.js"></script>
         <script src="js/menu.js"></script>
         <script src="js/aos.js"></script>
-        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <script src="js/areas-mobile.js"></script>
         <script>
             AOS.init({
                 duration: 1200,
@@ -648,50 +664,6 @@
                 }
             });
 
-            const mobileBreakpoint = 768;
-let iScreenWidth = document.body.getBoundingClientRect().width; 
-
-initSlider();
-
-function initSlider() {
-	const sliders = document.querySelectorAll('.js-mobile-slider');
-	let aFlickitySliders = [];
-	
-	function initFlickity(slider) {
-		return new Flickity( slider, {
-			cellAlign: 'left',
-			prevNextButtons: false
-		});
-	}
-
-	for(let i = 0; i < sliders.length; i += 1){
-		const slider = sliders[i];
-		if(iScreenWidth < mobileBreakpoint) {
-			let oSlider = initFlickity(slider);
-			aFlickitySliders.push(oSlider);
-		}
-	}
-
-	window.addEventListener('resize', () => {
-		iScreenWidth = document.body.getBoundingClientRect().width;
-
-		for(let i = 0; i < sliders.length; i += 1){
-			const oSlider = sliders[i];
-			const oFlickSlider = aFlickitySliders[i];
-			if(iScreenWidth < mobileBreakpoint){
-				if(!oFlickSlider) {
-					let createdFlickSlider = initFlickity(oSlider);
-					aFlickitySliders.push(createdFlickSlider);
-				}
-			} else {
-				if(oFlickSlider) {
-					oFlickSlider.destroy();
-					aFlickitySliders.splice(0, 1);
-				}
-			}
-		}
-	});	
-}
         </script>
     </body>
 </html>
