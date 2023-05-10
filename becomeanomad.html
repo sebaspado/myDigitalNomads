@@ -56,7 +56,7 @@
         <main>
             <section class="hero" id="hero">
 <div class="row">
-    <div class="col-lg-6"> 
+    <div class="col-lg-6 bg-hero-mobile"> 
         <h1>Became a <span>nomad</span></h1>
         <div class="nomad-logo">
             <img src="img/nomads-font-desk.svg" alt="hero image">    
@@ -64,7 +64,7 @@
                 <p>Ready to take a leap into a future of flexibility, opportunity and exciting global projects?</p>
                 <p><strong>We want to hear from you!</strong></p>
                 <a href="#contact" class="apply-now" href="">Apply now</a></div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 mobile-hide">
                 <img src="img/become-a-nomad-bg.png" class="hero-image" alt="hero image">
             </div>
 </div>
@@ -176,10 +176,10 @@
                 </div><!-- row end -->
           
   
+<div class="mobile-only">
+                <div class="row">
 
-                <div class="row mobile-only">
-
-                   
+                   <div class="shadow"></div>
                     <div class="col-sm-12 col-md-12 text-center">
                         <h2>Our <strong>areas</strong></h2>
                         <div class="shape-areas">
@@ -188,7 +188,7 @@
                     </div>
 
                     <div class="col-sm-12 col-md-12">
-                <div class="carousel" data-flickity='{ "draggable": false }'>
+                <div class="carousel" data-flickity='{ "freeScroll": true, "contain": true, "prevNextButtons": false, "pageDots": false }'>
            
                     <div class="carousel-cell">
                         <div class="icon-cont">
@@ -240,23 +240,10 @@
               </div><!--mobile carousel ends -->
               </div>
             </div><!--row ends-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            <div class="shape-areas">
+                <img src="img/shape-areas.svg" alt="circles background">
+            </div>
+        </div><!--mobile only ends-->
 
 
                 <div class="bg-areas"></div>
@@ -628,6 +615,8 @@
         <script src="js/menu.js"></script>
         <script src="js/aos.js"></script>
         <script src="js/areas-mobile.js"></script>
+        <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+        
         <script>
             AOS.init({
                 duration: 1200,
@@ -639,6 +628,8 @@
                 return window.innerWidth < maxWidth;
                                     }
             });
+
+            Splitting();
 
             $('a[href*="#"]')
             .not('[href="#"]')

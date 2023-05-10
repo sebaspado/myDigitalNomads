@@ -3,8 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;700&family=Poppins:wght@300;500;700;900&display=swap');
 .fixed-top {z-index: 99999999999999;}
 html{scroll-behavior:smooth;}
-body {overflow: hidden;
-    overflow-y: scroll;}
+body {overflow: hidden;overflow-y: scroll;}
 img {max-width: 100%;}
 a {text-decoration: none;}
 p {font-size: 20px;font-family: 'Montserrat', sans-serif;}
@@ -93,8 +92,8 @@ header .contactButton:hover {background:#E0FF73;animation-name: wobble-horizonta
             }
             100% {
               transform: translateX(0);
-            } }
-
+            } 
+          }
 
 /* about us */
 .about-us {margin:0 auto 100px}
@@ -102,14 +101,11 @@ header .contactButton:hover {background:#E0FF73;animation-name: wobble-horizonta
 .about-us .oyster {width: 668px;margin:174px auto 120px; text-align: center;position: relative;}
 .about-us .oyster h2 {margin-bottom:20px;}
 .about-us .oyster-underline {width: 149px;height:11px;position: absolute;top: 31px;right: 95px;background-image: url(../img/underline-oyster.png);z-index: -1;}
-.about-us .box { transform: translateY(0px);
-    transition: all 500ms ease;padding:20px;width: 390px;background: #fff;border-radius: 12px;position: relative;}
-.about-us .box:hover { box-shadow: 0 5px 20px rgb(0 0 0 / 6%);
-    transform: translateY(-10px) !important}
+.about-us .box { transform: translateY(0px);transition: all 500ms ease;padding:20px;width: 390px;background: #fff;border-radius: 12px;position: relative;}
+.about-us .box:hover { box-shadow: 0 5px 20px rgb(0 0 0 / 6%);transform: translateY(-10px) !important}
 .about-us .professional-icon {width:82px;height:95px;position: absolute;right: 32px;top: -46px;}
 .about-us .haslee-icon {width: 62px;height: 84px;position: absolute;right: 32px;top: -46px;}
 .about-us .affordable-icon {width: 74px;height: 92px;position: absolute;right: 32px;top: -46px;}
-
 .about-us h3 {font-weight:bold;}
 .about-us .affordable h3 {color:#D5FF40;}
 .about-us .affordable {
@@ -135,10 +131,6 @@ header .contactButton:hover {background:#E0FF73;animation-name: wobble-horizonta
   top: 25px;
   z-index: -2;
 }
-
-
-
-
 
 .why-h2 {margin: 0 100px 90px 0;text-align: right;}
 

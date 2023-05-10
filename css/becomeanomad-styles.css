@@ -20,15 +20,9 @@ h2 strong {color:#D5FF40;}
 .hero h1 {font-size:78px;margin-top: 50px;}
 .hero h1 span {text-indent: -2000px;position: absolute;}
 .hero p {width:50%; margin:auto; margin-bottom:20px;}
-.hero-image {float: right;}
-
-.our-areas {margin-top: 250px;position: relative;}
+.hero-image {float: right;}.our-areas {margin-top: 250px;position: relative;}
 .our-areas .col-up {margin-top:-80px;display: flex;flex-direction: column;align-content: flex-end;align-items: flex-end;}
-.our-areas .col-down {display: flex;
-    flex-direction: column;
-    align-content: flex-end;
-    align-items: flex-end;}
-
+.our-areas .col-down {display: flex;flex-direction: column;align-content: flex-end;align-items: flex-end;}
 .our-areas h2 {width: 205px;text-align:center;margin: auto;}
 .our-area-box {background:white;border-radius:16px;padding:20px;width: 278px;text-align: center;margin: 0 0 100px 0;}
 .our-area-box h3 {font-size:24px}
@@ -37,23 +31,13 @@ h2 strong {color:#D5FF40;}
 .our-area-box p {font-size:18px;}
 .our-areas .shape-areas {position: relative;top:0;left:0;margin: 50px -61px 0 0;z-index: -1;}
 .bg-areas {background: #202020;width: 70%;height: 517px;position: absolute;top: 60px;right: -20px;z-index: -1;border-radius: 150px 0 0 0;}
-
 .img-types {position: absolute;top: 208px;right: 104px;width: 640px;}
-.our-services .text-services {
-    font-size: 20px;
-    width: 80%;
-}
 
-
+.our-services .text-services {font-size: 20px;width: 80%;}
 .our-services h2 {text-align:left;width: 440px;font-size: 70px;font-weight: 600;margin-top: -64px;line-height: 78px;}
-.our-services h4 {
-    font-size: 28px;
-    margin-bottom: 40px;
-}
-
+.our-services h4 {font-size: 28px;margin-bottom: 40px;}
 .our-services h4 span {font-weight:100;font-size: 28px;display: inline-block;}
 .our-services {margin-bottom:80px;background:transparent;}
-
 .our-culture {padding: 80px 0 200px;}
 .our-culture h2 {text-align:right;margin: 80px 0 48px 0;}
 .our-culture p { color:#fff; font-size:18px; text-align:right}
@@ -61,27 +45,21 @@ h2 strong {color:#D5FF40;}
 
 @keyframes float {
   0% {
-    
     transform: translatey(0px);
   }
   50% {
-  
     transform: translatey(-20px);
   }
   100% {
-  
     transform: translatey(0px);
   }
 }
-
-
-
 
 .roles { background:#222221;position:relative;padding-top:50px;}
 .roles:before {position:absolute;content:" ";height:200px;width:100%;background:#D5FF40;z-index:-1;transform: rotate(-3deg);top: 8px;left: 8px;}
 .roles:after {position:absolute;content:" ";height:200px;width:100%;background:#D5FF40;z-index:-1;transform: rotate(3deg);bottom: 8px;right: -8px;}
 
-#BambooHR-ATS h2 {/* text-align:center; */color:#fff;font-size: 78px;padding: 20px 0 40px !important;border-bottom: 1px solid #343434 !important;}
+#BambooHR-ATS h2 {color:#fff;font-size: 78px;padding: 20px 0 40px !important;border-bottom: 1px solid #343434 !important;}
 #BambooHR-ATS {background:#222221;color:#fff !important;position:relative;z-index:9;padding:20px;}
 #BambooHR-ATS a {color:#fff;font-weight: 100;font-size: 30px;font-family: 'Poppins', sans-serif !important;}
 #BambooHR {padding-bottom:40px;}
@@ -102,26 +80,24 @@ h2 strong {color:#D5FF40;}
 .contact .p-contact p {text-align: left !important; width:auto;}
 .contact button {width:100%;border-radius:10px;height: 52px;font-weight: 500;}
 .contact .p-contact-mobile {display:none;}
-.contact .social-icons {
-    margin: 0 10px 0 0;
-}
+.contact .social-icons {margin: 0 10px 0 0;}
 .shape4 {display:none;}
 .carousel {display: none;}
-
-
+.mobile-only {display:none}
 
 @media (max-width:1024px) {
-  .mobile-hide {display:none}
- .carousel {display:block} 
-
-/*.flickity-page-dots {display:none}*/
-.carousel-cell {background:white;border-radius:16px;padding:20px;width: 278px;text-align: center;margin: 66px 0 100px 0;height: 250px;}
+  .bg-hero-mobile {background-image: url(../img/bg-become-mobile.jpg);background-size:cover;padding: 12%;}
+.mobile-hide {display:none}
+.mobile-only {position:relative; display:block}
+.mobile-only .row .col-sm-12 {padding:0 !important}
+.carousel {display:block} 
+.flickity-page-dots {display: none;}
+.carousel-cell:before {display: block;}
+.carousel-cell {background:white;border-radius:16px;padding:20px;width: 278px;text-align: center;margin: 66px 0 100px 0;height: 250px;width: 85%;margin-right: 10px;}
 .carousel-cell h3 {font-size:24px}
 .carousel-cell .icon-cont {border-radius:20px;background:#D5FF40;width: 65px;height: 65px;display:flex;justify-content: center;margin: -53px auto 24px;}
 .carousel-cell .icon-cont img {width:30px;}
-.carousel-cell p {font-size:18px;}
-
-  
+.shadow {box-shadow: -9px -7px 32px #000000 !important;width: 1px;height:400px;position:absolute;right: -36px;top:0;z-index: 999;}
 .bg-areas {display:none;}
 .contact .p-contact {display: none;}
 .contact .p-contact-mobile {display: block;text-align: center;margin-top: 20px;} 
@@ -131,55 +107,41 @@ h2 strong {color:#D5FF40;}
 .dflex-reverse {display: flex;flex-direction: column-reverse;}
 .our-culture {padding:0 0 20%}
 .our-culture h2, .our-culture p {text-align:center;padding:0 20px;}
-.our-culture .dflex-reverse img {/* width: 70%; */margin: auto;display: block;padding: 20px;}
+.our-culture .dflex-reverse img {margin: auto;display: block;padding: 20px;}
 .our-culture .culture-circle {position:absolute;left:0px;margin: auto;right: 0;top: -30px;animation: float 7s linear infinite;}
 .p-relative {margin-top:80px;}
-  
 }
 
 @media(max-width:1000px){
 .roles:before {display:none}  
 .contact {padding: 20px 40px;flex-direction: column;display: flex;}
 .roles .BambooHR-ATS-Department-Item {padding: 16px 0 !important;}
-
 }
 
 @media(max-width:768px){
-  .roles:before,.roles:after {display:none;}
- 
-
-  .our-services .text-services {width:100%}
-  .accordion-tabs {padding:0;}
-    .accordion-tabs img {display:none}
-  .accordeon-trigger {padding:20px}
-  .bg-202020 {background: transparent;}
-  .our-services h2 {text-align: center;width: auto;font-size:30px; line-height:40px;}
-  #BambooHR {padding-bottom:20px;}
+  .hero {padding: 0;}
+  .bg-hero-mobile {margin-bottom:40px}
+.roles:before,.roles:after {display:none;}
+.our-services .text-services {width:100%;font-size: 18px;}
+.accordion-tabs {padding:0;}
+.accordion-tabs img {display:none}
+.accordeon-trigger {padding:20px}
+.bg-202020 {background: transparent;}
+.our-services h2 {text-align: center;width: auto;font-size:30px; line-height:40px;}
+#BambooHR {padding-bottom:20px;}
 .contact h2, .roles h3 {font-size:30px;line-height:40px; text-align:center}
-.hero h1 {font-size: 52px;}
+.hero h1 {font-size: 52px;margin-top: 0;}
 .hero p {width: 100%;}
-  .our-services {margin-bottom:40px;}
+.our-services {margin-bottom:40px;}
 .p-relative {margin-top:40px;}
 .our-culture {padding:0 0 110px}
-.our-culture h2 {text-align:left;font-size:30px;} 
-.our-culture p {text-align:left;padding:0 20px;font-size:16px;}
+.our-culture h2 {text-align:left;font-size:30px;margin: 20px 0 20px 0;} 
+.our-culture p {text-align:left;padding:0 20px;}
 .our-areas {margin-top: 100px;}
 .our-areas h2 {font-size:30px;}
-.our-areas .shape-areas {display:none}
+.our-areas .shape-areas {/* display:none; */position: absolute;bottom: 64px;top: unset;left: -93px;width: 285px;}
 .BambooHR-ATS-Jobs-Item {margin-bottom:20px !important;}
+.contact p {font-size: 18px;margin:20px 0}
+footer nav ul {flex-direction: column;justify-content: space-between;align-items: center;}
+                
 } 
-
-
-
-
-
-.flickity-page-dots {display: none;}
-
-.carousel-cell {
-  width: 85%;
-  margin-right: 10px;
-}
-
-.carousel-cell:before {
-  display: block;
-}
