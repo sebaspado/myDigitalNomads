@@ -34,7 +34,7 @@ h2 strong {color:#D5FF40;}
 .our-areas .shape-areas2  {background-image: url(../img/bg-areas-shape.png);height: 684px;position: absolute;left: 183px;top: -93px;width: 656px;z-index: 99999999;margin: auto;right: 0;}
 
 .bg-areas {background: #202020;width: 70%;height: 517px;position: absolute;top: 60px;right: -20px;z-index: -1;border-radius: 150px 0 0 0;}
-.img-types {position: absolute;top: 208px;right: 104px;width: 640px;}
+.img-types {position: absolute;top: 208px;right: 104px;width: 540px;}
 
 .underline {background-image: url(../img/grunge-shape.svg);height: 145px;position: absolute;left: -26px;top: 18px;width: 411px;z-index: -1;background-size: cover;}
 .underline2 {background-image: url(../img/grunge-shape.svg);height: 145px;position: absolute;left: -26px;top: 18px;width: 411px;z-index: -1;background-size: cover;margin: auto;right: 0;}
