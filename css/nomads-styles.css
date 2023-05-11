@@ -317,6 +317,9 @@ footer .shape-footer {
 .privacy-policy ul li {font-size:16px; font-weight:100;}
 
 @media (max-width:1024px) {
+
+.our-services .text-services {width:100%}
+  
   .contact-btn {width: 150px;}
 .privacy-policy {margin-top:25%;}
 h2 {margin:0 0 8px 0}
@@ -343,7 +346,7 @@ header nav ul {width:500px;}
 .about-us .affordable-icon {width: 55px;height: 92px;position: absolute;right: 32px;top: -24px;}
 .our-services .callCenterImg {/* float:right; */margin-right:0;}  
 .float-right {float:none;}  
-.our-company img  {margin:20px auto 40px ;left:0;right:0;display:block;}
+.our-company img  {margin:20px auto 40px;left:0;right:0;display:block;float: none;}
 .why-h2 {margin: 0 0 60px; text-align: center;}
 .black-box {margin: 40px -0 0 22px !important;width:100%;border-radius: 12px 0 0 12px;display: block;}
 .shape2 {left:0}
@@ -373,7 +376,7 @@ section {padding:20px;}
 .our-services {padding: 30px 0 0;}
 .our-services h3 {font-size: 28px;text-align: center;margin: 12px 20px 20px;}
 .our-services h3 span {font-size:20px}
-.our-services .text-services {font-size: 16px;width:100%;text-align:center}
+.our-services .text-services {font-size: 16px;text-align:center}
 .float-right {margin:0;}
 .our-company {padding: 60px 20px 50px;}
 .our-company p {font-size: 16px;}
