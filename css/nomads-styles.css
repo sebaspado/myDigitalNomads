@@ -72,6 +72,8 @@ header .contactButton {
     background: linear-gradient(90deg, #D7FF47 39.57%, #9ac700 100.13%);
     }
 
+header .contact-btn {width:0px;}
+
 /* contact button animation */
 header .contactButton:hover {background:#E0FF73;animation-name: wobble-horizontal;animation-duration: 1s;animation-timing-function: ease-in-out;animation-iteration-count: 1;}
 @keyframes wobble-horizontal {
@@ -315,6 +317,7 @@ footer .shape-footer {
 .privacy-policy ul li {font-size:16px; font-weight:100;}
 
 @media (max-width:1024px) {
+  .contact-btn {width: 150px;}
 .privacy-policy {margin-top:25%;}
 h2 {margin:0 0 8px 0}
 .shape4{display:none}
@@ -394,3 +397,6 @@ textarea {margin-bottom:15px;}
 .about-us .oyster-underline {width: 149px;height: 11px;position: absolute;top: 16px;right: -10px;background-image: url(../img/underline-oyster.png);z-index: -1;}
 .d-flex {display:flex;flex-direction: column-reverse;}
 }
+
+
+.required {font-size:12px;color: #d5ff40;width: 100%;}

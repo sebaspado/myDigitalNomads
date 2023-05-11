@@ -14,6 +14,8 @@
     justify-content: space-between;
     align-items: center;
     margin: 46px auto 0;
+    position: relative;
+    z-index: 99999;
   }
   
   .tabs-tab-list li {

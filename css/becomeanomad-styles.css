@@ -4,7 +4,7 @@ body {background: #151515;}
 h2 {color:white;font-size: 78px;}
 h2 strong {color:#D5FF40;}
 .p-relative {position:relative;}
-
+.row {position:relative}
 @media screen and (max-width: 767px) {
   .mobile-hide {display: none;}
   .section--slider-mobile .row {
@@ -24,18 +24,23 @@ h2 strong {color:#D5FF40;}
 .our-areas {margin-top: 250px;position: relative;}
 .our-areas .col-up {margin-top:-80px;display: flex;flex-direction: column;align-content: flex-end;align-items: flex-end;}
 .our-areas .col-down {display: flex;flex-direction: column;align-content: flex-end;align-items: flex-end;}
-.our-areas h2 {width: 205px;text-align:center;margin: auto;}
+.our-areas h2 {width: 205px;text-align:center;margin: 20% auto 0;line-height: 70px;}
 .our-area-box {background:white;border-radius:16px;padding:20px;width: 278px;text-align: center;margin: 0 0 100px 0;}
 .our-area-box h3 {font-size:24px}
 .our-area-box .icon-cont {border-radius:20px;background:#D5FF40;width: 80px;height: 80px;display:flex;justify-content: center;margin: -70px auto 24px;}
 .our-area-box .icon-cont img {width:50px;}
 .our-area-box p {font-size:18px;}
 .our-areas .shape-areas {position: relative;top:0;left:0;margin: 50px -61px 0 0;z-index: -1;}
+.our-areas .shape-areas2  {background-image: url(../img/bg-areas-shape.png);height: 684px;position: absolute;left: 183px;top: -93px;width: 656px;z-index: 99999999;margin: auto;right: 0;}
+
 .bg-areas {background: #202020;width: 70%;height: 517px;position: absolute;top: 60px;right: -20px;z-index: -1;border-radius: 150px 0 0 0;}
 .img-types {position: absolute;top: 208px;right: 104px;width: 640px;}
 
+.underline {background-image: url(../img/grunge-shape.svg);height: 145px;position: absolute;left: -26px;top: 18px;width: 411px;z-index: -1;background-size: cover;}
+.underline2 {background-image: url(../img/grunge-shape.svg);height: 145px;position: absolute;left: -26px;top: 18px;width: 411px;z-index: -1;background-size: cover;margin: auto;right: 0;}
+
 .our-services .text-services {font-size: 20px;width: 80%;}
-.our-services h2 {text-align:left;width: 440px;font-size: 70px;font-weight: 600;margin-top: -64px;line-height: 78px;}
+.our-services h2 {text-align:left;width: 440px;font-size: 70px;font-weight: 600;margin-top: -64px;line-height: 78px;position: relative;z-index: 1;}
 .our-services h4 {font-size: 28px;margin-bottom: 40px;}
 .our-services h4 span {font-weight:100;font-size: 28px;display: inline-block;}
 .our-services {margin-bottom:80px;background:transparent;}
@@ -89,7 +94,16 @@ h2 strong {color:#D5FF40;}
 .mobile-only {display:none}
 
 @media (max-width:1024px) {
-  .bg-hero-mobile {background-image: url(../img/bg-become-mobile.jpg);background-size:cover;padding: 12%;}
+.roles:before, .roles:after, .underline, .underline2 {display:none}  
+.our-areas h2 {font-size:50px;margin:0;line-height:inherit;width: 100%;}  
+
+
+  
+.our-areas .shape-areas {position: absolute;bottom: 64px;top: unset;left: -93px;width: 285px;}
+.our-areas {margin-top:90px}
+.hero .col-lg-6 { width:100%}
+.img-types {display:none} 
+.bg-hero-mobile {background-image: url(../img/bg-become-mobile.jpg);background-size:cover;padding: 12%;}
 .mobile-hide {display:none}
 .mobile-only {position:relative; display:block}
 .mobile-only .row .col-sm-12 {padding:0 !important}
@@ -102,12 +116,11 @@ h2 strong {color:#D5FF40;}
 .carousel-cell .icon-cont img {width:30px;}
 .shadow {box-shadow: -9px -7px 32px #000000 !important;width: 1px;height:400px;position:absolute;right: -36px;top:0;z-index: 999;}
 .bg-areas {display:none;}
-.contact .p-contact {display: none;}
-.contact .p-contact-mobile {display: block;text-align: center;margin-top: 20px;} 
-.contact .p-contact-mobile p {font-size:18px;}
-.contact p { width:100%}
+
+.contact p { width:60%;margin:20px auto;}
 #BambooHR-ATS a {font-size:20px;}
 .dflex-reverse {display: flex;flex-direction: column-reverse;}
+  .our-culture .col-lg-5 {width:100%;}
 .our-culture {padding:0 0 20%}
 .our-culture h2, .our-culture p {text-align:center;padding:0 20px;}
 .our-culture .dflex-reverse img {margin: auto;display: block;padding: 20px;}
@@ -116,12 +129,15 @@ h2 strong {color:#D5FF40;}
 }
 
 @media(max-width:1000px){
-.roles:before {display:none}  
+    .contact .p-contact {display: none;}
+.contact .p-contact-mobile {display: block;text-align: center;margin-top: 20px;} 
+.contact .p-contact-mobile p {font-size:18px;}
 .contact {padding: 20px 40px;flex-direction: column;display: flex;}
 .roles .BambooHR-ATS-Department-Item {padding: 16px 0 !important;}
 }
 
 @media(max-width:768px){
+
   .hero {padding: 0;}
   .bg-hero-mobile {margin-bottom:40px;}
 
@@ -143,12 +159,17 @@ h2 strong {color:#D5FF40;}
 .our-culture p {text-align:left;padding:0 20px;}
 .our-areas {margin-top: 100px;}
 .our-areas h2 {font-size:30px;}
-.our-areas .shape-areas {/* display:none; */position: absolute;bottom: 64px;top: unset;left: -93px;width: 285px;}
+.our-areas .shape-areas { display:block; position: absolute;bottom: 64px;top: unset;left: -93px;width: 285px;}
 .BambooHR-ATS-Jobs-Item {margin-bottom:20px !important;}
   .BambooHR-ATS-Department-Header {font-size:14px}
-.contact p {font-size: 18px;margin:20px 0}
+.contact p {font-size: 18px;width:100%}
 footer nav ul {flex-direction: column;justify-content: space-between;align-items: center;}
-                
+
+.underline {background-image: url(../img/grunge-shape.svg);height: 111px;position: absolute;left: 0;top: -56px;width: 346px;z-index: -1;background-size: cover;display:block;right: 0;margin: auto;}
+.underline2 {background-image: url(../img/grunge-shape.svg);height: 97px;position: absolute;left: 0;top: 26px;width: 278px;z-index: -1;margin: auto;right: 0;display:block}
+
+
+  
 } 
 
 
@@ -198,7 +219,7 @@ footer nav ul {flex-direction: column;justify-content: space-between;align-items
   color: #fff;
 }
 .file-custom:after {
-  content: "Choose file...";
+  content: "* Choose your CV...";
   color: #7a7a7a;
 }
 .file-custom:before {
