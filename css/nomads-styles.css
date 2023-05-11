@@ -139,9 +139,9 @@ header .contactButton:hover {background:#E0FF73;animation-name: wobble-horizonta
 /* our services */
 .our-services {background: linear-gradient(90deg, #151515 0%, #0a0a0a 100%);color:#fff;padding: 80px 0 20px;position: relative;}
 .our-services h2 {text-align: center;}
-.our-services h4 {font-size:60px;margin-bottom: 40px;}
+.our-services h3 {font-size:60px;margin-bottom: 40px;}
 .our-services strong {/* color:#D5FF40; */background: linear-gradient(90deg, #D7FF47 39.57%, #658200 100.13%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;background-clip: text;text-fill-color: transparent;}
-.our-services h4 span {font-size:35px;display: block;/* margin-bottom: 40px; */}
+.our-services h3 span {font-size:35px;display: block;/* margin-bottom: 40px; */}
 .our-services .text-services {font-size:24px;width: 68%;}
 .our-services .callCenterImg {float:right;margin-right: -32px;}
 .green-belt {width: 92%;height: 176px;background:#eee;position: relative;bottom: -90px;display: flex;z-index: 2;right: -8%;background: linear-gradient(90deg, #D5FF40 0%, #AFDC0F 100%);border-radius: 20px 0px 0px 0px;align-items: center;justify-content: space-between;padding: 0 14%;}
@@ -371,8 +371,8 @@ header .contact,header nav {display: none;}
 section {padding:20px;}
 .why-h2 {margin: 0 0 30px 0;text-align: center;}
 .our-services {padding: 30px 0 0;}
-.our-services h4 {font-size: 28px;text-align: center;margin: 12px 20px 20px;}
-.our-services h4 span {font-size:20px}
+.our-services h3 {font-size: 28px;text-align: center;margin: 12px 20px 20px;}
+.our-services h3 span {font-size:20px}
 .our-services .text-services {font-size: 16px;width:100%;text-align:center}
 .float-right {margin:0;}
 .our-company {padding: 60px 20px 50px;}

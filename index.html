@@ -98,7 +98,7 @@
                                 <div>
                                <img src="img/seba.png" alt="nomad guy 2"></div>
                                <div>
-                                <p>Sebas Padovani 
+                                <p>Sebas Sanchez
                                     <strong>Designer</strong>
                                     <span>Argentina</span>
                                 </p></div>
@@ -126,7 +126,7 @@
 
                             <div class="hero-boxes box5" data-aos="slide-up">
                                 <div>
-                               <img src="img/proyects.png" alt="nomad guy 1"></div>
+                               <img src="img/proyects.png" alt="proyects image"></div>
                                <div>
                                 <p>89 proyects
                                     <strong>On the way</strong>
@@ -140,7 +140,7 @@
                             <div class="dot dot-4"></div>
                             <div class="dot dot-5"></div>
                             <div class="dot dot-6"></div>
-                            <img  src="img/bg-heroSvg.svg"></div>
+                            <img  src="img/bg-heroSvg.svg" alt="background hero"></div>
                     </div>
                 </div>
 
@@ -284,8 +284,8 @@
                                         src="img/call-center.png" alt="call center image">
                                 </div>
                                 <div class="col-sm-12  col-md-6 col-lg-6 d-flex-center">
-                                    <h4>Call <strong>Center</strong><span>
-                                            (Sales and Service)</span></h4>
+                                    <h3>Call <strong>Center</strong><span>
+                                            (Sales and Service)</span></h3>
                                     <p class="text-services">If you want a BIG
                                         company presence with exceptional phone
                                         support we are experts. We speak the
@@ -319,7 +319,7 @@
                                         src="img/marketing-bg2.png" alt="marketing image">
                                 </div>
                                 <div class="col-sm-12 col-md-6 col-lg-6 d-flex-center">
-                                    <h4>Marketing <strong>Services</strong></h4>
+                                    <h3>Marketing <strong>Services</strong></h3>
                                     <p class="text-services">We can take care of everything from designing a logo, or looking after your socials, all the way to planning and executing multi-location marketing strategies.
                                     </p>
                                 </div>
@@ -349,7 +349,7 @@
                                         src="img/itdevelopment.png">
                                 </div>
                                 <div class="col-sm-12 col-lg-6 d-flex-center">
-                                    <h4>It <strong>Development</strong></h4>
+                                    <h3>It <strong>Development</strong></h3>
                                     <p class="text-services">From building simple websites to huge custom designed applications, we can do it all.
                                         We have a highly skilled team, experts in IT project delivery.                                        
                                     </p>
@@ -540,6 +540,26 @@
                     return false;    
                 }
             });
+
+            document.addEventListener("DOMContentLoaded", () => {
+                function counter(id, start, end, duration) {
+                let obj = document.getElementById(id),
+                current = start,
+                range = end - start,
+                increment = end > start ? 1 : -1,
+                step = Math.abs(Math.floor(duration / range)),
+                timer = setInterval(() => {
+                    current += increment;
+                    obj.textContent = current;
+                    if (current == end) {
+                    clearInterval(timer);
+                    }
+                }, step);
+                }
+                counter("count1", 0, 400, 3000);
+                counter("count2", 100, 50, 2500);
+                counter("count3", 0, 40, 3000);
+                });
         </script>
     </body>
 </html>
