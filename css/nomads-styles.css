@@ -348,7 +348,7 @@ header nav ul {width:500px;}
 .float-right {float:none;}  
 .our-company img  {margin:20px auto 40px;left:0;right:0;display:block;float: none;}
 .why-h2 {margin: 0 0 60px; text-align: center;}
-.black-box {margin: 40px -0 0 22px !important;width:100%;border-radius: 12px 0 0 12px;display: block;}
+.black-box {margin: 40px 0 0 18px !important;width:100%;border-radius: 12px 0 0 12px;display: block;}
 .shape2 {left:0}
 .shape3 {left: 0;display: none;}
 .contact {width: 100%;/* height:750px; */background:#151515;color: #fff;padding: 80px 20px 140px;}
@@ -369,7 +369,7 @@ header nav {display: none;}
 header nav ul {width: 100%;}
 p {font-size:16px;}
 h2 {font-size:24px}
-.nomads-underline {left: -32px;top: -9px; display: none;}
+.nomads-underline {left: 0;right: 0;top: 3px;/* display: none; */width: 131px;background-size: cover;height: 25px;margin: auto;}
 header .contact,header nav {display: none;}
 .hero .brands-slider {width: 94%;margin: auto;display: block;left: 0;right: 0;height: 100px;bottom: -40px;padding: 8px;}
 .shape2 {top: 1336px;left: -180px;width: 100%;}
