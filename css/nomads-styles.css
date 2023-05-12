@@ -364,6 +364,7 @@ header nav {display: none;}
 }
 
 @media(max-width:768px){
+.home .required {margin-bottom:20px;display: block;} 
 header nav ul {width: 100%;}
 p {font-size:16px;}
 h2 {font-size:24px}
