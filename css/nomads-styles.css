@@ -4,6 +4,7 @@
 .fixed-top {z-index: 99999999999999;}
 html{scroll-behavior:smooth;}
 body {overflow: hidden;overflow-y: scroll;}
+
 img {max-width: 100%;}
 a {text-decoration: none;}
 p {font-size: 20px;font-family: 'Montserrat', sans-serif;}
@@ -314,7 +315,10 @@ footer .shape-footer {
 .privacy-policy ul {margin-bottom:50px;}
 .privacy-policy ul li {font-size:16px; font-weight:100;}
 
+.mobile-svg {display:none}
 @media (max-width:1024px) {
+  .mobile-svg {display:block}
+  .mobile-hide-svg {display:none;}
 .our-services .text-services {width:100%}
 .contact-btn {width: 150px;}
 .privacy-policy {margin-top:25%;}
