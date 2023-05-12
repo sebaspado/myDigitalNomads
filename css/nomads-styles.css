@@ -328,8 +328,8 @@ header nav ul {width:500px;}
 .hero {height:auto;}
 .dot-6 {bottom: 222px;left: 28%;}
 .hero-boxes {display: none !important;}
-.hero .hero-bg {/* display:none; */position: static;width: 100%;height: auto;padding: 14px 0 40px;}
-.hero .hero-text {width: 100% !important;text-align: center;padding: 0px 40px;top: 18%;margin-bottom: 12%;}
+.hero .hero-bg {/* display:none; */position: static;width: 100%;height: auto;padding: 14px 0 40px;/* position: relative; */left: 0;}
+.hero .hero-text {width: 100% !important;text-align: center;padding: 0px 40px;top: 10px;margin-bottom: 12%;}
 .hero .hero-text h1 {font-size:32px}
 .hero .hero-text p {font-size:16px;line-height: 24px;}
 .dot {display:none}
