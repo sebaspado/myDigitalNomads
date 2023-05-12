@@ -305,10 +305,7 @@ footer .shape-footer {
   text-align: center;
 }
 
-.mobile-menu--open {
-  right: 0;
-  opacity: 1;
-}
+.mobile-menu--open {right: 0;opacity: 1;}
 
 /* privacy ****************************************/
 .privacy-policy {margin-top:10%;}
@@ -317,10 +314,8 @@ footer .shape-footer {
 .privacy-policy ul li {font-size:16px; font-weight:100;}
 
 @media (max-width:1024px) {
-
 .our-services .text-services {width:100%}
-  
-  .contact-btn {width: 150px;}
+.contact-btn {width: 150px;}
 .privacy-policy {margin-top:25%;}
 h2 {margin:0 0 8px 0}
 .shape4{display:none}
