@@ -318,15 +318,15 @@ footer .shape-footer {
 .mobile-svg {display:none}
 
 
-.goTop {
+.goTop a {
     background: #D5FF40;
     background: linear-gradient(90deg, #D7FF47 39.57%, #9ac700 100.13%);
     position:fixed;
     bottom:20px;
     right:20px;
-    padding: 10px 12px;
+    padding: 13px 12px;
     border-radius:50%;
-     display:none; 
+    display:none;
     display:flex;
     align-content: center;
     flex-direction: column;
@@ -337,7 +337,7 @@ footer .shape-footer {
     justify-content: center;
     z-index: 9999;
     }
-.goTop img {width:70%;margin-top:-5px;}
+.goTop img {width:70%;/* margin-top:-5px; */}
 .hide {
   display:none
  
