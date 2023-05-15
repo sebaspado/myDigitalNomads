@@ -403,5 +403,6 @@ textarea {margin-bottom:15px;}
 .d-flex {display:flex;flex-direction: column-reverse;}
 }
 
+.goTop {background:#000;position:fixed;bottom:20px;right:20px;padding: 10px 14px;border-radius:50%;display:none}
 
 .required {font-size:12px;color: #d5ff40;width: 100%;}

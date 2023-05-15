@@ -592,7 +592,12 @@ We frequently engage with freelancers on most common freelance platforms, but we
                     <div class="col-sm-12 col-lg-1"></div>
                 </div></form>
             </section>
+           <!-- <div class="goTop"><a href="#hero">
+                <img alt="go to top"
+                        src="img/top-arrow.svg"/>
+            </a></div>-->
         </main>
+
         <footer>
             <div class="container">
                 <div class="logo">
@@ -605,7 +610,7 @@ We frequently engage with freelancers on most common freelance platforms, but we
                         <li><a href="privacypolicy.html">Privacy Policy</a></li>
                     </ul>
                 </nav>
-                <p class="copy"><strong><span>my</span>digital<span>nomads</span></strong> is the Trading Name of <strong> <span>Highbond Trading Limited</span> 
+                <p class="copy"><strong><span>my</span><span style="color:#8DBE4A">digital</span><span>nomads</span></strong> is the Trading Name of <strong> <span>Highbond Trading Limited</span> 
                 </strong> <br>
                     Katalanou 1, 1st Floor, Flat / Office 101, Aglantzia, 2121, Nicosia, Cyprus<br>
                     Company ID : 437461 <br>
@@ -624,21 +629,10 @@ We frequently engage with freelancers on most common freelance platforms, but we
         <script src="js/aos.js"></script>
         <script src="js/areas-mobile.js"></script>
         <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
-        
         <script>
-            AOS.init({
+             AOS.init({
                 duration: 1200,
                 })
-
-                AOS.init({
-                 disable: function() {
-                var maxWidth = 1000;
-                return window.innerWidth < maxWidth;
-                                    }
-            });
-
-        
-
             $('a[href*="#"]')
             .not('[href="#"]')
             .not('[href="#0"]')

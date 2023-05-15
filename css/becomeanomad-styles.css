@@ -6,15 +6,12 @@ h2 strong {color:#D5FF40;}
 .p-relative {position:relative;}
 .row {position:relative}
 @media screen and (max-width: 767px) {
-  .mobile-hide {display: none;}
-  .section--slider-mobile .row {
-    display: block;
-  }
+.mobile-hide {display: none;}
+.section--slider-mobile .row {display: block;}
 }
 
 .apply-now {width: 145px;height: 40px;border-radius:6px;color:#000;display: flex;align-content: center;align-items: center;justify-content: center;margin:auto;background: #D5FF40;background: linear-gradient(90deg, #D7FF47 39.57%, #9ac700 100.13%);}
 .apply-now:hover {background:#E0FF73;animation-name: wobble-horizontal;animation-duration: 1s;animation-timing-function: ease-in-out;animation-iteration-count: 1;}
-
 .hero {text-align: center;color:#fff;    border-radius: 0 0 262px 412px;}
 .hero .nomad-logo {margin: -30px 0 40px;}
 .hero h1 {font-size:78px;margin-top: 50px;}
@@ -61,6 +58,15 @@ h2 strong {color:#D5FF40;}
   }
 }
 
+/* rotar la linea punteadaaaaaa */
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
 
 .roles { background:#222221;position:relative;padding-top:50px;}
 .roles:before {position:absolute;content:" ";height:200px;width:100%;background:#D5FF40;z-index:-1;transform: rotate(-3deg);top: 8px;left: 8px;}
@@ -137,10 +143,8 @@ h2 strong {color:#D5FF40;}
 }
 
 @media(max-width:768px){
-
-  .hero {padding: 0;}
-  .bg-hero-mobile {margin-bottom:40px;}
-
+.hero {padding: 0;}
+.bg-hero-mobile {margin-bottom:40px;}
 .roles:before,.roles:after {display:none;}
 .our-services .text-services {width:100%;font-size: 18px;}
 .accordion-tabs {padding:0;}
@@ -161,15 +165,11 @@ h2 strong {color:#D5FF40;}
 .our-areas h2 {font-size:30px;}
 .our-areas .shape-areas { display:block; position: absolute;bottom: 64px;top: unset;left: -93px;width: 285px;}
 .BambooHR-ATS-Jobs-Item {margin-bottom:20px !important;}
-  .BambooHR-ATS-Department-Header {font-size:14px}
+.BambooHR-ATS-Department-Header {font-size:14px}
 .contact p {font-size: 18px;width:100%}
 footer nav ul {flex-direction: column;justify-content: space-between;align-items: center;}
-
 .underline {background-image: url(../img/grunge-shape.svg);height: 111px;position: absolute;left: 0;top: -56px;width: 346px;z-index: -1;background-size: cover;display:block;right: 0;margin: auto;}
-.underline2 {background-image: url(../img/grunge-shape.svg);height: 97px;position: absolute;left: 0;top: 26px;width: 278px;z-index: -1;margin: auto;right: 0;display:block}
-
-
-  
+.underline2 {background-image: url(../img/grunge-shape.svg);height: 97px;position: absolute;left: 0;top: 26px;width: 278px;z-index: -1;margin: auto;right: 0;display:block} 
 } 
 
 
@@ -234,8 +234,6 @@ footer nav ul {flex-direction: column;justify-content: space-between;align-items
   padding: 12px 20px;
   line-height: 1.5;
   color: #000;
-  /* background-color: #eee; */
-  /* border: .075rem solid #ddd; */
   border-radius: 0 .25rem .25rem 0;
   background: #D5FF40;
   background: linear-gradient(90deg, #D7FF47 39.57%, #9ac700 100.13%);
