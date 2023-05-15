@@ -577,7 +577,7 @@ These flexible contracts allow individuals to pick and choose when they wish to 
                 </div></form>
             </section>
           
-            <div class="goTop"><a href="#hero">
+            <div id="go" class="goTop hide"><a href="#hero">
                 <img alt="go to top"
                         src="img/top-arrow.svg"/>
             </a></div>
@@ -639,16 +639,19 @@ These flexible contracts allow individuals to pick and choose when they wish to 
                     return false;    
                 }
             });
-            $(window).scroll(function() {
-                if ($(this).scrollTop()>500)
-                {
-                    $('.goTop').show(100);
-                }
-                else
-                {
-                $('.goTop').hide(100);
-                }
-             });
+
+            myID = document.getElementById("go");
+
+var myScrollFunc = function () {
+    var y = window.scrollY;
+    if (y >= 400) {
+        myID.className = "goTop show"
+    } else {
+        myID.className = "goTop hide"
+    }
+};
+
+window.addEventListener("scroll", myScrollFunc);
         </script>
     </body>
 </html>

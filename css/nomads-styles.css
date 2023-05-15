@@ -326,7 +326,7 @@ footer .shape-footer {
     right:20px;
     padding: 10px 12px;
     border-radius:50%;
-    /* display:none; */
+     display:none; 
     display:flex;
     align-content: center;
     flex-direction: column;
@@ -338,6 +338,14 @@ footer .shape-footer {
     z-index: 9999;
     }
 .goTop img {width:70%;margin-top:-5px;}
+.hide {
+  display:none
+ 
+}
+.show {
+  display:block !important
+
+}
 @media (max-width:1024px) {
   .goTop {bottom: 5%;z-index: 99;right: 10px;}
   .mobile-svg {display:block}
@@ -387,6 +395,7 @@ header nav {display: none;}
 }
 
 @media(max-width:768px){
+  .goTop {display:none !important}
   .contact p {text-align:center;}
 .home .required {margin-bottom:20px;display: block;} 
 header nav ul {width: 100%;}
