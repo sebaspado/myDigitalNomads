@@ -316,7 +316,13 @@ footer .shape-footer {
 .privacy-policy ul li {font-size:16px; font-weight:100;}
 
 .mobile-svg {display:none}
+
+
+.goTop {background: #D5FF40;
+    background: linear-gradient(90deg, #D7FF47 39.57%, #9ac700 100.13%);position:fixed;bottom:20px;right:20px;padding: 10px 12px;border-radius:50%;/* display:none; */display:flex;align-content: center;flex-direction: column;/* width: 50px; *//* height: 47px; */text-align: center;align-items: center;justify-content: center;}
+.goTop img {width:70%;margin-top:-5px;}
 @media (max-width:1024px) {
+  .goTop {bottom: 5%;z-index: 99;right: 10px;}
   .mobile-svg {display:block}
   .mobile-hide-svg {display:none;}
 .our-services .text-services {width:100%}
@@ -403,6 +409,7 @@ textarea {margin-bottom:15px;}
 .d-flex {display:flex;flex-direction: column-reverse;}
 }
 
-.goTop {background:#000;position:fixed;bottom:20px;right:20px;padding: 10px 14px;border-radius:50%;display:none}
+
+
 
 .required {font-size:12px;color: #d5ff40;width: 100%;}
