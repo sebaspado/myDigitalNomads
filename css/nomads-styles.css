@@ -395,7 +395,7 @@ header nav {display: none;}
 }
 
 @media(max-width:768px){
-  .goTop {display:none !important}
+  .goTop {/* display:none !important; */}
   .contact p {text-align:center;}
 .home .required {margin-bottom:20px;display: block;} 
 header nav ul {width: 100%;}
