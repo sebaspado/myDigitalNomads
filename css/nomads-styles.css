@@ -17,7 +17,7 @@ h1, h2, h3 {font-family: 'Poppins', sans-serif;}
 h2 {font-size: 38px;margin: 0 0 16px;}
 h2 span {color:#D5FF40;font-weight: 800;}
 header {background:#151515;height: 80px;width: 100%;display: flex;align-items: center;}
-header .container {display: flex;justify-content: space-between;/* align-items: center; */width: 100%;/* padding:0; */}
+header .container {display: flex;justify-content: space-between;width: 100%;}
 header .logo {width: 156px;}
 header nav {display:flex;align-content: center;align-items: center;}
 header nav ul {display:flex;width: 630px;justify-content: space-between;margin: 0;padding: 0;}
@@ -141,8 +141,8 @@ header .contactButton:hover {background:#E0FF73;animation-name: wobble-horizonta
 .our-services {background: linear-gradient(90deg, #151515 0%, #0a0a0a 100%);color:#fff;padding: 80px 0 20px;position: relative;}
 .our-services h2 {text-align: center;}
 .our-services h3 {font-size:60px;margin-bottom: 40px;}
-.our-services strong {/* color:#D5FF40; */background: linear-gradient(90deg, #D7FF47 39.57%, #658200 100.13%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;background-clip: text;text-fill-color: transparent;}
-.our-services h3 span {font-size:35px;display: block;/* margin-bottom: 40px; */}
+.our-services strong {background: linear-gradient(90deg, #D7FF47 39.57%, #658200 100.13%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;background-clip: text;text-fill-color: transparent;}
+.our-services h3 span {font-size:35px;display: block;}
 .our-services .text-services {font-size:24px;width: 68%;}
 .our-services .callCenterImg {float:right;margin-right: -32px;}
 .green-belt {width: 92%;height: 176px;background:#eee;position: relative;bottom: -90px;display: flex;z-index: 2;right: -8%;background: linear-gradient(90deg, #D5FF40 0%, #AFDC0F 100%);border-radius: 20px 0px 0px 0px;align-items: center;justify-content: space-between;padding: 0 14%;}
@@ -163,12 +163,11 @@ header .contactButton:hover {background:#E0FF73;animation-name: wobble-horizonta
     height: 743px;
     right: -220px;
     top: -57px;
-    /* transform: rotate(22.27deg); */
     }
 
 .shape2 {position: absolute;width: 630px;height: 496px;left: 440px;top: 1256.17px;background: linear-gradient(49.08deg, rgba(213, 255, 64, 0.21) 3.31%, rgba(200, 80, 192, 0.21) 57.52%, rgba(201, 245, 106, 0.21) 91.12%);filter: blur(75px);transform: rotate(-12.58deg);z-index: -1;}
-.our-nomads {width: 480px;/* background: #faffea; */position: relative;z-index: 1;/* border-radius: 12px; *//* padding: 20px; */}
-.black-box {background: #151515;border-radius: 20px;/* transform: rotate(2.7deg); */color:#fff;text-align:right;padding: 20px;margin: 68px 0 0 0;width: 527px;}
+.our-nomads {width: 480px;position: relative;z-index: 1;}
+.black-box {background: #151515;border-radius: 20px;color:#fff;text-align:right;padding: 20px;margin: 68px 0 0 0;width: 527px;}
 .nomads-underline {width: 225px;height: 44px;position: absolute;top: -1px;left: 185px;background-image: url(../img/nomads-underline.png);z-index: 0;}
 
 .shape3 {position: absolute;width: 630px;height: 496px;left: 226px;top: 375px;background: linear-gradient(49.08deg, rgba(213, 255, 64, 0.21) 3.31%, rgba(200, 80, 192, 0.21) 57.52%, rgba(201, 245, 106, 0.21) 91.12%);filter: blur(75px);transform: rotate(-12.58deg);}
@@ -177,7 +176,7 @@ header .contactButton:hover {background:#E0FF73;animation-name: wobble-horizonta
 
 
 /* contact */
-.contact {width: 100%;/* height:750px; */background:#151515;color: #fff;padding: 80px 0 140px;position: relative;}
+.contact {width: 100%;background:#151515;color: #fff;padding: 80px 0 140px;position: relative;}
 .social-container {margin-top:20px;}
 .home-textinput {width:100%;height: 52px;border:1px solid #fff;border-radius:10px;background: transparent;padding: 15px;margin-bottom: 20px;color: #fff;}
 .home-form {display:flex;flex-direction: column;align-items: flex-end;margin-top:40px;position: relative;z-index: 999999999;}
@@ -330,8 +329,6 @@ footer .shape-footer {
     display:flex;
     align-content: center;
     flex-direction: column;
-    /* width: 50px; */
-    /* height: 47px; */
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -347,9 +344,9 @@ footer .shape-footer {
 
 }
 @media (max-width:1024px) {
-  .goTop {bottom: 5%;z-index: 99;right: 10px;}
-  .mobile-svg {display:block}
-  .mobile-hide-svg {display:none;}
+.goTop {bottom: 5%;z-index: 99;right: 10px;}
+.mobile-svg {display:block}
+.mobile-hide-svg {display:none;}
 .our-services .text-services {width:100%}
 .contact-btn {width: 150px;}
 .privacy-policy {margin-top:25%;}
@@ -359,10 +356,11 @@ header nav ul {width:500px;}
 .hero {height:auto;}
 .dot-6 {bottom: 222px;left: 28%;}
 .hero-boxes {display: none !important;}
-.hero .hero-bg {/* display:none; */position: static;width: 100%;height: auto;padding: 14px 0 40px;/* position: relative; */left: 0;}
+.hero .hero-bg {position: static;width: 100%;height: auto;padding: 14px 0 40px;/* position: relative; */left: 0;}
 .hero .hero-text {width: 100% !important;text-align: center;padding: 0px 40px;top: 10px;margin-bottom: 12%;}
 .hero .hero-text h1 {font-size:32px}
-.hero .hero-text p {font-size:16px;line-height: 24px;}
+.hero .hero-text p {font-size:16px;line-height: 24px; width: 100%;}
+.hero .hero-text h1 strong { margin-bottom: -34px;}
 .dot {display:none}
 .about-us {margin-bottom: 20px;padding:0 20px;}
 .about-us h2 {margin-bottom: 16px !important;}
@@ -375,14 +373,14 @@ header nav ul {width:500px;}
 .about-us .professional-icon {width: 62px;height:95px;position: absolute;right: 32px;top: -23px;}
 .about-us .haslee-icon {width: 163px;height: 84px;position: static;left: -33px;top: 43px;position: relative;}
 .about-us .affordable-icon {width: 55px;height: 92px;position: absolute;right: 32px;top: -24px;}
-.our-services .callCenterImg {/* float:right; */margin-right:0;}  
+.our-services .callCenterImg {margin-right:0;}  
 .float-right {float:none;}  
 .our-company img  {margin:20px auto 40px;left:0;right:0;display:block;float: none;}
 .why-h2 {margin: 0 0 60px; text-align: center;}
 .black-box {margin: 40px 0 0 18px !important;width:100%;border-radius: 12px 0 0 12px;display: block;}
 .shape2 {left:0}
 .shape3 {left: 0;display: none;}
-.contact {width: 100%;/* height:750px; */background:#151515;color: #fff;padding: 80px 20px 140px;}
+.contact {width: 100%;background:#151515;color: #fff;padding: 80px 20px 140px;}
 }
 
 @media(max-width:1000px){
@@ -395,13 +393,12 @@ header nav {display: none;}
 }
 
 @media(max-width:768px){
-  .goTop {/* display:none !important; */}
-  .contact p {text-align:center;}
+.contact p {text-align:center;}
 .home .required {margin-bottom:20px;display: block;} 
 header nav ul {width: 100%;}
 p {font-size:16px;}
 h2 {font-size:24px}
-.nomads-underline {left: 0;right: 0;top: 3px;/* display: none; */width: 131px;background-size: cover;height: 25px;margin: auto;}
+.nomads-underline {left: 0;right: 0;top: 3px;width: 131px;background-size: cover;height: 25px;margin: auto;}
 header .contact,header nav {display: none;}
 .hero .brands-slider {width: 94%;margin: auto;display: block;left: 0;right: 0;height: 100px;bottom: -40px;padding: 8px;}
 .shape2 {top: 1336px;left: -180px;width: 100%;}
@@ -434,8 +431,5 @@ textarea {margin-bottom:15px;}
 .about-us .oyster-underline {width: 149px;height: 11px;position: absolute;top: 16px;right: -10px;background-image: url(../img/underline-oyster.png);z-index: -1;}
 .d-flex {display:flex;flex-direction: column-reverse;}
 }
-
-
-
 
 .required {font-size:12px;color: #d5ff40;width: 100%;}

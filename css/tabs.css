@@ -2,7 +2,6 @@
 
 .accordion-tabs {
   color: #fff;
-  /* background-color: #fff; */
   border-radius: 6px;
 }
 
@@ -41,13 +40,9 @@
 }
 
 .tabs-trigger.is-selected, .tabs-trigger.is-selected:hover, .tabs-trigger.is-selected:focus {
-  /*  color: #000;
-  background: #D5FF40;*/
   color: #000;
   background: #D5FF40;
   background: linear-gradient(90deg, #D7FF47 39.57%, #9ac700 100.13%);
-  /* -webkit-background-clip: text; */
-  /* -webkit-text-fill-color: transparent; */
   }
 
 .tabs-trigger:active {
