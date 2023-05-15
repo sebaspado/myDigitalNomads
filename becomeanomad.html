@@ -618,6 +618,13 @@ These flexible contracts allow individuals to pick and choose when they wish to 
              AOS.init({
                 duration: 1200,
                 })
+
+                AOS.init({
+                disable: function() {
+                    var maxWidth = 768;
+                    return window.innerWidth < maxWidth;
+                }
+                });
             $('a[href*="#"]')
             .not('[href="#"]')
             .not('[href="#0"]')
