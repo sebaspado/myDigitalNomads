@@ -7,6 +7,8 @@ body {overflow: hidden;overflow-y: scroll;}
 
 img {max-width: 100%;}
 a {text-decoration: none;}
+.contact a {color:#D5FF40;}
+.contact a:hover {color:#e7ff94;}
 p {font-size: 20px;font-family: 'Montserrat', sans-serif;}
 .d-flex-center {
   display: flex!important;
@@ -131,7 +133,7 @@ header .contactButton:hover {background:#E0FF73;animation-name: wobble-horizonta
   width: 424px;
   height: 195px;
   right: -39px;
-  top: 25px;
+  top: 56px;
   z-index: -2;
 }
 
@@ -181,6 +183,7 @@ header .contactButton:hover {background:#E0FF73;animation-name: wobble-horizonta
 .home-textinput {width:100%;height: 52px;border:1px solid #fff;border-radius:10px;background: transparent;padding: 15px;margin-bottom: 20px;color: #fff;}
 .home-form {display:flex;flex-direction: column;align-items: flex-end;margin-top:40px;position: relative;z-index: 999999999;}
 .social-icons {margin:0 10px;}
+.social-icons:first-child {margin-left:0}
 .copy span {color:#fff;}
 .social-icons:hover {opacity: 0.6;animation-name: wobble-horizontal;animation-duration: 1s;animation-timing-function: ease-in-out;animation-iteration-count: 1;}
 textarea {background:transparent;border:1px solid #fff;border-radius:10px;padding:15px;width:100%;margin-bottom:20px;color: #fff;}
@@ -391,9 +394,16 @@ header nav {display: none;}
 .our-nomads {width:100%;text-align: center;}
 .our-company-box {width:90%;margin:0 auto 40px}
 }
+.contact .d-flex {
+    display: flex;
+    justify-content: space-evenly;
+}
 
 @media(max-width:768px){
-.contact p {text-align:center;}
+
+ .social-container {margin-top:20px;text-align:center} 
+
+.contact p {text-align: center; margin-bottom:24px !important;}
 .home .required {margin-bottom:20px;display: block;} 
 header nav ul {width: 100%;}
 p {font-size:16px;}
@@ -404,7 +414,7 @@ header .contact,header nav {display: none;}
 .shape2 {top: 1336px;left: -180px;width: 100%;}
 section {padding:20px;}
 .why-h2 {margin: 0 0 30px 0;text-align: center;}
-.our-services {padding: 30px 0 0;}
+.our-services {padding: 30px 0 0;margin-top: 50px;}
 .our-services h3 {font-size: 28px;text-align: center;margin: 12px 20px 20px;}
 .our-services h3 span {font-size:20px}
 .our-services .text-services {font-size: 16px;text-align:center}
@@ -414,7 +424,7 @@ section {padding:20px;}
 .green-belt {margin-top: 40px;padding:0 20px;height:100px;bottom: -44px;right: -8%;position: static;width: 100%;border-radius: 0 30px 0 0;}
 .green-belt h5 {font-size:30px;font-weight:bold;color: #151515;}
 .green-belt h5 span{font-size:18px;display:block;font-weight:100;margin-top: 0px;}
-.contact {padding: 20px 40px;flex-direction: column-reverse;display: flex;}
+.contact {padding: 20px 40px 50px;flex-direction: column;display: flex;}
 .shape1 {display:none}
 .tabs-tab-list {display: none !important;}
 .tabs-panel {margin:0 !important;}
@@ -422,9 +432,9 @@ section {padding:20px;}
 footer .container {display:flex;flex-direction: column;justify-content: center;align-items: center;}
 footer nav {width:100%}
 footer .shape-footer {width:450px}
-.contact h2 {text-align: center;margin-top: 20px;}
+.contact h2 {text-align: left !important;margin-top: 20px;margin: 20px auto 0 !important;}
 .home-form {margin:20px 0}
-.reverse-mobile {display:flex;flex-direction: column-reverse;}
+.reverse-mobile {display:flex;/* flex-direction: column-reverse; */}
 form button {width:100%;height: 52px;}
 .home-form {margin-bottom:50px; display:block;}
 textarea {margin-bottom:15px;}
@@ -433,3 +443,75 @@ textarea {margin-bottom:15px;}
 }
 
 .required {font-size:12px;color: #d5ff40;width: 100%;}
+
+.p-relative {position:relative;}
+.contact .p-relative {width:100%;margin: 5% 0 12px;}
+
+
+/* Hide the browser's default checkbox */
+
+.container-checks {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #757575 !important;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* margin-right: 20px; */
+  }
+
+.container-checks input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 3px;
+}
+
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+
+.container-checks input:checked ~ .checkmark {
+  background-color: #d5ff40;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container-checks input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container-checks .checkmark:after {
+  left: 10px;
+  top: 5px;
+  width: 7px;
+  height: 12px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
