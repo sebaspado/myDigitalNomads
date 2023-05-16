@@ -443,12 +443,10 @@ textarea {margin-bottom:15px;}
 }
 
 .required {font-size:12px;color: #d5ff40;width: 100%;}
-
 .p-relative {position:relative;}
 .contact .p-relative {width:100%;margin: 5% 0 12px;}
 
 
-/* Hide the browser's default checkbox */
 
 .container-checks {
   display: block;
@@ -462,7 +460,6 @@ textarea {margin-bottom:15px;}
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  /* margin-right: 20px; */
   }
 
 .container-checks input {
@@ -476,10 +473,10 @@ textarea {margin-bottom:15px;}
 
 .checkmark {
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
+  top: 4px;
+  left: 8px;
+  height: 18px;
+  width: 18px;
   background-color: #eee;
   border-radius: 3px;
 }
@@ -505,8 +502,8 @@ textarea {margin-bottom:15px;}
 }
 
 .container-checks .checkmark:after {
-  left: 10px;
-  top: 5px;
+  left: 6px;
+  top: 2px;
   width: 7px;
   height: 12px;
   border: solid black;
