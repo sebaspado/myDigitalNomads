@@ -22,44 +22,46 @@
     <header class="fixed-top bg-dark">
       <div class="container">
           <div class="logo">
-              <img alt="my digital nomads logo"
-                  src="img/logo-myDigitalNomads.svg"/></div>
+              <a href="index.html"><img alt="my digital nomads logo"
+                  src="img/logo-myDigitalNomads.svg"/></a></div>
           <nav class="nav-bar">
               <ul>
-                  <li><a class="nav-link" href="#hero">Home</a></li>
-                  <li><a class="nav-link" href="#about-us">About Us</a></li>
-                  <li><a class="nav-link" href="#services">Our Services</a></li>
-                  <li><a class="nav-link" href="#our-company">Our Company</a></li>
+                  <li><a class="nav-link" href="index.html">Home</a></li>
+                <!--  <li><a class="nav-link" href="#our-areas">Our areas</a></li>
+                  <li><a class="nav-link" href="#types">Types of contracts</a></li>
+                  <li><a class="nav-link" href="#our-culture">Our culture</a></li>
+                  <li><a class="nav-link" href="#open-positions">Open positions</a></li>-->
+                  <li><a class="nav-link" href="index.html#about-us">About Us</a></li>
+                  <li><a class="nav-link" href="index.html#services">Our Services</a></li>
+                  <li><a class="nav-link" href="index.html#our-company">Our Company</a></li>
                   <li><a href="becomeanomad.html">Become a Nomad</a></li>
-              </ul></nav>
+              </ul>
+           </nav>
+          <div class="contact-btn"><a href="#open-positions" class="contactButton" href="">Work with us</a></div>
+          <!-- MENU MOBILE -->
+          <div class="mobile-nav-button">
+              <div class="mobile-nav-button__line"></div>
+              <div class="mobile-nav-button__line"></div>
+              <div class="mobile-nav-button__line"></div>
+          </div>
 
-              <div class="contact-btn"><a href="becomeanomad.html#open-positions" class="contactButton" href="">Work with us</a></div>
-
-      <!-- MENU MOBILE -->
-      <div class="mobile-nav-button">
-          <div class="mobile-nav-button__line"></div>
-          <div class="mobile-nav-button__line"></div>
-          <div class="mobile-nav-button__line"></div>
-      </div>
-
-      <nav class="mobile-menu">
-          <ul>
-              <li><a class="nav-link" href="#hero">Home</a></li>
-              <li><a class="nav-link" href="#about-us">About Us</a></li>
-              <li><a class="nav-link" href="#services">Our Services</a></li>
-              <li><a class="nav-link" href="#our-company">Our Company</a></li>
-              <li><a class="nav-link" href="becomeanomad.html">Become a Nomad</a></li>
-              <li><a class="nav-link" href="becomeanomad.html#open-positions">Work with us</a></li>
-          </ul>
-      </nav>
-   <!-- MENU MOBILE ENDS -->
-
+          <nav class="mobile-menu">
+              <ul>
+                  <li><a class="nav-link" href="index.html">Home</a></li>
+                  <li><a class="nav-link" href="index.html#about-us">About Us</a></li>
+                  <li><a class="nav-link" href="index.html#services">Our Services</a></li>
+                  <li><a class="nav-link" href="index.html#our-company">Our Company</a></li>
+                  <li><a href="becomeanomad.html">Become a Nomad</a></li>
+                  <li><a href="#open-positions">Work with us</a></li>
+              </ul>
+          </nav>
+          <!-- MENU MOBILE ENDS -->
       </div>
   </header>
     <main>
       
 
-      <section class="about-us" id="about-us">
+      <section class="about-us">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-1"></div>
                 <div class="col-sm-12 col-md-12 col-lg-10">
@@ -210,7 +212,6 @@
             <div class="col-sm-12 col-md-12 col-lg-1"></div>
         </div>
       </section>
-
       
     </main>
     <footer>
@@ -242,107 +243,53 @@
     <script src="js/tabs.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/aos.js"></script>
+    <script src="js/areas-mobile.js"></script>
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
     <script>
-      AOS.init({
-        duration: 1200,
-      });
+         AOS.init({
+            duration: 1200,
+            })
 
-      AOS.init({
-        disable: function () {
-          var maxWidth = 1000;
-          return window.innerWidth < maxWidth;
-        },
-      });
-
-      $('a[href*="#"]')
+            AOS.init({
+            disable: function() {
+                var maxWidth = 768;
+                return window.innerWidth < maxWidth;
+            }
+            });
+        $('a[href*="#"]')
         .not('[href="#"]')
         .not('[href="#0"]')
-        .on("click", function (event) {
-          if (this.hash !== "") {
-            var hash = this.hash;
-            $("html, body").animate(
-              {
-                scrollTop: $(hash).offset().top - 100,
-              },
-              // tiempo que tarda en scrolear, dejarlo en 1
-              1,
-              function () {
-                if (history.pushState) {
-                  history.pushState(null, null, hash);
-                } else {
-                  window.location.hash = hash;
-                }
-              }
-            );
-            return false;
-          }
-        });
-        var x, i, j, l, ll, selElmnt, a, b, c;
-                            x = document.getElementsByClassName("custom-select");
-                            l = x.length;
-                            for (i = 0; i < l; i++) {
-                            selElmnt = x[i].getElementsByTagName("select")[0];
-                            ll = selElmnt.length;
-                            a = document.createElement("DIV");
-                            a.setAttribute("class", "select-selected");
-                            a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
-                            x[i].appendChild(a);
-                            b = document.createElement("DIV");
-                            b.setAttribute("class", "select-items select-hide");
-                            for (j = 1; j < ll; j++) {
-                                c = document.createElement("DIV");
-                                c.innerHTML = selElmnt.options[j].innerHTML;
-                                c.addEventListener("click", function(e) {
-                                    var y, i, k, s, h, sl, yl;
-                                    s = this.parentNode.parentNode.getElementsByTagName("select")[0];
-                                    sl = s.length;
-                                    h = this.parentNode.previousSibling;
-                                    for (i = 0; i < sl; i++) {
-                                    if (s.options[i].innerHTML == this.innerHTML) {
-                                        s.selectedIndex = i;
-                                        h.innerHTML = this.innerHTML;
-                                        y = this.parentNode.getElementsByClassName("same-as-selected");
-                                        yl = y.length;
-                                        for (k = 0; k < yl; k++) {
-                                        y[k].removeAttribute("class");
-                                        }
-                                        this.setAttribute("class", "same-as-selected");
-                                        break;
-                                    }
-                                    }
-                                    h.click();
-                                });
-                                b.appendChild(c);
-                            }
-                            x[i].appendChild(b);
-                            a.addEventListener("click", function(e) {
-                                e.stopPropagation();
-                                closeAllSelect(this);
-                                this.nextSibling.classList.toggle("select-hide");
-                                this.classList.toggle("select-arrow-active");
-                                });
-                            }
-                            function closeAllSelect(elmnt) {
-                            var x, y, i, xl, yl, arrNo = [];
-                            x = document.getElementsByClassName("select-items");
-                            y = document.getElementsByClassName("select-selected");
-                            xl = x.length;
-                            yl = y.length;
-                            for (i = 0; i < yl; i++) {
-                                if (elmnt == y[i]) {
-                                arrNo.push(i)
-                                } else {
-                                y[i].classList.remove("select-arrow-active");
-                                }
-                            }
-                            for (i = 0; i < xl; i++) {
-                                if (arrNo.indexOf(i)) {
-                                x[i].classList.add("select-hide");
-                                }
-                            }
-                            }
+        .on('click', function(event) {   
+            if (this.hash !== "") {
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top - 100
+                }, 
+                // tiempo que tarda en scrolear, dejarlo en 1 
+                1, function() {
 
-            document.addEventListener("click", closeAllSelect);
+                    if (history.pushState) {
+                        history.pushState(null, null, hash); 
+                    } else {
+                        window.location.hash = hash;
+                    } 
+                });
+                return false;    
+            }
+        });
+
+        myID = document.getElementById("go");
+
+var myScrollFunc = function () {
+var y = window.scrollY;
+if (y >= 400) {
+    myID.className = "goTop show"
+} else {
+    myID.className = "goTop hide"
+}
+};
+
+window.addEventListener("scroll", myScrollFunc);
     </script>
   </body>
 </html>
