@@ -3,8 +3,6 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description"
-            content="We're a leading outsourcing firm specializing in providing remote and flexible workforce solutions. Contact us today and take your company to new heights.">
         <meta name="author" content="My digital nomads">
         <title>Naked cleaners</title>
         <link rel="canonical" href="https://mydigitalnomads.co.uk/">
@@ -12,10 +10,6 @@
         <link href="css/aos.css" rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet">
         <link href="css/slick.css" rel="stylesheet">
-        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-        <link rel="manifest" href="site.webmanifest">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
@@ -38,7 +32,7 @@
                         <div class="col-lg-4">
                             <h1>Advertise <span>with us</span></h1>
                             <h2>Become the leader of luxury
-                                <br>naked cleaning in <strong>Irland</strong>
+                                <br>naked cleaning in <strong>Ireland</strong>
                             </h2>
                             <p>Work when you want and make what you need.
                                 Achieve financial freedom by doing the
@@ -120,7 +114,7 @@
                         <div class="col-lg-1">
                         </div>
                         <div class="col-lg-5">
-                            <img src="img/location.png" data-aos="slide-left" class="location-img" alt="iphone">
+                            <img src="img/location.png" data-aos="fade-up-right" class="location-img" alt="iphone">
                         </div>
                     </div>
                 </div>
@@ -163,7 +157,7 @@
                             <p>Don’t wait, here's why you should get yourself showcased using one of the Boosts available on nakedcleaners.com!
                                  As part of our commitment to your success, we offer additional benefits to amplify your advertising experience.</p>
                            <p>Don't miss out on the opportunity to showcase your offers to a vast audience in Ireland. Choose from our range of
-                             highly effective options—Boost, Location Boost, and Category Boost—starting from just 19.99 EUR. Take the first
+                             highly effective options—Boost, Location Boost, and Category Boost—starting from just <strong>19.99 EUR</strong>. Take the first
                               step towards achieving your advertising goals and unlock the true potential of naked cleaning in Ireland today.
                             </p><p>
                             Click the button below to get started and transform your advertising game with Ireland's leading naked cleaners website.
@@ -183,19 +177,19 @@
                             </div>
 
                             <div>
-                                <h2>Flexible budgeting options</h2>
-                                <p>We understand that every cleaner has their own business development path. That's why we offer flexible
-                                     budgeting options to suit your needs. Choose from 7-day, 30-day to 90-day plans, allowing you to manage
-                                      your advertising budget effectively. Expand your business easily by adding more Boosts and see how many
-                                       new users will be reaching out for bookings.</p>
+                                <h2>Easy ad creation</h2>
+                                <p>We've streamlined the ad creation process to make it quick and hassle-free.
+                                     With our intuitive interface, you can create visually appealing and compelling ads in minutes, 
+                                     without any technical expertise. Benefit from showcasing your offer to the most relevant crowd in Ireland. 
+                                </p>
                             </div>
 
                             <div>
-                                <h2>Flexible budgeting options</h2>
-                                <p>We understand that every cleaner has their own business development path. That's why we offer flexible
-                                     budgeting options to suit your needs. Choose from 7-day, 30-day to 90-day plans, allowing you to manage
-                                      your advertising budget effectively. Expand your business easily by adding more Boosts and see how many
-                                       new users will be reaching out for bookings.</p>
+                                <h2>Customer support</h2>
+                                <p>Our dedicated support team is here to assist you every step of the way. 
+                                    From answering your questions to providing guidance on optimizing your ads, we're committed to ensuring your
+                                     advertising journey is seamless and successful.
+                                </p>
                             </div>
 
                             </div>
@@ -214,7 +208,6 @@
         <script src="js/jquery-3.6.4.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/slick.js"></script>
-      <!--  <script src="js/menu.js"></script>-->
         <script src="js/aos.js"></script>
         <script>
                     AOS.init({
@@ -228,56 +221,33 @@
                 }
                 });
                 $('.slide').slick({
-  centerMode: true,
-  centerPadding: '0px',
-  dots:true,
-  slidesToShow: 1,
-  autoplay: true,
-  autoplaySpeed: 6000,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '20px',
-        slidesToShow: 1
-      }
-    }
-  ]
-});
-
-            $('a[href*="#"]')
-            .not('[href="#"]')
-            .not('[href="#0"]')
-            .on('click', function(event) {   
-                if (this.hash !== "") {
-                    var hash = this.hash;
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top - 100
-                    }, 
-                    // tiempo que tarda en scrolear, dejarlo en 1 
-                    1, function() {
-
-                        if (history.pushState) {
-                            history.pushState(null, null, hash); 
-                        } else {
-                            window.location.hash = hash;
-                        } 
-                    });
-                    return false;    
-                }
-            });
-           
+                    centerMode: true,
+                    centerPadding: '0px',
+                    dots:true,
+                    slidesToShow: 1,
+                    autoplay: true,
+                    autoplaySpeed: 6000,
+                    responsive: [
+                        {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '20px',
+                            slidesToShow: 3
+                        }
+                        },
+                        {
+                        breakpoint: 480,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '20px',
+                            slidesToShow: 1
+                        }
+                        }
+                    ]
+                    });           
         </script>
     </body>
 </html>

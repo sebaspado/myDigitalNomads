@@ -1,6 +1,5 @@
 @charset "UTF-8";
 * {margin:0;padding:0;}
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Sans:wght@300;500;700&display=swap');
 .fixed-top {
   z-index: 9999;
   display: flex;
@@ -21,7 +20,7 @@ h1 span {color:#047882;}
 section {margin:100px 0}
 .r-position {position:relative;}
 header {background:#fff; height:112px}
-.hero {background: linear-gradient(180deg, #8ef6ff 0%, rgba(217, 217, 217, 0) 100%);height:100vh;padding-top: 5%;margin-bottom: 100px;}
+.hero {background: linear-gradient(180deg, #b8f9ff 0%, rgba(217, 217, 217, 0) 100%);height:100vh;padding-top: 5%;margin-bottom: 100px;}
 .hero h1 {margin:30px 0 20px 0;font-size: 30px;font-weight: 400;}
 .hero h2 {font-family: 'Noto Sans', sans-serif;font-size:24px;margin-bottom: 20px;}
 .lap {width: 100%;position: absolute;top: 75px;right:-100px;/* height: 0; */}
