@@ -53,9 +53,10 @@ header {background:#fff; height:112px}
 .desk-hide {display: none;}
 .location {position:relative;}
 .location-img {position:absolute;bottom: -60px;}
-@media (max-width:768px) {
+
+@media (max-width:1024px) {
   .location-img {position:relative;right:-20px;bottom:-40px}
-  .hero {margin-bottom:20px}
+  .hero {margin-bottom:20px;height: auto;padding-top: 20%;}
   .container {padding:0 20px}
   section {margin:30px 0}
   p {font-size:14px;}
@@ -65,6 +66,6 @@ header {background:#fff; height:112px}
   h2 {margin:20px 0;font-size: 24px;}
   .lap {position:static}
   .bg-section {margin: 50px 0;padding: 30px 0 40px;}
-  .button, prices {width:100%}
+  .button, .prices {width:100%}
 }
 
