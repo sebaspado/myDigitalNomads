@@ -2448,6 +2448,8 @@ header .navbar-expand .navbar-brand img {
     background: none;
 }
 
+.card:not(.no-hover):hover input {border:1px solid #fff;color: #fff !important;background: #fff;}
+
 .card:not(.no-hover):hover {
     background: -webkit-linear-gradient(45deg, var(--secondary-color) 15%, var(--primary-color) 65%);
     background: linear-gradient(45deg, var(--secondary-color) 15%, var(--primary-color) 65%);
@@ -4274,28 +4276,28 @@ footer .copyright a:not(.btn) {
 }
 
 @media(max-width: 374px) {
-
-    /* #region General */
-
     body h1,
     body .slide-content .title,
-    body h2.super {
-        font-size: 3rem;
-    }
-    
-    /* #endregion General */
+    body h2.super {font-size: 3rem;} 
 }
-
-
 
 @media (min-width:1024px){
 .card {height: 260px;border-radius: 8px !important;}
+#pricing .card {height: auto;}
 }
-
 
 .navbar-nav-footer {
     display:flex;
-    justify-content: center;
-} 
+    justify-content: center;} 
+    
 .navbar-nav-footer li {list-style:none; }
 .navbar-nav-footer li a {font-size:12px !important}
+
+ul#myTabs {width: 332px;margin:0 auto 20px;display: flex;justify-content: space-between;}
+ul#myTabs li {/* width:100px; */font-size:20px;text-align:center;padding: 10px 25px;}
+ul#myTabs li a {font-size:20px;}
+ul#myTabs li a.active {background: #ffebea;border-radius:50px;border: 1px solid #fc5130;padding:10px 20px}
+
+@media (max-width:768px) {
+    ul#myTabs {width:50%;margin:0 auto 20px;display: flex;justify-content: center;}
+}
