@@ -1,41 +1,16 @@
-/*----------------------------------------------
-*
-* [Default Stylesheet]
-*
-* Theme    : Leverage
-* Version  : 2.1
-* Author   : Codings
-* Support  : codings.dev
-* 
-----------------------------------------------*/
 
-/*----------------------------------------------
-
-[ALL CONTENTS]
-
-1. Root
-2. Button
-3. Effects
-
-----------------------------------------------*/
-
-/*----------------------------------------------
-1. Root
-----------------------------------------------*/
-
-/* #region Root */
 
 :root {
     --h1-font: "Default";
     --h1-size: 6rem;
     --h1-weight: 900;
     
-    --h2-font: 'Poppins', sans-serif;
+    --h2-font: 'Luckiest Guy', cursive;
     --h2-size: 3rem;
     --h2-weight: 600;
     
-    --p-font: 'Poppins', sans-serif;
-    --p-size: 1rem;
+    --p-font: 'Nunito', sans-serif;
+    --p-size: 1.2rem;
     --p-weight: 400;
 
     --header-bg-color: #111111;

@@ -1,48 +1,8 @@
-/*----------------------------------------------
-*
-* [Main Stylesheet]
-*
-* Theme    : Leverage
-* Version  : 2.1
-* Author   : Codings
-* Support  : codings.dev
-* 
-----------------------------------------------*/
 
-/*----------------------------------------------
-*
-* [Font Import]
-*
-----------------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nunito:wght@300&family=Yanone+Kaffeesatz&display=swap');
 
-/*----------------------------------------------
 
-[ALL CONTENTS]
-
-1. Reset
-2. General 
-3. Section 
-4. Helper Class
-5. Header
-6. Slider
-7. Feature
-8. Widget
-9. Form and Field | 9.1 Multi-Step Form
-10. List
-11. Gallery
-12. Footer
-13. Modal
-14. Miscellaneous
-15. Keyframe
-16. All Media Queries
-
-----------------------------------------------*/
-
-/*----------------------------------------------
-1. Reset
-----------------------------------------------*/
 
 /* #region Reset */
 
@@ -208,14 +168,16 @@ p:last-child {
     margin-bottom: 0;
 }
 
+
+
 h1,
 .slide-content .title {
     margin-top: 0;
     margin-bottom: 1.5rem;
     font-size: var(--h1-size);
     font-weight: var(--h1-weight);
-    line-height: 1.2;
-    font-family: var(--h1-font);
+    line-height: 120px;
+    font-family: 'Yanone Kaffeesatz';
     color: var(--primary-color);
     -ms-word-wrap: break-word;
     word-wrap: break-word;
@@ -2850,7 +2812,7 @@ header .navbar-expand .navbar-brand img {
 
 .hero-image {
     position: absolute;
-    right: 10%;
+    right: -2%;
     bottom: 0;
     width: auto;
     height: 85%;
@@ -3967,6 +3929,7 @@ footer .copyright a:not(.btn) {
     body .slide-content .title,
     body h2.super {
         font-size: 3.5rem;
+        line-height: 54px;
     }
 
     body .text-md-left h2.featured,
@@ -4282,7 +4245,7 @@ footer .copyright a:not(.btn) {
 }
 
 @media (min-width:1024px){
-.card {height: 260px;border-radius: 8px !important;}
+.card {height: 282px;border-radius: 8px !important;}
 #pricing .card {height: auto;}
 }
 
@@ -4297,7 +4260,15 @@ ul#myTabs {width: 332px;margin:0 auto 20px;display: flex;justify-content: space-
 ul#myTabs li {/* width:100px; */font-size:20px;text-align:center;padding: 10px 25px;}
 ul#myTabs li a {font-size:20px;}
 ul#myTabs li a.active {background: #ffebea;border-radius:50px;border: 1px solid #fc5130;padding:10px 20px}
-
+.friends {font-size:184px}
 @media (max-width:768px) {
+    .friends {font-size: 63px;}
     ul#myTabs {width:50%;margin:0 auto 20px;display: flex;justify-content: center;}
+    .full-slider .inner,
+.no-slider .inner {
+    top: -50px;
+    max-width: 1140px;
+    padding: 0;
+    margin: auto;
+}
 }
