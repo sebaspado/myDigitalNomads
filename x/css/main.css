@@ -2363,6 +2363,8 @@ header .navbar-expand .navbar-brand img {
     white-space: pre-wrap;
 }
 
+#testimonials p { margin-bottom:0}
+
 .card-img-top {
     border-radius: 0;
 }
