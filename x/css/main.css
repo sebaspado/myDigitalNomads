@@ -1353,6 +1353,7 @@ aside {
 header {
     position: relative;
     z-index: 5;
+    background: #fff !important;
 }
 
 .navbar-holder {
@@ -1397,6 +1398,7 @@ header .navbar-expand {
     z-index: 2;
     width: 100%;
     padding: 20px 25px;
+    background: #fff;
     pointer-events: initial;
 }
 
@@ -4258,12 +4260,15 @@ footer .copyright a:not(.btn) {
 .navbar-nav-footer li {list-style:none; }
 .navbar-nav-footer li a {font-size:12px !important}
 
-ul#myTabs {width: 332px;margin:0 auto 20px;display: flex;justify-content: space-between;}
+ul#myTabs {width: 435px;margin:0 auto 20px;display: flex;justify-content: space-between;}
 ul#myTabs li {/* width:100px; */font-size:20px;text-align:center;padding: 10px 25px;}
 ul#myTabs li a {font-size:20px;}
 ul#myTabs li a.active {background: #ffebea;border-radius:50px;border: 1px solid #fc5130;padding:10px 20px}
 .friends {font-size:184px}
+.x {width: 500px;height: 500px;background: url(../img/x.png) no-repeat;position: absolute;background-size: contain;top: 19px;left: 0;opacity: .06;right: 0;margin: auto;}
+
 @media (max-width:768px) {
+    .x {width: 400px;height: 400px;top:8%}
     .friends {font-size: 63px;}
     ul#myTabs {width:50%;margin:0 auto 20px;display: flex;justify-content: center;}
     .full-slider .inner,

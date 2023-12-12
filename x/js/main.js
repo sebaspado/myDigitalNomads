@@ -126,7 +126,7 @@ jQuery(function ($) {
 
         var scroll = $(window).scrollTop();
 
-        if (!navbar.hasClass('relative')) {
+      /*  if (!navbar.hasClass('relative')) {
 
             // Down
             if (scroll > position) {
@@ -171,7 +171,7 @@ jQuery(function ($) {
                 }
             }
             position = scroll;
-        }
+        }*/
     })
 
     $('.nav-link').each(function() {
