@@ -1020,6 +1020,12 @@ aside {
     border-color: var(--secondary-l-color);
 }
 
+.plans .items .item .card:hover .primary-button {
+        background: linear-gradient(to right, #ff8f00 20%, #ff5f2b 50%);
+    border:1px solid #ff8105
+
+}
+
 .price {
     margin-bottom: 25px;
     font-size: 42px;
@@ -3588,7 +3594,7 @@ footer .copyright a:not(.btn) {
     border: none;
     border-radius: 0;
     overflow-x: hidden;
-    background-color: var(--primary-bg-color-2);
+    background-color: transparent;
     background-size: cover;
     background-position: center center;
 }
@@ -3627,7 +3633,7 @@ footer .copyright a:not(.btn) {
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 25px 25px 75px;
+    /* padding: 25px 25px 75px; */
 }
 
 .theme-mode-dark .modal-body h2 {
@@ -3652,7 +3658,7 @@ footer .copyright a:not(.btn) {
 }
 
 .scroll-to-top {
-    display: none;
+    display: block;
     position: fixed;
     z-index: 5;
     right: 25px;
@@ -4279,3 +4285,45 @@ ul#myTabs li a.active {background: #ffebea;border-radius:50px;border: 1px solid 
     margin: auto;
 }
 }
+
+
+.carousel-wrap {
+    margin: 90px auto;
+    padding: 0 5%;
+    width: 80%;
+    position: relative;
+  }
+  
+  /* fix blank or flashing items on carousel */
+  .owl-carousel .item {
+    position: relative;
+    z-index: 100;
+    -webkit-backface-visibility: hidden;
+    height: 250px;
+  }
+  
+  /* end fix */
+  .owl-nav > div {
+    margin-top: -26px;
+    position: absolute;
+    top: 50%;
+    color: #cdcbcd;
+  }
+  
+  .owl-nav i {
+    font-size: 52px;
+  }
+  
+  .owl-nav .owl-prev {
+    left: -30px;
+  }
+  
+  .owl-nav .owl-next {
+    right: -30px;
+  }
+
+.close {color:#fff;opacity:1;right:20px;position:absolute;top: 15px;}
+.close:hover {color:#fff}
+
+.icon-arrow-left {color:#fff;font-size:28px !important;color:#000;border-radius:50px;top:-40px;bottom:0; position:absolute; margin:auto 0}
+.icon-arrow-right {color:#fff;font-size:28px !important;color:#000;border-radius:50px;top:-40px;bottom:0; position:absolute; margin:auto 0;right:0px}
