@@ -4329,3 +4329,6 @@ ul#myTabs li a.active {background: #ffebea;border-radius:50px;border: 1px solid 
 
 .icon-arrow-left {color:#fff;font-size:28px !important;color:#000;border-radius:50px;top:-40px;bottom:0; position:absolute; margin:auto 0}
 .icon-arrow-right {color:#fff;font-size:28px !important;color:#000;border-radius:50px;top:-40px;bottom:0; position:absolute; margin:auto 0;right:0px}
+.col-2 .form-check-label{margin:0}
+.form-check-label {margin:4px 0 0 10px}
+.agree {font-size:14px;text-align:left} .agree input {width:12px !important;}
