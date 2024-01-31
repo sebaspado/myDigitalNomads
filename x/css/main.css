@@ -1886,8 +1886,8 @@ header .navbar-expand .navbar-brand img {
     left: 5%;
     width: 45%;
     height: 95%;
-    border-top: 4px solid;
-    border-right: 4px solid;
+    /* border-top: 4px solid; */
+    /* border-right: 4px solid; */
     transform: rotate(-15deg);
     border-image: -webkit-linear-gradient(to right, transparent 55%, var(--primary-color) 55%, var(--primary-color) 100%) 30;
     border-image: linear-gradient(to right, transparent 55%, var(--primary-color) 55%, var(--primary-color) 100%) 30;
@@ -1908,11 +1908,11 @@ header .navbar-expand .navbar-brand img {
     left: 5%;
     width: 45%;
     height: 95%;
-    border-left: 4px solid;
-    border-bottom: 4px solid;
+    /* border-left: 4px solid; */
+    /* border-bottom: 4px solid; */
     transform: rotate(-15deg);
     border-image: -webkit-linear-gradient(to bottom, transparent 83%, var(--primary-color) 83%, var(--primary-color) 100%) 30;
-    border-image: linear-gradient(to bottom, transparent 83%, var(--primary-color) 83%, var(--primary-color) 100%) 30;
+    /* border-image: linear-gradient(to bottom, transparent 83%, var(--primary-color) 83%, var(--primary-color) 100%) 30; */
     transition-timing-function: cubic-bezier(.25, .25, .75, .75);
     transition-duration: 0.6s;
     transition-property: opacity, transform;
