@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap");
+
 * { margin: 0px; padding: 0px; }
 img { max-width: 100%; height: auto; }
 h1 { color: rgb(255, 255, 255); }
 p { font-size: 18px; }
-body { font-family: "Open Sans", sans-serif; }
+body { font-family: "Open Sans", sans-serif;overflow-x: hidden; }
 .logoHeader { text-align: center; }
 .bgBlack { background: rgb(18, 18, 18); padding: 40px 40px 80px; }
 .pink {background: rgb(252, 0, 132);border-radius: 12px;color: rgb(255, 255, 255);margin-top: -40px;position: relative;width: 1100px;padding: 60px;z-index: 0;}
@@ -39,34 +40,32 @@ h5, h6 { font-size: 40px; }
 
 @media (max-width: 1240px) {
     .pinkFluid {margin-top: -70px;}
-  .triangle, .triangle2 { display: none; }
+    .triangle, .triangle2 { display: none; }
 }
+
 @media (max-width: 1024px) {
-  
-
-  .bgBlack2 .noLimits {display:flex;width: 100%;padding-top: 32px;flex-direction: column;text-align: center;}
-.bgBlack2 .noLimits p {width:100%;color: #FC0084;margin:0}
-
-  p, .denominations p {font-size: 17px;}
-  img { margin-top: 2rem; }
-  h2, h3, h4, h5, h6 { font-size: 26px; }
-  h2 { margin-bottom: 30px !important; }
-  body { text-align: center; }
-  .voucher .col-lg-2 { width: 50%; }
-  .bgBlack2 { padding: 30px 20px;width:90% }
-  .bgBlack2 .col-lg-6 { text-align: left; }
-  .bgBlack2 h6 { font-size: 20px; margin-bottom: 40px; text-align: center; }
-  .denominations { width: 90%; padding: 20px 12px; }
-  .denominations h4 { margin-bottom: 40px; }
-  .denominations img { margin-top: 0px; }
-  .pink { width: 90%; padding: 30px; }
-  .pinkFluid {padding: 100px 20px 120px;}
-  .pinkFluid p { width: 80%; margin: 0px auto 20px; }
-  .pad20 { padding: 30px 20px; }
-  .voucher .col-lg-2 { margin-bottom: 30px; }
-  .denominations .col-lg-2 { width: 100%; }
+    .bgBlack2 .noLimits {display:flex;width: 100%;padding-top: 32px;flex-direction: column;text-align: center;}
+    .bgBlack2 .noLimits p {width:100%;color: #FC0084;margin:0}
+      p, .denominations p {font-size: 17px;}
+      img { margin-top: 2rem; }
+      h2, h3, h4, h5, h6 { font-size: 26px; }
+      h2 { margin-bottom: 30px !important; }
+      body { text-align: center; }
+      .voucher .col-lg-2 { width: 50%; }
+      .bgBlack2 { padding: 30px 20px;width:90% }
+      .bgBlack2 .col-lg-6 { text-align: left; }
+      .bgBlack2 h6 { font-size: 20px; margin-bottom: 40px; text-align: center; }
+      .denominations { width: 90%; padding: 20px 12px; }
+      .denominations h4 { margin-bottom: 40px; }
+      .denominations img { margin-top: 0px; }
+      .pink { width: 90%; padding: 30px; }
+      .pinkFluid {padding: 100px 20px 120px;}
+      .pinkFluid p { width: 80%; margin: 0px auto 20px; }
+      .pad20 { padding: 30px 20px; }
+      .voucher .col-lg-2 { margin-bottom: 30px; }
+      .denominations .col-lg-2 { width: 100%; }
 }
 
 @media (max-width: 768px) {
-  .circle, .dots {display:none}
+     .circle, .dots {display:none}
 }
