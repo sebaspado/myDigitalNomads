@@ -33549,3 +33549,5 @@ body.dark {
   background-color: rgba(0, 0, 0, 0.2);
 }
 /*# sourceMappingURL=style.css.map */
+
+.photo-description {position: absolute;z-index: 999;color: #fff;text-shadow: 0 1px 1px #000;margin: auto;left: 0;right: 0;width: 100%;text-align: center;padding-top: 10px;font-size: 14px;}

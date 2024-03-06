@@ -179,6 +179,7 @@
 	flex: 1;
 	margin: 0;
 	padding: 0;
+	position: relative;
 }
 
 #image-carousel .carousel-grid-item .item {
