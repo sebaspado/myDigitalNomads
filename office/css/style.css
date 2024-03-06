@@ -33560,9 +33560,12 @@ body.dark {
   width: 100%;
   height: 100%;
 }
-
+  .d-flex-foot { display: flex;
+    flex-direction: column;
+    justify-content: center;}
 .text-right {text-align:right}
 @media (max-width:768px) {
   .text-right {text-align:left;}
   .center-mobile {text-align: center;}
+
 }
