@@ -13914,7 +13914,7 @@ address,
 table,
 fieldset,
 form {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 blockquote p:last-child {
@@ -33551,3 +33551,12 @@ body.dark {
 /*# sourceMappingURL=style.css.map */
 
 .photo-description {position: absolute;z-index: 999;color: #fff;text-shadow: 0 1px 1px #000;margin: auto;left: 0;right: 0;width: 100%;text-align: center;padding-top: 10px;font-size: 14px;}
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
