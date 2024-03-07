@@ -33560,6 +33560,7 @@ body.dark {
   width: 100%;
   height: 100%;
 }
+.mapouter{position: relative;text-align: right;height: 560px;width: 100%;}
   .d-flex-foot { display: flex;
     flex-direction: column;
     justify-content: center;}
