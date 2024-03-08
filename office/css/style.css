@@ -33568,5 +33568,7 @@ body.dark {
 @media (max-width:768px) {
   .text-right {text-align:left;}
   .center-mobile {text-align: center;}
+.mapouter{position: relative;text-align: right;height: auto;width: 100%;}
 
+  
 }
