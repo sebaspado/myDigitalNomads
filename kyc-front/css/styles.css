@@ -13345,6 +13345,7 @@ input {
 .certificates {
   margin-bottom: 80px;
 }
+.certificates p {margin:0}
 .certificates h4 {
   font-size: 40px;
   margin-bottom: 40px;
@@ -13382,6 +13383,10 @@ footer .foot2 a {
   font-size: 14px;
 }
 
+.benefits {padding-bottom:0}
+.benefits h3 {font-size:28px;}
+.benefits .row {margin-bottom: 44px;}
+
 @media (max-width: 1024px) {
   .masthead .masthead-device-mockup .device-wrapper {
     max-width: 100%;
@@ -13411,6 +13416,9 @@ footer .foot2 a {
     width: 90%;
     padding: 30px 12px !important;
   }
+
+.benefits img {margin-bottom:40px}
+  
   .reverseOrder {
     flex-direction: column-reverse;
   }
@@ -13452,6 +13460,8 @@ footer .foot2 a {
   display: none;
 }
 
+#features {padding:100px 0 0 0 !important}
+
 @media (max-width: 992px) {
   .alert-validate::before {
     visibility: visible;
@@ -13478,3 +13488,7 @@ footer .foot2 a {
     }
   }
 }
+
+
+#contact i {margin-right:10px}
+.space-evenly {justify-content: space-evenly;}
