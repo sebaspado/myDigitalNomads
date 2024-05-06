@@ -41,7 +41,7 @@ body {
   font-family: "Open Sans", sans-serif;
   overflow-x: hidden;
   background-color: black;
-  background-image: url("/img/bg.jpeg");
+  background-image: url("../img/bg.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
 }
