@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap");
+
+.box {
+  color: #fff;
+  border: 2px solid #fff;
+  margin: 25% 5% 0px;
+  padding: 40px 20px 20px;
+  border-radius: 20px;
+  text-align: left;
+  position: relative;
+  h2 {
+    position: absolute;
+    background: linear-gradient(270deg, #f917cd 45.4%, #4428d4 99.53%);
+    padding: 6px 18px;
+    top: -28px;
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  ul li {
+    font-size: 24px;
+  }
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+h1 {
+  color: rgb(255, 255, 255);
+}
+p {
+  font-size: 18px;
+}
+.button {font-size:24px;text-decoration: none;background: linear-gradient(270deg, #7154ff 45.4%, #4428d4 99.53%);color:#fff;padding:30px;margin:50px auto;display:block;width:320px;text-align:center;border-radius:50px;border-bottom: 2px solid #866eff;text-shadow: 1px 0 1px #000;}
+body {
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+  background-color: black;
+  background-image: url("/img/bg.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.logoHeader {
+  text-align: center;
+  margin-top: 30px;
+}
+
+footer {
+div {margin: 20px 0;}    
+p {margin: 40px 0 10px;}
+ul {margin:0;padding:0}
+background: linear-gradient(90deg, #FFD9F7 0%, #F1F6FF 100%);text-align: center;width: 90%;margin: 100px auto 20px;padding: 60px 64px;flex-direction: column;border-radius: 32px;align-items: center;gap: 64px;flex-shrink: 0;a {text-decoration:none;color:#666;margin:0 10px}ul {display:flex;flex-direction: row;flex-wrap: nowrap;align-content: center;justify-content: center;align-items: center;}ul li {list-style: none}ul li a img {height:50px;margin:0 15px}}
+
+@media (max-width: 1024px) {
+body {padding: 0;}
+footer {position: relative;padding: 16px;
+           ul {flex-wrap: wrap;}
+           ul li {margin-bottom:15px}
+           ul li img { max-width:60%; height:auto} 
+        } .box h2 {font-size:20px}
+}
