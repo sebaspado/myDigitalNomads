@@ -76,7 +76,7 @@ footer {
 .left img {margin-left: -23px;}
 input, textarea {border:1px solid #E7D1FF;display:block;width: 100%;margin-bottom:20px;padding:10px;}
 button {padding:10px 20px;border-radius:50px;border:none;background:linear-gradient(270deg, #F917CD 45.4%, #4428D4 99.53%);color:#fff;width:100%;}
-
+form {padding:20px}
 
 @media (max-width: 1024px) {
   .left {align-items:center;
@@ -88,7 +88,7 @@ button {padding:10px 20px;border-radius:50px;border:none;background:linear-gradi
   p {font-size:22px;width: 100%;}
   footer {
     .row {display:flex;flex-direction: column-reverse;}
-    form {margin-bottom:40px}
+    form {margin-bottom:40px;padding:0}
   position: relative; padding: 16px; width: 90%;
   & ul { flex-wrap: wrap; }
   & ul li { margin-bottom: 15px; }
