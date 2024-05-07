@@ -9,7 +9,7 @@ a {text-decoration: none;color:#fff}
 * { margin: 0px; padding: 0px; }
 img { max-width: 100%; height: auto; }
 h1 { color: rgb(255, 255, 255); }
-p {color: white;font-size: 24px;font-weight: 700;text-align: center;text-shadow: 0 1px BLACK;width: 80%;margin:auto}
+p {color: white;font-size: 24px;font-weight: 700;text-align: center;text-shadow: 0 1px BLACK, 1px 0 BLACK;width: 80%;margin:auto}
 .button { font-size: 24px; text-decoration: none; background: linear-gradient(270deg, rgb(113, 84, 255) 45.4%, rgb(68, 40, 212) 99.53%); color: rgb(255, 255, 255); padding: 30px; margin: 50px auto; display: block; width: 320px; text-align: center; border-radius: 50px; border-bottom: 2px solid rgb(134, 110, 255); text-shadow: rgb(0, 0, 0) 1px 0px 1px; }
 body { font-family: "Open Sans", sans-serif; overflow-x: hidden; background-color: black; background-image: url("../img/bg.jpeg"); background-size: cover; background-repeat: no-repeat; }
 .logoHeader { text-align: center; margin-top: 30px; }
