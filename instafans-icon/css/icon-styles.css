@@ -2,8 +2,8 @@
 h1 {font-size: 60px;font-family: "Poppins", sans-serif;font-weight: 800;margin: 50px 0px 20px;text-transform: uppercase;text-align: center;background: -webkit-linear-gradient(180deg, rgb(249 23 205) 0%, rgb(22 175 233) 100%) text;-webkit-text-stroke: 10px transparent;color: rgb(35, 45, 45);}
 .box {
   color: rgb(255, 255, 255); border: 2px solid rgb(255, 255, 255); margin: 25% 5% 0px; padding: 40px 20px 20px; border-radius: 20px; text-align: left; position: relative;
-  & h2 { position: absolute; background: linear-gradient(270deg, rgb(249, 23, 205) 45.4%, rgb(68, 40, 212) 99.53%); padding: 6px 18px; top: -28px; font-size: 32px; font-weight: bold; }
-  & ul li { font-size: 24px; }
+  & h2 {position: absolute;background: linear-gradient(268deg, rgb(249 23 205) 0%, rgb(22 175 233) 100%);padding: 6px 18px;top: -28px;font-size: 32px;font-weight: bold;}
+  & ul li { font-size: 24px;font-weight: bold; }
 }
 * { margin: 0px; padding: 0px; }
 img { max-width: 100%; height: auto; }
@@ -26,6 +26,7 @@ footer {
 }
 @media (max-width: 1024px) {
   body { padding: 0px; }
+  p {font-size:22px}
   footer {
   position: relative; padding: 16px; width: 90%;
   & ul { flex-wrap: wrap; }
