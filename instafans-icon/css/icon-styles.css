@@ -69,6 +69,7 @@ footer {
 }
 @media (max-width: 1024px) {
   h1 {margin:50px 0}
+  h2 {font-size: 20px;}
   body { padding: 0px;  background-attachment: fixed;
   background-position: center;}
   p {font-size:22px;width: 100%;}
