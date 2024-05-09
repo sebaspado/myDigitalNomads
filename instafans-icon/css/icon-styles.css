@@ -8,7 +8,7 @@ h1 {
   margin: 50px 0px 20px;
   text-transform: uppercase;
   text-align: center;
-  background: -webkit-linear-gradient(180deg, rgb(249 23 205) 0%, rgb(22 175 233) 100%) text;
+  background: -webkit-linear-gradient(180deg, rgb(249 23 205) 0%, rgb(71 192 255) 100%) text;
   -webkit-text-stroke: 10px transparent;
   color: rgb(35, 45, 45);
 }
@@ -32,7 +32,7 @@ h1 {
 
   & h2 {
     position: absolute;
-    background: linear-gradient(268deg, rgb(249 23 205) 0%, rgb(22 175 233) 100%);
+    background: linear-gradient(268deg, rgb(249 23 205) 0%, rgb(50 167 247) 100%);
     padding: 6px 18px;
     top: -28px;
     font-size: 32px;
