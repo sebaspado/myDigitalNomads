@@ -195,6 +195,14 @@ form {
   padding: 20px
 }
 
+@media (max-width: 1200px) {
+   .box h2 {
+    font-size: 26px;
+  }
+.box ul li {font-size:20px}
+  
+}
+
 @media (max-width: 1024px) {
   .left {
     align-items: center;
