@@ -33,31 +33,20 @@ const scroll = () => {
 
     contentElements.forEach((el, position) => {
         
-        const isLast = position === totalContentElements-1;
-
+		const isLast = position === totalContentElements-1;
+		
         gsap.timeline({
             scrollTrigger: {
                 trigger: el,
-                start: 'top top',
+                start: isLast ? 'top top' : 'bottom top',
                 end: '+=100%',
                 scrub: true
             }
         })
-        .fromTo(el.querySelector('.content__img'), {
-            yPercent: 10,
-            rotation: 20,
-        }, {
-            ease: 'power1',
-            yPercent: -60,
-            rotation: -20,
-            scrollTrigger: {
-                trigger: el,
-                start: 'top bottom',
-                end: 'max',
-                scrub: true
-            }
+        .to(el, {
+			ease: 'none',
+            yPercent: -100
         }, 0);
-        
 
     });
 

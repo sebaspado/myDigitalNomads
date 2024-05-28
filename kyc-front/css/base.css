@@ -7,12 +7,12 @@
 :root {
 	font-size: 16px;
 	--page-padding: 1.5rem;
-	--color-text: #212121;
-	--color-bg: #12100e;
+	--color-text: #fff;
+	--color-bg: #000000;
 	--color-link: rgba(255,255,255,0.6);
 	--color-link-hover: #fff;
-	/*--color-bg-1: #fff;
-	--color-bg-2: #fff;*/
+	--color-bg-1: #2f251e;
+	--color-bg-2: #43392f;
 	--color-bg-3: var(--color-bg-1);
 	--color-bg-4: var(--color-bg-2);
 	--color-bg-5: var(--color-bg-1);
@@ -422,9 +422,9 @@ i {
 	padding-bottom: 30vh;
 }
 
-.bg-1 { background: var(--color-bg-1); }
-.bg-2 { background: var(--color-bg-2); }
-.bg-3 { background: var(--color-bg-3); }
+.bg-1 {background: #1b1b1b;}
+.bg-2 {background: #0066ff;}
+.bg-3 {background: #000000;}
 .bg-4 { background: var(--color-bg-4); }
 .bg-5 { background: var(--color-bg-5); }
 .bg-6 { background: var(--color-bg-6); }
