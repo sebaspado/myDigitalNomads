@@ -949,7 +949,7 @@ progress {
 
 .g-5,
 .gx-5 {
-  --bs-gutter-x: 3rem;
+  /* --bs-gutter-x: 3rem; */
 }
 
 .g-5,
@@ -13473,7 +13473,7 @@ footer .foot2 a {
   }
 }
 
-footer {margin-top: 62px;}
+footer {/* margin-top: 62px; */}
 footer a {
   margin: 0 50px 0 20px;
   color:#fff;
