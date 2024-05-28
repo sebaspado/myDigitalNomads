@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.girl-mobile {display: none !important;}
 .masthead p {
-  color: white;
+  color: #212121;
   margin: 0px 0px 5px;
   font-size: 20px;
 }
 
 h1 {
-  color: white;
+  color: #212121;
 }
 
 :root {
@@ -52,19 +54,14 @@ h1 {
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
+  --bs-font-sans-serif:font-family: "Roboto", sans-serif !important;
+  --bs-font-monospace: font-family: "Roboto", sans-serif !important;
   --bs-gradient: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0.15),
     rgba(255, 255, 255, 0)
   );
-  --bs-body-font-family: Mulish, -apple-system, BlinkMacSystemFont, Segoe UI,
-    Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
-    Segoe UI Symbol, Noto Color Emoji;
+  --bs-body-font-family:font-family: "Roboto", sans-serif !important;
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 500;
   --bs-body-line-height: 1.5;
@@ -139,9 +136,7 @@ h1,
 .h1 {
   margin-top: 0px;
   margin-bottom: 0.5rem;
-  font-family: Newsreader, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Roboto", sans-serif !important;
   font-weight: 600;
   line-height: 1.2;
 }
@@ -641,11 +636,10 @@ progress {
 }
 
 .blockquote-footer::before {
-  content: "ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬ÂÃƒâ€šÃ‚Â ";
+  content: "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ";
 }
 
-.img-fluid {
-}
+.img-fluid {position: relative;}
 
 .img-thumbnail {
   padding: 0.25rem;
@@ -4302,7 +4296,7 @@ fieldset:disabled .btn {
   line-height: 1;
   color: var(--bs-navbar-color);
   background-color: transparent;
-  border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+  /* border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color); */
   border-radius: var(--bs-navbar-toggler-border-radius);
   transition: var(--bs-navbar-toggler-transition);
 }
@@ -4479,6 +4473,8 @@ fieldset:disabled .btn {
   .navbar-expand-lg .navbar-collapse {
     flex-basis: auto;
     display: flex !important;
+    justify-content: space-between;
+    padding-top: 10px;
   }
 
   .navbar-expand-lg .navbar-toggler {
@@ -8004,7 +8000,7 @@ fieldset:disabled .btn {
 }
 
 .shadow-sm {
-  box-shadow: rgba(0, 0, 0, 0.075) 0px 0.125rem 0.25rem !important;
+  /* box-shadow: rgba(0, 0, 0, 0.075) 0px 0.125rem 0.25rem !important; */
 }
 
 .shadow-lg {
@@ -8732,8 +8728,8 @@ fieldset:disabled .btn {
 }
 
 .px-5 {
-  padding-right: 3rem !important;
-  padding-left: 3rem !important;
+   padding-right: 3rem !important; 
+  padding-left: 3rem !important; 
 }
 
 .py-0 {
@@ -12636,6 +12632,7 @@ aside,
 section {
   padding-top: 5rem;
   padding-bottom: 5rem;
+  background: #fff;
 }
 
 .app-badge {
@@ -12643,7 +12640,7 @@ section {
 }
 
 #mainNav {
-  background-color: black;
+  background-color: white;
 }
 
 #mainNav .navbar-brand {
@@ -12660,11 +12657,11 @@ section {
 #mainNav .navbar-toggler {
   font-size: 3rem;
   padding: 0.75rem 1rem;
-  color: white;
+  color: #212121;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
-  color: white;
+  color: #212121;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link:hover {
@@ -12888,16 +12885,14 @@ footer a:focus {
 }
 
 .masthead {
-  padding-top: 142px;
-  padding-bottom: 5rem;
+  padding-top: 134px;
+  padding-bottom: 2rem;
   position: relative;
-  background: #000;
+  background: #fff;
   .row {
-    justify-content: center;
+  justify-content: center;
   }
-  img {
-    width: 400px;
-  }
+  img {}
 }
 
 @media (min-width: 1600px) {
@@ -12908,7 +12903,6 @@ footer a:focus {
 
 @media (max-width: 1024px) {
   .masthead {
-    background-color: black;
     height: auto;
   }
 }
@@ -13467,11 +13461,13 @@ footer a {
 #features {padding:100px 0 0 0 !important}
 
 .foot2 a {text-decoration: underline;}
+.banner {background: linear-gradient(90deg, #E0ECFF 0%, #ECECEC 100%);width: 100%;padding: 20px 52px;display:flex;h2 {font-size: 32px;width: 324px;text-align:center;font-weight: 400;}div {width: 538px;display: flex;align-items: center;justify-content: flex-end;}div img {width: 140px;height: auto;}
+;border-radius: 32px;justify-content: space-between;align-items: center;}
+
 #contact{
   a {margin:20px 30px 0 0;color:transparent;display:inline-block}
-
   i {margin-right:10px}
-        }
+ }
 
 
 @media (max-width: 992px) {
@@ -13484,9 +13480,9 @@ footer a {
 
   .masthead {
     img {
-      width: 70%;
+      /* width: 70%; */
       display: block;
-      margin: 40px auto 00;
+      margin: auto;
     }
   }
 
@@ -13505,3 +13501,261 @@ footer a {
 
 
 .space-evenly {justify-content: space-evenly;}
+
+
+
+
+
+
+
+
+@-webkit-keyframes counter-clockwise {
+  0% {
+  -webkit-transform: rotate(360deg);
+  border-left: 2px solid #0066ff;
+  border-bottom: 2px solid #0066ff;
+  }
+  
+  50%{
+  border-bottom: 2px solid #0066ff;
+  border-left: 2px solid #0066ff;
+  }
+  
+  100% {
+  -webkit-transform: rotate(0);
+  border-left: 2px solid #0066ff;
+  border-bottom: 2px solid #0066ff;    
+  }
+  }
+  @-keyframes counter-clockwise {
+  0% {
+  transform: rotate(360deg);
+  border-left: 2px solid #0066ff;
+  border-bottom: 2px solid #0066ff;
+  }
+  
+  50%{
+  border-bottom: 2px solid #0066ff;
+  border-left: 2px solid #0066ff;
+  }
+  
+  100% {
+  transform: rotate(0);
+  border-left:2px solid #0066ff;
+  border-bottom: 2px solid #0066ff;    
+  }
+  }
+  
+  
+  @-webkit-keyframes clockwise {
+  0% {
+  -webkit-transform: rotate(0);
+  border-left: 2px solid #0066ff;
+  border-bottom: 2px solid #0066ff;
+  }
+  
+  50%{
+  border-left:2px solid #0066ff;
+  border-bottom: 2px solid #0066ff;
+  }
+  
+  100% {
+  -webkit-transform: rotate(360deg);
+  border-left: 2px solid #0066ff;
+  border-bottom: 2px solid #0066ff;
+  }
+  }
+  
+  @-keyframes clockwise {
+  0% {
+  transform: rotate(0);
+  border-left: 2px solid #0066ff;
+  border-bottom: 2px solid #0066ff;
+  }
+  
+  50%{
+  border-left:2px solid #0066ff;
+  border-bottom: 2px solid #0066ff;
+  }
+  
+  100% {
+  transform: rotate(360deg);
+  border-left: 2px solid #0066ff;
+  border-bottom: 2px solid #0066ff;
+  }
+  }
+  
+  
+  @-webkit-keyframes clockwise-outside {
+  0% {
+  -webkit-transform: rotate(0);
+  border-left: 2px solid #0066ff;
+  border-bottom: 2px solid #0066ff;
+  }
+  
+  50%{
+  border-left: 2px solid #0066ff;
+  border-bottom: 2px solid #0066ff;
+  }
+  
+  100% {
+  -webkit-transform: rotate(360deg);
+  border-left: 2px solid #0066ff;
+  border-bottom: 2px solid #0066ff;
+  }
+  }
+  
+  @-keyframes clockwise-outside {
+  0% {
+  transform: rotate(0);
+  border-left: 2px solid #0066ff;
+  border-bottom: 2px solid #0066ff;
+  }
+  
+  50%{
+  border-left: 2px solid #0066ff;
+  border-bottom: 2px solid #0066ff;
+  }
+  
+  100% {
+  transform: rotate(360deg);
+  border-left: 2px solid #0066ff;
+  border-bottom: 2px solid #0066ff;
+  }
+  }
+  
+  .screen {
+  position: relative;
+  width: 100%;
+  img {
+  z-index: 4;
+  }
+  ;
+  }
+
+.statics  {width:145px !important;position: absolute !important;right: 38px;top: 43px;animation: up-down1 1.4s infinite ease-in-out alternate;}
+.done {width:150px !important;position: absolute !important;right: -10px;top: 230px;animation: up-down2 2s infinite ease-in-out alternate;}
+.icon-screen {width:100px !important;position: absolute;top: 209px;left: -48px;animation: up-down2 2.2s infinite ease-in-out alternate;}
+
+  #loading_animation {
+  border-radius: 50%;
+  width: 532px;
+  top: 59px;
+  position: absolute;
+  left: -22px;
+  }
+  
+  .outside_ring {
+  border-radius: 50%;
+  height: 28em;
+  width: 28em;
+  border: 2px solid #cdd4db;
+  border-bottom: 2px solid #0066ff;
+  border-left: 2px solid #0066ff;
+  -webkit-animation: clockwise-outside 4s infinite;
+  animation: clockwise-outside 14s infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  z-index: 0;
+  }
+  
+  .middle_ring {
+  border-radius: 50%;
+  height: 22em;
+  width: 22em;
+  position: absolute;
+  top: 40px;
+  left: 45px;
+  border: 2px solid transparent;
+  border-bottom: 2px solid #42C88E;
+  border-left:2px solid #42C88E;
+  -webkit-animation: counter-clockwise 4s infinite;
+  animation: counter-clockwise 8s infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  z-index: 1;
+  }
+  
+  .inner_ring {
+  border-radius: 50%;
+  position: absolute;
+  z-index: 3;
+  height: 14em;
+  width: 14em;
+  top: 4em;
+  left: 4em;
+  border: 2px solid transparent;
+  border-bottom: 2px solid #42C88E;
+  -webkit-animation: clockwise 4s infinite;
+  animation: clockwise 4s infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  }
+  
+  #animation_message {
+  font-family: helvetica;
+  font-size: 1.5em;
+  font-weight: 600;
+  text-align: center;
+  color: #bbb;
+  position: absolute;
+  left: 2.35em;
+  top: 6.6em;
+  width: 10em;
+  z-index: 4;
+  }
+
+
+
+  @keyframes up-down1{
+    from{
+      transform: translatey(0px);
+    }
+    to{
+      transform: translatey(-10px);
+    }
+  }
+
+  @keyframes up-down2{
+    from{
+      transform: translatey(0px);
+    }
+    to{
+      transform: translatey(-10px);
+    }
+  }
+
+@media (max-width:1024px) {
+    #loading_animation {
+  border-radius: 50%;
+  width: 100%;
+  top: 59px;
+  /* position: absolute; */
+  left: 0;
+  right:0;
+  margin:auto;
+  }
+  .outside_ring,  .middle_ring{margin:auto;left: 0;right: 0;}
+  .done {right:-10px}
+  .statics {right: -17px;}
+  .icon-screen {left:40px}
+  .banner {
+    align-items: center;
+    flex-direction: column;
+    h2 {font-size: 22px;width:100%;margin-bottom:20px}
+    img {width:100px !important; height:auto !important}
+  }
+}
+
+
+
+@media (max-width:600px) {
+    .img-fluid, #loading_animation, .done, .statics, .icon-screen{display: none !important;}
+    .girl-mobile {display: block !important;width: 100%;}
+    .banner div {width:100%;
+    img {width: 65px !important;}}
+    .masthead{
+    h1 {font-size: 29px;margin-top:-20px;font-weight: 500;}
+    p {font-size: 18px;}
+    }
+}
