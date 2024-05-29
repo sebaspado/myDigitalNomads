@@ -90,6 +90,8 @@ h1 {
   box-sizing: border-box;
 }
 
+li {font-size:14px;font-weight:light; padding-bottom:10px}
+
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
@@ -12673,7 +12675,7 @@ section {
 
 #mainNav .navbar-brand:hover,
 #mainNav .navbar-brand:active {
-  color: rgb(41, 55, 240);
+  color: rgb(0 14 202);
 }
 
 #mainNav .navbar-toggler {
@@ -12687,7 +12689,7 @@ section {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: rgb(147 190 255);
+  color: rgb(0 102 255);
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active {
@@ -13754,6 +13756,7 @@ footer a {
 
 .copy-foot {font-size: 13px; margin:20px  auto 0;color: #a1a1a1;width: 70%;}
 footer a {color:#fff;}
+.titulo {font-size: 64px !important;}
 @media (max-width:1024px) {
   h1 {width:100%;padding-top:40px}
   .masthead p { width:100%}

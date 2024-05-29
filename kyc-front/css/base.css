@@ -388,13 +388,12 @@ i {
 
 .content__title {
 	grid-area: content-title;
-	letter-spacing: -0.095em;
-	text-transform: uppercase;
-	line-height: 1;
+	/* letter-spacing: -0.095em; */
+	/* text-transform: uppercase; */
+	/* line-height: 1; */
 	font-weight: normal;
-	font-size: clamp(2rem,6vw,5rem);
+	font-size: 34px;
 	margin: 0;
-	font-variation-settings: "slnt" 0, "wdth" 400, "wght" 900, "INKT" 400;
 }
 
 .content__text {
@@ -408,7 +407,7 @@ i {
 }
 
 .content__text--narrow {
-	max-width: 300px;
+	max-width: 84%;
 }
 
 .content--intro {
