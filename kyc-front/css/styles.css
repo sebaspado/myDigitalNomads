@@ -13753,7 +13753,13 @@ footer a {
     }
   }
 
-
+.benefits {color:#212121}
+.benefits .flex-benefits {display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  p {font-size: 24px;}
+}
 .copy-foot {font-size: 13px; margin:20px  auto 0;color: #a1a1a1;width: 70%;}
 footer a {color:#fff;}
 .titulo {font-size: 64px !important;}
