@@ -407,7 +407,7 @@ i {
 }
 
 .content__text--narrow {
-	max-width: 84%;
+	/* max-width: 84%; */
 }
 
 .content--intro {
