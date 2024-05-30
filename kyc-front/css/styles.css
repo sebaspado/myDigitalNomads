@@ -13754,11 +13754,13 @@ footer a {
 }
 .copy-foot {font-size: 13px; margin:20px  auto 0;color: #a1a1a1;width: 70%;}
 footer a {color:#fff;}
-
+.contact {background-color: #000;}
 
 
 @media (max-width:1024px) {
-  .titulo {font-size: 64px !important;margin-top: -40px;}
+  .contact {padding:40px 20px}
+  .titulo {font-size: 64px !important;margin-top: -20px;}
+.primero {height:250px !important}
   h2.titulo {font-size:32px !important;margin-top:0px}
   .benefits {text-align:center}
   .benefits p {font-size:16px !important}
