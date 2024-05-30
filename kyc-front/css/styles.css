@@ -13405,6 +13405,7 @@ footer .foot2 a {
 
   .masthead {
     margin-bottom: 40px;
+    text-align:center;
   }
 
   aside,
@@ -13427,7 +13428,7 @@ footer .foot2 a {
     padding: 30px 12px !important;
   }
 
-.benefits img {margin-bottom:40px}
+.benefits img {margin-bottom:40px;max-width: 75%;}
   
   .reverseOrder {
     flex-direction: column-reverse;
@@ -13757,6 +13758,9 @@ footer a {color:#fff;}
 
 
 @media (max-width:1024px) {
+  .benefits {text-align:center}
+  .benefits p {font-size:16px !important}
+  .benefits h4 {font-size:32px;margin-bottom:20px}
   h1 {width:100%;padding-top:40px}
   .masthead p { width:100%}
     #loading_animation {
@@ -13787,7 +13791,7 @@ footer a {color:#fff;}
     .banner div {width:100%;
     img {width: 65px !important;}}
     .masthead{
-    h1 {font-size: 29px;margin-top:-20px;font-weight: 500;}
+    h1 {font-size: 29px;margin-top:-20px;font-weight: 500;text-align: center;}
     p {font-size: 18px;}
     }
 }
