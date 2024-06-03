@@ -90,7 +90,7 @@ h1 {
   box-sizing: border-box;
 }
 
-li {font-size:14px;font-weight:light; padding-bottom:10px}
+li {font-size: 13px;font-weight:light;padding-bottom:10px;list-style: none;}
 
 @media (prefers-reduced-motion: no-preference) {
   :root {
@@ -8976,7 +8976,7 @@ fieldset:disabled .btn {
 .text-center {
   text-align: center !important;
   img {
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
   }
 }
 
@@ -13480,7 +13480,7 @@ footer a {
 #features {padding:100px 0 0 0 !important}
 
 .foot2 a {text-decoration: underline;}
-.banner {background: linear-gradient(90deg, #E0ECFF 0%, #ECECEC 100%);width: 100%;padding: 20px 52px;display:flex;h2 {font-size: 32px;width: 324px;text-align:center;font-weight: 400;color: #212121;}div {width: 538px;display: flex;align-items: center;justify-content: flex-end;}div img {width: 140px;height: auto;}
+.banner {background: linear-gradient(90deg, #E0ECFF 0%, #ECECEC 100%);width: 100%;padding: 20px 52px;display:flex;h2 {font-size: 32px;width: 324px;text-align:center;font-weight: 400;color: #212121;}div {width: 538px;display: flex;align-items: center;justify-content: flex-end;}div img {width: 140px;height: auto;margin-right: 32px;}
 ;border-radius: 32px;justify-content: space-between;align-items: center;}
 
 #contact{
@@ -13657,7 +13657,7 @@ footer a {
   width: 532px;
   top: 59px;
   position: absolute;
-  left: -22px;
+  left: 90px;
   }
   
   .outside_ring {
@@ -13739,7 +13739,10 @@ footer a {
     }
   }
 .how {margin-top: 0;}
-.benefits {color:#212121}
+.benefits {color:#212121;
+  h4 {margin-bottom: 40px;}
+  strong {display: block;margin: 22px 0;}
+}
 .benefits .flex-benefits {display: flex;
   flex-direction: column;
   align-items: center;
