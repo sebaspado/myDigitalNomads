@@ -743,6 +743,8 @@ progress {
   margin-top: calc(-1 * var(--bs-gutter-y));
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
+  align-content: center;
+  align-items: center;
 }
 
 .row > * {
@@ -13128,7 +13130,7 @@ iframe {
 }
 
 .wrap-contact3 {
-  width: 500px;
+  width: 100%;
   background: white;
   border-radius: 10px;
   overflow: hidden;
@@ -13487,10 +13489,12 @@ footer a {
 ;border-radius: 32px;justify-content: space-between;align-items: center;}
 
 #contact{
+  h4 {margin-bottom:40px}
   a {margin:20px 30px 0 0;color:transparent;display:inline-block}
   i {margin-right:10px}
-  background:#000
- }
+  background:#000;
+
+}
 
 
 @media (max-width: 992px) {
@@ -13773,7 +13777,9 @@ p {color: #000; font-size: 20px;margin-bottom:4%}
     font-size: 26px !important;
 }
   
-  .contact {padding:40px 20px}
+  .contact {padding:40px 20px;
+           h4{font-size:32px;margin-bottom:20px !important}
+           }
   .titulo {font-size: 64px !important;margin-top: -20px;}
 .primero {height:250px !important}
   h2.titulo {font-size:32px !important;margin-top:0px}
@@ -13782,16 +13788,8 @@ p {color: #000; font-size: 20px;margin-bottom:4%}
   .benefits h4 {font-size:32px;margin-bottom:20px}
   h1 {width:100%;padding-top:40px}
   .masthead p { width:100%}
-    #loading_animation {
-  border-radius: 50%;
-  width: 100%;
-  top: 59px;
-  /* position: absolute; */
-  left: 0;
-  right:0;
-  margin:auto;
-  }
-  .outside_ring,  .middle_ring{margin:auto;left: 0;right: 0;}
+  #loading_animation {border-radius: 50%;width: 100%;top: 59px;left: 0;right:0;margin:auto;}
+  .outside_ring, .middle_ring{margin:auto;left: 0;right: 0;}
   .done {right:-10px}
   .statics {right: -17px;}
   .icon-screen {left:40px}
@@ -13804,11 +13802,10 @@ p {color: #000; font-size: 20px;margin-bottom:4%}
 .wrap img {width: 34%;}
   
 .phones { .content__title{text-align: center !important;margin: 0 auto 8%;}
-         ul li {width:100% !important;text-align:center;}}
-
-  
+  ul li {width:100% !important;text-align:center;}}
 }
 
+.inputs {border-bottom:1px solid #acacac; width:100%;padding: 10px;margin-bottom:10px}
 
 
 @media (max-width:600px) {
