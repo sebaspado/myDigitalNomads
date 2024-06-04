@@ -297,8 +297,12 @@ i svg {
     overflow: hidden;
     gap: 2vh 5vw;
     align-content: center;
-    grid-template-areas: "content-img" "content-title" "content-text";
+    grid-template-areas:
+        "content-img"
+        "content-title"
+        "content-text";
     justify-items: center;
+    align-items: center;
 }
 
 .content--grid:has(.content__inner) {
@@ -369,18 +373,19 @@ i svg {
 .content__title {
     grid-area: content-title;
     font-weight: normal;
-    font-size: 34px;
-    margin: 0px;
+    font-size: 42px;
+    margin: 0px 0 50px 0;
 }
 
 .content__text {
     margin: 0px;
-    max-width: 500px;
+    max-width: 61%;
     grid-area: content-text;
-    text-align: center;
-    line-height: 1.5;
-    padding: 0px 1rem;
-    backface-visibility: hidden;
+    /* text-align: center; */
+    /* line-height: 1.5; */
+    /* padding: 0px 1rem; */
+    /* backface-visibility: hidden; */
+    font-size: 20px;
 }
 
 .content__text--narrow {
@@ -445,7 +450,7 @@ i svg {
     }
 
     .content--grid .content__title {
-        align-self: end;
+        /* align-self: end; */
     }
 
     .frame__demos {
@@ -467,6 +472,8 @@ i svg {
         text-align: right;
     }
 
+
+    
     .frame #cdawrap, .frame__author, .frame__sub {
         justify-self: end;
     }
@@ -497,4 +504,21 @@ i svg {
     .content--half {
         width: 50%;
     }
+}
+
+
+@media (max-width:1024px) {
+    .phone {text-align:center;
+         
+           }
+    .content__text {
+    margin: 0px;
+    max-width: 100%;
+    grid-area: content-text;
+    /* text-align: center; */
+    /* line-height: 1.5; */
+    /* padding: 0px 1rem; */
+    /* backface-visibility: hidden; */
+    font-size: 18px; text-align:Center
+}
 }

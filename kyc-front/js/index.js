@@ -33,20 +33,41 @@ const scroll = () => {
 
     contentElements.forEach((el, position) => {
         
-		const isLast = position === totalContentElements-1;
-		
+        const isLast = position === totalContentElements-1;
+
         gsap.timeline({
+            defaults: {ease: 'none'},
             scrollTrigger: {
                 trigger: el,
-                start: isLast ? 'top top' : 'bottom top',
-                end: '+=100%',
+                start: 'top top',
+                end: isLast ? '+=100%' : '+=200%',
                 scrub: true
             }
         })
+        .set(el, {
+            transformOrigin: `${ position%2 === 0 ? 100 : 0 }% ${ isLast ? 0 : 100 }%`
+        })
         .to(el, {
-			ease: 'none',
-            yPercent: -100
-        }, 0);
+            startAt: {filter: 'brightness(100%)'},
+            xPercent: position%2 === 0 ? -150 : 150,
+            yPercent: isLast ? 100 : 0,
+            rotation: position%2 === 0 ? -20 : 20,
+            scale: 0.8,
+            filter: 'brightness(0%)'
+        }, 0)
+        // Animate all the content inner elements
+        .to(el.querySelector('.content__title'), {
+            scale: 0.5,
+            yPercent: -400,
+        }, 0)
+        .to(el.querySelector('.content__text'), {
+            yPercent: 100
+        }, 0)
+        .to(el.querySelector('.content__img'), {
+            //ease: 'power1',
+            scale: 0.2
+        }, 0)
+        
 
     });
 

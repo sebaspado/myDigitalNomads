@@ -90,13 +90,16 @@ h1 {
   box-sizing: border-box;
 }
 
-li {font-size: 13px;font-weight:light;padding-bottom:10px;list-style: none;}
+.phones ul li {font-size: 16px;font-weight:light;padding-bottom: 26px;list-style: none;width: 80%; }
 
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
   }
 }
+
+.phones {text-align:left;width:100%;height: 500px;display: flex;flex-direction: column;align-content: flex-start;align-items: flex-start;justify-content: center;}
+
 
 body {
   margin: 0px;
@@ -221,13 +224,13 @@ address {
 
 ol,
 ul {
-  padding-left: 2rem;
+  padding-left: 0;
 }
 
 ol,
 ul,
 dl {
-  margin-top: 0px;
+  margin-top: 5%;
   margin-bottom: 1rem;
 }
 
@@ -13754,8 +13757,18 @@ footer a {color:#fff;}
 .contact {background-color: #000;}
 
 
-@media (max-width:1024px) {
+.how-tittle { 
+  h4 {color: #000;margin-top: 8%;}
+p {color: #000; font-size: 20px;margin-bottom:4%}
+}
 
+
+@media (max-width:1024px) {
+.how-tittle { 
+  h4 {font-size:32px}
+
+}
+  
   .content__title {
     font-size: 26px !important;
 }
@@ -13787,6 +13800,13 @@ footer a {color:#fff;}
     img {width:100px !important;height:auto !important}
   }
   .copy-foot {width: 100%;}
+
+.wrap img {width: 34%;}
+  
+.phones { .content__title{text-align: center !important;margin: 0 auto 8%;}
+         ul li {width:100% !important;text-align:center;}}
+
+  
 }
 
 
