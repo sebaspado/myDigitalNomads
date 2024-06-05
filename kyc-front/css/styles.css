@@ -13806,8 +13806,8 @@ p {color: #000; font-size: 20px;margin-bottom:4%}
 }
 
 .inputs, textarea {border-bottom:1px solid #acacac; width:100%;padding: 10px;margin-bottom:20px}
-
-
+select {border-right:none;border-left:none;border-top:none;padding:10px 6px !important;color:#818481}
+textarea {margin-top:20px}
 @media (max-width:600px) {
   footer a {margin:0 10px 0; font-size:14px}
     .img-fluid, #loading_animation, .done, .statics, .icon-screen{display: none !important;}
