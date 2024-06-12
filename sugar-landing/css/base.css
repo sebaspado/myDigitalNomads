@@ -29,7 +29,7 @@ body {
 .js .loading::before, .js .loading::after {
     content: "";
     position: fixed;
-    z-index: 1000;
+    z-index: 999999999999999999999;
 }
 
 .js .loading::before {
