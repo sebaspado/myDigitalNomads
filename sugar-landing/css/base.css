@@ -48,7 +48,7 @@ body {
     margin: -30px 0px 0px -30px;
     border-radius: 50%;
     opacity: 0.4;
-    background: var(--color-link);
+    background-image: url("../img/logo.svg");
     animation: 0.7s linear 0s infinite alternate forwards running loaderAnim;
 }
 
