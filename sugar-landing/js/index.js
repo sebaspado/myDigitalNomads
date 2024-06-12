@@ -3246,7 +3246,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   
   Promise.all([(0, _utils.preloadImages)('.tiles__line-img'), (0, _utils.preloadFonts)('rmd7deq')]).then(function () {
 
-    document.body.classList.remove('loading'); 
+   document.body.classList.remove('loading'); 
   
     var scroll = new _locomotiveScroll.default({
       el: document.querySelector('[data-scroll-container]'),
