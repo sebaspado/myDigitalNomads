@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 *, ::after, ::before {
     box-sizing: border-box;
 }
@@ -6,19 +8,23 @@
     font-size: 16px;
 }
 
+
+
 body {
     margin: 0px;
-    --color-text: #fff;
+    --color-text: #212121;
     --color-bg: #DEEDFF;
-    --color-link: #aaa;
+    --color-link: #2969FF;
     --color-link-hover: #fff;
-    --color-alt: #7f6a57;
+    --color-alt: #2969FF;
     color: var(--color-text);
     background-color: var(--color-bg);
     -webkit-font-smoothing: antialiased;
     counter-reset: contentSection 0;
-    font-family: neuzeit-grotesk, sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
+
+.nav-link {color: var(--color-link) !important}
 
 .js .loading::before, .js .loading::after {
     content: "";
@@ -136,7 +142,7 @@ main {
 }
 
 .content__pretitle::before {
-    content: "―";
+    content: "â€•";
     margin-right: 0.25rem;
 }
 
@@ -165,7 +171,7 @@ main {
     margin: 0px -3rem;
     white-space: nowrap;
     text-transform: uppercase;
-    font-family: span, serif;
+    font-family:"Open Sans", sans-serif;;
     font-weight: 200;
     font-style: italic;
     color: rgb(33, 31, 27);
@@ -356,22 +362,50 @@ main {
     opacity: 0.7;
 }
 
-.tiles__title {
-    position: absolute;
+.titles {
+    position: relative;
     height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 5vw;
+    /* font-size: 5vw; */
     padding: 3rem;
     margin: 0px;
     line-height: 0.8;
-    font-family: span, serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 700;
     font-style: normal;
-    text-align: center;
-}
+    text-align: left;
+    z-index: 999999;
+    flex-direction: column;
+    gap: 10px;
+    top: 2%;
+    h1 {
+    font-size: 42px;
+    font-weight:bold;
+    span {color:#2969ff}
+    text-align: left;
+    margin-bottom: 26px;
+    }
+    p {
+    font-size: 18px;
+    line-height:30px;
+    font-weight:100;
+    }
+    .row {
+    display:flex;
+    align-items: center;
+    justify-content: center;}
+ .col-lg-6 {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;}
+    ;
+    align-content: space-around;
+    }
+
+
 
 .tiles__title--alt {
     font-size: clamp(2rem, 9vw, 7.25rem);
@@ -398,13 +432,13 @@ main {
 .backtop {
     align-self: center;
     margin: auto 0px;
-    font-size: 6vw;
+    font-size: 2vw;
     cursor: pointer;
     text-decoration: none;
 }
 
 .backtop::after {
-    content: "⤴";
+    content: "â¤´";
     font-size: 3vw;
     vertical-align: top;
     margin-left: 1rem;
@@ -533,4 +567,68 @@ html.has-scroll-dragging {
     }
 }
 
-.custom-nav {margin:20px;border-radius:8px;}
+.custom-nav {/* margin:20px; */}
+.form {
+    width: 80%;
+    border-radius: 16px;
+    border: 1px solid #FFF;
+    background: rgba(255, 255, 255, 0.44);
+    backdrop-filter: blur(3px);
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    align-items: flex-end;
+    margin: auto;
+    .form-title {
+            width: 100%;
+            padding: 20px;
+            font-size: 24px;
+            border-radius: 0 15px 0px 0px;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0%, #ffffff 100%);
+        }
+    input {
+            font-size:16px;
+            width: 100%;
+            border:none;
+            border-radius:4px;
+            padding:10px 12px;
+            margin-bottom:20px;
+        }
+
+        form {padding: 0 20px 20px 20px;}
+
+    .submit {
+        padding:12px;
+        background:#2969ff;
+        border:none;
+        border-radius:100px;
+        color:#fff;
+        font-size: 16px;
+        width:150px;
+        float: right;
+        }
+    }
+
+    .relative {
+    z-index: 99999;
+    position: relative;
+    height:100vh;
+    display:flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    p {margin-bottom:40px}
+    }
+    
+    .columns-head {
+        border:1px solid #fff;
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.44);
+        backdrop-filter: blur(3px);
+        .col-lg-3 {padding:30px;}
+        h2 {font-size: 20px;color:#2969FF;margin: 20px 0;}
+        p {font-size: 14px;}
+        i {width: 24px;display: inline-block;margin-right: 10px;}
+    }

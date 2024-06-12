@@ -3178,9 +3178,9 @@ parcelRequire = (function (modules, cache, entry, globalName) {
         this.scroll.init();
   
         if (window.location.hash) {
-          // Get the hash without the '#' and find the matching element
+  
           var id = window.location.hash.slice(1, window.location.hash.length);
-          var target = document.getElementById(id); // If found, scroll to the element
+          var target = document.getElementById(id); 
   
           if (target) this.scroll.scrollTo(target);
         }
@@ -3203,7 +3203,6 @@ parcelRequire = (function (modules, cache, entry, globalName) {
     }, {
       key: "scrollTo",
       value: function scrollTo(target, offset, duration, easing, disableLerp, callback) {
-        // TODO - In next breaking update, use an object as 2nd parameter for options (offset, duration, easing, disableLerp, callback)
         this.scroll.scrollTo(target, offset, duration, easing, disableLerp, callback);
       }
     }, {
@@ -3243,11 +3242,11 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
   var backtopEl = document.querySelector('.backtop');
-  var headerEl = document.querySelector('#header'); // Preload  images and fonts
+  var headerEl = document.querySelector('#header'); // Precarga las imagenes!!
   
   Promise.all([(0, _utils.preloadImages)('.tiles__line-img'), (0, _utils.preloadFonts)('rmd7deq')]).then(function () {
-    // Remove loader (loading class)
-    document.body.classList.remove('loading'); // Initialize the Locomotive scroll
+
+    document.body.classList.remove('loading'); 
   
     var scroll = new _locomotiveScroll.default({
       el: document.querySelector('[data-scroll-container]'),
