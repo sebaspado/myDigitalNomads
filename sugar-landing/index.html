@@ -180,16 +180,19 @@
 
 		</main>
 		<script src="js/bootstrap.bundle.min.js"></script>
+		
+<script>
+    (function () {
+        const locomotiveScroll = new LocomotiveScroll();
+    })();
+</script>
+
 		<script src="js/index.js"></script>
 		
 		<script>
-const locoScroll = new LocomotiveScroll({
-  el: document.querySelector("[data-scroll-container]"),
-  smooth: true,
-  tablet: {
-    breakpoint: 0,    // <---- Fixes The Issue 🎉
-  }
-})
+   (function () {
+        const locomotiveScroll = new LocomotiveScroll();
+    })();
 		</script>
 
 		
