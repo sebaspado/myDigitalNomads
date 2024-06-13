@@ -738,16 +738,12 @@ html.has-scroll-dragging {
     height: 100vh;
     flex-direction: row;
     justify-content: center;
-    p {
-      margin-bottom: 0px;
-    }
-    .columns-head {
-      margin-top: 40px;
-    }
   }
 
+.relative  p {margin-bottom: 0px;}
+.relative .columns-head {margin-top: 40px; }
 .navbar-nav {margin-top:20px; text-align:center;}
 .sign {margin:0}  
-.sign.nav-link {}
 .login {border:1px solid #2969ff;border-radius:50px;margin:20px 0;} 
+
 }
