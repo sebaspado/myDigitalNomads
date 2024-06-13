@@ -28,6 +28,9 @@ body {
   color: var(--color-link) !important;
 }
 
+.sign {background: #2969ff;border-radius:100px;color:#fff;margin-left:20px;}
+.sign.nav-link {color:white !important;padding:10px 30px !important}
+
 .js .loading::before,
 .js .loading::after {
   content: "";
@@ -742,4 +745,9 @@ html.has-scroll-dragging {
       margin-top: 40px;
     }
   }
+
+.navbar-nav {margin-top:20px; text-align:center;}
+.sign {margin:0}  
+.sign.nav-link {}
+.login {border:1px solid #2969ff;border-radius:50px;margin:20px 0;} 
 }

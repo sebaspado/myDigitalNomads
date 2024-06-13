@@ -4061,7 +4061,8 @@ textarea.form-control-lg {
     flex-direction: column;
     padding-left: 0;
     margin-bottom: 0;
-    list-style: none
+    list-style: none;
+    justify-content: space-between !important;
 }
 
 .navbar-nav .nav-link {
@@ -4080,8 +4081,8 @@ textarea.form-control-lg {
 
 .navbar-collapse {
     flex-basis: 100%;
-    flex-grow: 1;
-    align-items: center
+    /* flex-grow: 1; */
+    align-items: center;
 }
 
 .navbar-toggler {
@@ -4161,11 +4162,10 @@ textarea.form-control-lg {
 @media (min-width: 768px) {
     .navbar-expand-md {
         flex-wrap:nowrap;
-        justify-content: flex-start
     }
 
     .navbar-expand-md .navbar-nav {
-        flex-direction: row
+        flex-direction: row;
     }
 
     .navbar-expand-md .navbar-nav .dropdown-menu {
@@ -4183,7 +4183,8 @@ textarea.form-control-lg {
 
     .navbar-expand-md .navbar-collapse {
         display: flex!important;
-        flex-basis: auto
+        flex-basis: auto;
+        justify-content: flex-end !important;
     }
 
     .navbar-expand-md .navbar-toggler {
