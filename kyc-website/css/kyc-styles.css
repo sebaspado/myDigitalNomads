@@ -428,7 +428,7 @@ section {padding: 90px 0;}
 footer {border-bottom: 1px solid #BFBFBF;}
 .copyright .nav-link {color:#212121}
 .copyright p.copy {font-size: 14px;text-align: center;margin-top:40px;color:rgba(54, 54, 54, 0.7)} 
-.mobile {display: none !important;}
+.mobile, .only-mobile-slider {display: none !important;}
 
 @media (max-width:1200px) {
 .white-cards .col-lg-4 {
@@ -454,13 +454,61 @@ footer {border-bottom: 1px solid #BFBFBF;}
   .demo-cont .request {width:75%;margin:16px auto 20px}
   .demo-cont .desk {display:none;}
   .demo-cont .mobile {display:block !important;margin:4% 0 0 4%}
-  
 }
 
 @media (max-width:768px) {
+  .desktop-only {display:none !important}
+  .only-mobile-slider {display:block !important}
+  .only-mobile-slider .col-lg-4 {background:white;border-radius:12px;height: 412px;}
+  .only-mobile-slider .col-lg-4 .text-white-cards {padding:12px;}
+  .only-mobile-slider .col-lg-4 img {width:100%;height: 175px;object-fit: cover;border-radius: 12px 12px 0 0;}
+  .carousel-indicators {
+      position: relative;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin-right: 15%;
+      margin-top: 1rem;
+      margin-left: 15%;
+      list-style: none
+  }
+
+  .carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    border-radius:50px !important;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #212121;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 0px solid transparent; 
+    border-bottom: 0px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease
+}
+
+  .carousel-indicators button {border-radius:50px !important}
+  
+  .carousel-indicators .active {
+    opacity: 1;
+    background: #06f;
+    width: 38px;
+}
   .banner {flex-direction: column;padding: 20px;}
   .banner h2 {text-align:center;font-size: 22px;width:100%;}
   .banner img {width: 20%;height:auto;margin-right:2%}
   .banner div {text-align:center;}
    .demo-cont .mobile {display:block !important;margin:10px auto 0;width:90%}
 }
+
+
