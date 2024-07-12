@@ -485,7 +485,7 @@ footer {border-bottom: 1px solid #BFBFBF;}
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 350px;
+    width: 100%;
     flex-direction: column;
     gap: 12px;
     padding: 12px;
