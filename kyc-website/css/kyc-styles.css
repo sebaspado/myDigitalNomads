@@ -13,7 +13,7 @@ img {max-width:100%;height:auto}
     padding:10px;
 }
 
-
+h3, h2 {font-size: 24px;}
 .carousel-control-next, .carousel-control-prev {display:none;}
 
 @media (min-width: 1400px) {
@@ -429,9 +429,14 @@ section {padding: 90px 0;}
 .demo-cont .demo-img {position: absolute;right: 0px;top: 0;bottom: 0;margin: auto;}
 .demo-cont .request {text-decoration: none;width: 200px;}
 footer {border-bottom: 1px solid #BFBFBF;}
-.copyright .nav-link {color:#212121}
-.copyright p.copy {font-size: 12px;text-align: center;margin-top:40px;color:rgba(54, 54, 54, 0.7)} 
+.copyright .nav-link {color:#212121;font-weight: 500;}
+.copyright p.copy {font-size: 12px;text-align: center;margin-top:40px;color:rgba(54, 54, 54, 0.7);/* border-top: 1px solid #cdcdcd; *//* padding-top: 32px; */} 
 .mobile, .only-mobile-slider {display: none !important;}
+hr {margin: 32px auto 16px;}
+
+footer {margin-top:90px}
+footer .row {display: flex;justify-content: space-between;}
+footer p {margin-top:20px}
 
 @media (max-width:1200px) {
 .white-cards .col-lg-4 {
@@ -442,7 +447,7 @@ footer {border-bottom: 1px solid #BFBFBF;}
   width: 300px;
   padding-top:12px;
   }
-  .banner h2 {text-align:center;font-size:26px}
+  .banner h2 {text-align:center;font-size: 24px;}
   .banner img {width: 20%;height:auto;margin-right:2%}
   .banner div {text-align:center;}
 }
@@ -539,12 +544,14 @@ footer {border-bottom: 1px solid #BFBFBF;}
   .banner div {text-align:center;}
    .demo-cont .mobile {display:block !important;margin: -18px auto 0px;max-width: 110% !important;}
   footer {padding:0 15px}
+  footer .logo {text-align:center;margin-bottom:44px}
   footer.py-5 {padding-bottom:0 !important}
   footer a img {margin-bottom:10px !important;}
   footer h5 {font-size:18px}
   .col a img {margin:auto; text-align:center;display:block;} 
   .col.text-center {width:100%;margin-bottom: 46px !important;}
-  .col {width:50%}
+  .col-5, .col-7 {margin-bottom:32px}
+  hr {margin-top:0}
 }
 
 
