@@ -7,6 +7,7 @@ img {max-width:100%;height:auto}
     border: none;
 }
 
+
 .navbar-toggler:focus {box-shadow:none}
 .navbar-collapse {
     flex-basis: 100%;
@@ -80,7 +81,7 @@ section {padding: 90px 0;}
     font-style: italic;
   }
 
-  body {font-family: "Roboto", sans-serif;}
+  body {font-family: "Roboto", sans-serif;overflow-x:hidden}
   .bg {background: linear-gradient(0deg, #FFF 0%, #9AC2FE 100%);width: 100%;}
   .bg-2 {background: linear-gradient(180deg, #FFF 0%, #C1DAFF 100%);/* display: flex; */padding-bottom: 90px;}
   .navbar-light .navbar-nav .nav-link {color:#212121}
