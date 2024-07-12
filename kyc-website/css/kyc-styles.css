@@ -13,7 +13,8 @@ img {max-width:100%;height:auto}
     padding:10px;
 }
 
-h3, h2 {font-size: 24px;}
+h3, h2, h5 {font-size: 24px;}
+footer h5 {font-size:20px}
 .carousel-control-next, .carousel-control-prev {display:none;}
 
 @media (min-width: 1400px) {
@@ -434,7 +435,7 @@ footer {border-bottom: 1px solid #BFBFBF;}
 .mobile, .only-mobile-slider {display: none !important;}
 hr {margin: 32px auto 16px;}
 
-footer {margin-top:90px}
+footer {margin-top: 160px;}
 footer .row {display: flex;justify-content: space-between;}
 footer p {margin-top:20px}
 
