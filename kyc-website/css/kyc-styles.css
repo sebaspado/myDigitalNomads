@@ -431,6 +431,7 @@ section {padding: 90px 0;}
 .demo-cont p {font-size: 24px;}
 .demo-cont .demo-img {position: absolute;right: 0px;top: 0;bottom: 0;margin: auto;}
 .demo-cont .request {text-decoration: none;width: 200px;}
+.demo-cont a.request:hover {color:#fff;background:#007dff}
 
 .copyright .nav-link {color:#212121;font-weight: 500;}
 .copyright p.copy {font-size: 12px;text-align: center;margin-top:40px;color:rgba(54, 54, 54, 0.7);/* border-top: 1px solid #cdcdcd; *//* padding-top: 32px; */} 
@@ -582,6 +583,7 @@ footer .col-lg-1 img {margin-bottom:12px}
   .testimonio-box {box-shadow:none;height: 280px;}
   .testimonio {margin-bottom:40px}
   .testimonio svg{width:75px}
+    .navbar-nav li {margin-bottom:12px}
 }
 
 
