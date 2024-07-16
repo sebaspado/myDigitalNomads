@@ -461,6 +461,8 @@ hr {margin: 32px auto 16px;}
 footer {margin-top: 160px;}
 footer .row {display: flex;justify-content: space-between;}
 footer p {margin-top:20px}
+footer .col-lg-3 {margin-left:-20px}
+footer .col-lg-1 img {margin-bottom:12px}
 
 @media (max-width:1200px) {
 .white-cards .col-lg-4 {
@@ -477,6 +479,7 @@ footer p {margin-top:20px}
 }
 
 @media (max-width:990px) {
+  footer .col-lg-3 {margin-left:-0px}
   section {padding: 45px 0;}
   h1 , .lead{text-align:center;}
     #loading_animation, .desk {display: none !important;}
