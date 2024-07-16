@@ -576,7 +576,7 @@ footer p {margin-top:20px}
   .col.text-center {width:100%;margin-bottom: 46px !important;}
   .col-5, .col-7 {margin-bottom:32px}
   hr {margin-top:0}
-  .testimonio-box {box-shadow:none}
+  .testimonio-box {box-shadow:none;height: 280px;}
   .testimonio {margin-bottom:40px}
   .testimonio svg{width:75px}
 }

@@ -10,6 +10,7 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/starter-template/">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/kyc-styles.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.min.js"></script>
 
   </head>
 
@@ -821,7 +822,7 @@
     
 
 <!-- slider mobile only -->
-  <div class="carousel slide only-mobile-slider blue-cards" data-bs-ride="carousel">
+  <div id="testi" class="carousel slide only-mobile-slider blue-cards" data-bs-ride="carousel">
 
     <div class="testimonio">
       <svg xmlns="http://www.w3.org/2000/svg" width="142" height="116" viewBox="0 0 142 116" fill="none">
@@ -837,7 +838,36 @@
     </div>
 
     <div class="carousel-inner">
+
       <div class="carousel-item active">
+
+        <div class="testimonio-box">
+          <img src="img/finlogo.png" alt="fincorp logo">
+              <div class="row">
+                <div class="col-lg-1">
+                    <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16 13" fill="none">
+                    <g clip-path="url(#clip0_3848_3909)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9298 2.03037C13.5439 3.15836 12.351 4.48372 12.351 6.00651C13.3679 6.11931 14.2088 6.5188 14.8738 7.20499C15.5387 7.89118 15.8712 8.68546 15.8712 9.58785C15.8712 10.5466 15.5485 11.355 14.9031 12.013C14.2577 12.671 13.4461 13 12.4683 13C11.3731 13 10.4246 12.5723 9.62279 11.7169C8.82096 10.8615 8.42005 9.82285 8.42005 8.60087C8.42005 4.93491 10.5517 2.06798 14.8151 0L15.9298 2.03037ZM7.50978 2.03037C5.10429 3.15836 3.90156 4.48372 3.90156 6.00651C4.93808 6.11931 5.78878 6.5188 6.45372 7.20499C7.11865 7.89118 7.45111 8.68546 7.45111 9.58785C7.45111 10.5466 7.12354 11.355 6.46838 12.013C5.81323 12.671 4.99675 13 4.0189 13C2.92372 13 1.98012 12.5723 1.18807 11.7169C0.39602 10.8615 0 9.82285 0 8.60087C0 4.93491 2.12188 2.06798 6.36571 0L7.50978 2.03037Z" fill="#0066FF"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_3848_3909">
+                    <rect width="16" height="13" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg></i>
+                </div>
+
+                <div class="col-lg-11">
+                  <p>kyc.me has transformed our verification process. It's fast, reliable, and compliant. Highly recommend!</p>
+                  <p><strong>Thomas Davis</strong>
+                  <span>Compliance Officer at FinCorp</span></p>
+                </div>
+
+                </div>
+          </div>
+      </div>
+
+      <div class="carousel-item">
         <div class="testimonio-box">
         
           <img src="img/teknox.png" alt="fincorp logo">
@@ -898,17 +928,17 @@
   
   
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#testi" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#testi" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#testi" data-bs-slide-to="2" aria-label="Slide 3"></button>
    </div>
   
   
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#testi" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#testi" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
@@ -1140,7 +1170,7 @@
 
 
 
-<script src="js/bootstrap.bundle.min.js"></script>
+
 
 <script>
   const myCarouselElement = document.querySelector('#section1')
