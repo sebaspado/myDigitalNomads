@@ -12,7 +12,7 @@ img {max-width:100%;height:auto}
     align-items: center;
     padding:10px;
 }
-
+#shadow-host-companion {display:none}
 h3, h2, h5 {font-size: 24px;}
 footer h5 {font-size:20px}
 .carousel-control-next, .carousel-control-prev {display:none;}
@@ -431,7 +431,7 @@ section {padding: 90px 0;}
 .demo-cont p {font-size: 24px;}
 .demo-cont .demo-img {position: absolute;right: 0px;top: 0;bottom: 0;margin: auto;}
 .demo-cont .request {text-decoration: none;width: 200px;}
-footer {border-bottom: 1px solid #BFBFBF;}
+
 .copyright .nav-link {color:#212121;font-weight: 500;}
 .copyright p.copy {font-size: 12px;text-align: center;margin-top:40px;color:rgba(54, 54, 54, 0.7);/* border-top: 1px solid #cdcdcd; *//* padding-top: 32px; */} 
 .mobile, .only-mobile-slider {display: none !important;}
