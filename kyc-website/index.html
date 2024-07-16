@@ -323,7 +323,7 @@
 
 
   <!-- slider mobile only -->
-  <div id="features" class="carousel slide only-mobile-slider" data-bs-ride="carousel">
+  <div id="features" data-bs-interval="false" class="carousel slide only-mobile-slider" data-bs-ride="carousel">
 
 
   <div class="carousel-inner">
@@ -638,7 +638,7 @@
 
 
   <!-- slider mobile only -->
-  <div id="carouselExampleIndicators" class="carousel slide only-mobile-slider blue-cards" data-bs-ride="carousel">
+  <div id="carouselExampleIndicators" data-bs-interval="false" class="carousel slide only-mobile-slider blue-cards" data-bs-ride="carousel">
 
 
     <div class="carousel-inner">
@@ -803,8 +803,10 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-    <!--mobile carousel ends -->
+
+  <!--mobile carousel ends -->
     <!--mobile senction slider end -->
+
 
 
 </section>
@@ -822,7 +824,7 @@
     
 
 <!-- slider mobile only -->
-  <div id="testi" class="carousel slide only-mobile-slider blue-cards" data-bs-ride="carousel">
+  <div id="testi" class="carousel slide only-mobile-slider blue-cards" data-bs-interval="false" data-bs-ride="carousel">
 
     <div class="testimonio">
       <svg xmlns="http://www.w3.org/2000/svg" width="142" height="116" viewBox="0 0 142 116" fill="none">
@@ -1172,14 +1174,7 @@
 
 
 
-<script>
-  const myCarouselElement = document.querySelector('#section1')
 
-const carousel = new bootstrap.Carousel(myCarouselElement, {
-  interval: 500000,
-  touch: true
-})
-</script>
       
   </body>
 </html>
