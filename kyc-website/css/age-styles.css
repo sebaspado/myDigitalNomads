@@ -37,6 +37,7 @@
     color: #212121;
     background-color: transparent;
     box-shadow: none;
+    font-weight: 500;
 }
 .benefit-section {padding-bottom:0;}
 .benefits {display:flex;flex-direction: column;justify-content: center;margin-top: -40px;}
