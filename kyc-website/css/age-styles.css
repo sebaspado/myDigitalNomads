@@ -67,6 +67,7 @@
 .blue-cards .col-lg-3 .svg-circles svg {border-radius:12px}
 
 .testi {padding:60px 0}
+.accordion-button {font-weight:500}
 
 @media (max-width:1200px) {
 .white-cards .col-lg-6 {height: 230px;}
