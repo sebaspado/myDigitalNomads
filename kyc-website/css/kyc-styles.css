@@ -699,6 +699,7 @@ footer .col-lg-1 img {margin-bottom:12px}
 }/* responsive ends */
 
 @media (max-width: 768px) {
+  h5 {font-size: 20px;}
     .only-mobile-slider .col-lg-4 {
         background: white;
         border-radius: 12px;
