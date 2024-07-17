@@ -1,5 +1,5 @@
 .display-5 {font-size:40px}
-
+.smaller {font-size:18px;}
 .white-cards.row {align-items: flex-start;gap: 30px !important;flex: 1 0 0 !important;
     flex-wrap: wrap;display: flex;justify-content: center;}
 .white-cards .col-lg-6 {
@@ -71,7 +71,7 @@
 
 @media (max-width:1200px) {
 .white-cards .col-lg-6 {height: 230px;}
-.white-cards .text-white-cards {padding: 12px 10px 0 4px;justify-content: flex-start;}
+.white-cards .text-white-cards {padding: 12px 10px 0 4px;/* justify-content: flex-start; */}
 .white-cards .col-lg-6 p {font-size: 15px;}
 }
 
