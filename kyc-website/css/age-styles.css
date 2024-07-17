@@ -76,7 +76,7 @@
 }
 
 @media (max-width:992px) {
-
+.display-5 {font-size:28px}
 .benefits {align-items: center;}
 .benefit {margin-bottom: 24px;}
 .benefit p {text-align:center;}
