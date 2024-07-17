@@ -17,12 +17,14 @@ img {max-width:100%;height:auto}
 h3, h2, h5 {font-size: 24px;}
 footer h5 {font-size:20px}
 .carousel-control-next, .carousel-control-prev {display:none;}
-
+.col-lg-8 p {margin-top:20px;font-size: 18px;}
 @media (min-width: 1400px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
       max-width: 1110px;
   }
 }
+
+.btn-close {opacity: 1;}
 
 a {
     color: #0066ff;
@@ -36,7 +38,7 @@ a {
     flex-direction: column;
     max-width: 100%;
     visibility: hidden;
-    background: linear-gradient(180deg, rgb(239, 248, 255, 0.9) 0%, rgb(147 199 241) 100%);
+    background: #fff;
     backdrop-filter: blur(6.5px);
     background-clip: padding-box;
     outline: 0;
@@ -130,7 +132,7 @@ section {padding: 90px 0;}
   body {font-family: "Roboto", sans-serif;overflow-x:hidden}
   .bg {background: linear-gradient(0deg, #FFF 0%, #9AC2FE 100%);width: 100%;}
   .bg-2 {background: linear-gradient(180deg, #FFF 0%, #C1DAFF 100%);/* display: flex; */padding-bottom: 90px;}
-  .navbar-light .navbar-nav .nav-link {color:#212121}
+  .navbar-light .navbar-nav .nav-link {color:#212121;}
   .navbar-nav li {margin-right: 16px;}
 
   .request {display: flex;
@@ -523,6 +525,9 @@ footer .col-lg-1 img {margin-bottom:12px}
 }
 
 @media (max-width:990px) {
+
+
+  
   footer .col-lg-3 {margin-left:-0px}
   section {padding: 45px 0;}
   h1 , .lead{text-align:center;}
@@ -534,16 +539,14 @@ footer .col-lg-1 img {margin-bottom:12px}
   .demo-cont .request {width:75%;margin:16px auto 20px}
   .demo-cont .desk {display:none;}
   .demo-cont .mobile {display:block !important;margin:4% 0 0 4%}
-}
 
-@media (max-width:768px) {
 
   .demo-cont {height:auto;/* padding:60px 0 0 0; */text-align:center;border:15px solid #fff}
   .demo-cont .row {flex-direction: column-reverse;}
   .demo-cont .col-lg-6 {padding: 20px 20px 0 20px;}
   h3 {font-size:20px}
-  .demo-cont h6, .demo-cont p, .demo-cont a.request {width:100%}
-    .demo-cont h6 {font-size:20px;}
+  .demo-cont h6, .demo-cont p, .demo-cont a.request {width:100%;position: relative;}
+  .demo-cont h6 {font-size:20px;}
   .demo-cont p {font-size:16px; margin-top:20px}
   .desktop-only {display:none !important}
   .only-mobile-slider {display:block !important}
@@ -630,18 +633,35 @@ footer .col-lg-1 img {margin-bottom:12px}
     #testi .carousel-item.active {
       /* padding: 5px; */
   }
-  .request {display: flex;
+  .request {
+            display: flex;
             position:absolute;
             bottom:3%;
-    color:#fff;
-            width:90%;
-    border:none;
-    padding: 10px 20px;
-    justify-content: center;
-    align-items: center;
-    gap: 14px;border-radius: 100px;
-    background: #06F;}
+            color:#fff;
+            width: 90%;
+            border:none;
+            padding: 10px 20px;
+            justify-content: space-between;
+            align-items: center;
+            /* gap: 14px; */
+            font-size: 18px;
+            border-radius: 100px;
+            background: #06F;
+            }
 
+.demo-cont .request {
+            display: flex;
+            color:#fff;
+            width: 100%;
+            border:none;
+            padding: 10px 20px;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            border-radius: 100px;
+            background: #06F;
+            }
+  
 .dropdown-item {white-space: normal;}
  .dropdown-menu {
   background: linear-gradient(180deg, rgba(177, 208, 255, 0.72) 0%, rgba(123, 164, 226) 100%);
@@ -669,8 +689,19 @@ footer .col-lg-1 img {margin-bottom:12px}
 .dropdown-menu a:hover {background: none;}
 .request-demo {display:none}
 .request-demo a {padding:0;background:#0066FF;color:#fff;text-decoration:none;width:100%;display: flex;padding: 16px 14px;justify-content: space-between;align-items: center;border-radius: 4px;}
-
+.navbar-light .navbar-nav .nav-link {
+    color: #212121;
+    font-size: 18px;
+}
+.navbar-light .navbar-nav .nav-link.show {font-weight:bold}
+  
   
 }/* responsive ends */
 
-
+@media (max-width: 768px) {
+    .only-mobile-slider .col-lg-4 {
+        background: white;
+        border-radius: 12px;
+        height: 412px;
+    }
+}
