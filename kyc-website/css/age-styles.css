@@ -42,7 +42,10 @@
 .benefit-section {padding-bottom:0;}
 .benefits {display:flex;flex-direction: column;justify-content: center;margin-top: -40px;}
 .benefit {display:flex;/* justify-content: center; */align-items: center;margin-bottom: 24px;}
-.benefit i {margin-right:16px;}
+.benefit i {margin-right:16px;width: 30px;height: 30px;}
+.benefit i svg {width: 24px;height: 24px;}
+
+
 .benefit p {margin:0}
 .benefit p strong {display:block;}
 .benefit-section .col-lg-6 {position:relative;}
@@ -62,7 +65,7 @@
 
 .blue-cards.row {align-items: flex-start;gap: 20px !important;flex: 1 0 0 !important;flex-wrap: wrap;display: flex;justify-content: center;margin-bottom: 20px;}
 .blue-cards .col-lg-3 i {position:relative;z-index:9}
-.blue-cards .col-lg-3 p {color:white;position: relative;z-index: 1;margin: 6px 0 0;}
+.blue-cards .col-lg-3 p {color:white;position: relative;z-index: 1;margin: 6px 0 0;font-size: 15px;}
 .blue-cards .col-lg-3 .svg-circles {position: absolute;right: 0;top: 1px;}   
 .blue-cards .col-lg-3 .svg-circles svg {border-radius:12px}
 
@@ -72,6 +75,7 @@
 @media (max-width:1200px) {
 .white-cards .col-lg-6 {height: 230px;}
 .white-cards .text-white-cards {padding: 12px 10px 0 4px;/* justify-content: flex-start; */}
+  .white-cards .col-lg-6 h4 {font-size:20px}
 .white-cards .col-lg-6 p {font-size: 15px;}
 }
 
