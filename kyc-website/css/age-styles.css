@@ -79,7 +79,7 @@ form {background:#fff;padding: 36px;height:auto;border-radius:12px;margin-top:40
 }
 form input {margin-bottom:26px}
 form .form-select {margin-top:8px}
-form .form-check {margin-bottom:20px}
+form .form-check {margin: 20px 0;}
 form textarea {width:100%;border:1px solid #ced4da;border-radius:4px;}
 form .request {margin-top:20px;width:100%}
 
