@@ -42,12 +42,12 @@
 }
 .benefit-section {padding-bottom:0;}
 .benefits {display:flex;flex-direction: column;justify-content: center;margin-top: -40px;}
-.benefit {display:flex;/* justify-content: center; */align-items: center;margin-bottom: 24px;}
-.benefit i {margin-right:16px;width: 30px;height: 30px;}
+.benefit {display:flex;margin-bottom: 24px;align-items: center;}
+.benefit i {display: contents;/* margin-right:16px; */width: 30px;height: 30px;padding: 0 16px 0 0;}
 .benefit i svg {width: 24px;height: 24px;}
 
 
-.benefit p {margin:0}
+.benefit p {margin: 0 0 0 16px;}
 .benefit p strong {display:block;}
 .benefit-section .col-lg-6 {position:relative;}
 .shape {position:absolute;right: 14px;bottom: -45px;z-index: 999;}
@@ -73,6 +73,13 @@
 .testi {padding:60px 0}
 .accordion-button {font-weight:500}
 
+form {background:#fff;padding: 36px;height:auto;border-radius:12px;margin-top:40px;box-shadow: 0px -30px 30px 0px rgba(0, 0, 0, 0.04);
+}
+form input {margin-bottom:26px}
+form .form-select {margin-top:8px}
+form textarea {width:100%;border:1px solid #ced4da;border-radius:4px;margin-top:20px}
+form .request {margin-top:20px;width:100%}
+
 @media (max-width:1200px) {
 .white-cards .col-lg-6 {height: 230px;}
 .white-cards .text-white-cards {padding: 12px 10px 0 4px;/* justify-content: flex-start; */}
@@ -81,6 +88,9 @@
 }
 
 @media (max-width:992px) {
+  form {margin-top:0px;}
+  form .request {margin-top:20px; position:relative;}
+  form select {margin-bottom:20px}
 .display-5 {font-size:28px}
 .benefits {align-items: center;}
 .benefit {margin-bottom: 24px;}

@@ -432,6 +432,7 @@ a.request {color:#fff}
   /* height: 548px; */
 }
 
+.white-cards .col-lg-4 h4, .white-cards .col-lg-4 p {color:#212121}
 .white-cards .col-lg-4  .imagen {width:100%;height:200px;display:block;}
 .white-cards .col-lg-4 img {width: 100%;}
 .white-cards .text-white-cards {padding:0 16px 16px;display: flex;
