@@ -10,6 +10,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/kyc-styles.css" rel="stylesheet">
     <link href="css/age-styles.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
@@ -315,7 +316,7 @@
         <div class="col-sm-12 col-lg-6 position-relative">
           
 
-            <form>
+            <form data-aos="fade-up" data-aos-duration="2000">
                <div class="row">
                 <div class="col-sm-12 col-lg-6">
                     <label for="firstName" class="form-label">First name</label>
@@ -479,5 +480,9 @@
           <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-53LZQK6T"
             height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <!-- End Google Tag Manager (noscript) -->
+<script src="js/aos.js"></script>
+            <script>
+                AOS.init();
+              </script>
                 </body>
                 </html>

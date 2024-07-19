@@ -193,6 +193,8 @@ a.request {color:#fff}
 .statics  {width:145px !important;position: absolute !important;right: 38px;top: 43px;animation: up-down1 1.4s infinite ease-in-out alternate;z-index: 99;}
 .done {width:150px !important;position: absolute !important;right: -10px;top: 230px;animation: up-down2 2s infinite ease-in-out alternate;z-index: 99;}
 .icon-screen {width:100px !important;position: absolute;top: 209px;left: -48px;animation: up-down2 2.2s infinite ease-in-out alternate;z-index: 99;}
+.return  {width:573px !important;position: absolute !important;right: 90px;top: -120px;animation: up-down1 1.4s infinite ease-in-out alternate;z-index: 99;}
+
 
   #loading_animation {
   border-radius: 50%;
