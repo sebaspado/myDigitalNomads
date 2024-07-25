@@ -10,6 +10,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/kyc-styles.css" rel="stylesheet">
     <link href="css/age-styles.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
@@ -314,12 +315,6 @@
         
         <div class="col-sm-12 col-lg-6 position-relative">
             <img src="img/id-bg.png" class="d-block mx-lg-auto position-relative" style="z-index: 999;" alt="solution for Supplier Risk Management and Due Diligence">
-            
-            <!-- <img src="img/girl-mobile.png" class="d-block mx-lg-auto mobile position-relative" style="z-index: 999;" alt="kyc hero girl">
-            <div id="loading_animation">
-                <div class="outside_ring"></div>
-                <div class="middle_ring"></div>
-            </div>--> 
         </div>
         
         
@@ -338,6 +333,7 @@
 </div>
 </div>   
 
+
 <section>
     <div class="bg-2">
         
@@ -354,7 +350,7 @@
                 
                 <div class="row white-cards mb-3 desktop-only">
                     
-                    <div class="col-lg-6">
+                    <div class="col-lg-6"  data-aos="fade-right">
                         <img src="img/DocAuthentication.jpg" alt="Automated Onboarding Process">
                         <div class="text-white-cards">
                             <h4 class="f-22">Document Authentication</h4>
@@ -364,7 +360,7 @@
                         </div>
                         
                         
-                        <div class="col-lg-6">
+                        <div class="col-lg-6"  data-aos="fade-left">
                             <img src="img/risk.jpg" alt="Comprehensive Risk Assessment">
                             <div class="text-white-cards">
                                 <h4 class="f-22">Facial Match</h4>
@@ -376,8 +372,8 @@
                         
                         
                         <div class="row white-cards desktop-only">
-                            <div class="col-lg-6">
-                                <img src="img/liveFace.jpg" alt="Centralized Data Repository">
+                            <div class="col-lg-6" data-aos="fade-up">
+                                <img src="img/liveFace.jpg"   alt="Centralized Data Repository">
                                 <div class="text-white-cards">
                                     <h4 class="f-22">Liveness Check</h4>
                                     <p>Ensures that the person verifying their identity is present.
@@ -386,7 +382,7 @@
                                 </div>
                                 
                                 
-                                <div class="col-lg-6">
+                                <div class="col-lg-6"  data-aos="fade-up">
                                     <img src="img/recognition.jpg" alt="Seamless Integration">
                                     <div class="text-white-cards">
                                         <h4 class="f-22">Accelerated Onboarding</h4>
@@ -462,15 +458,7 @@
                                                         <button type="button" data-bs-target="#features" data-bs-slide-to="3" aria-label="Slide 4"></button>
                                                     </div>
                                                     
-                                                    
-                                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                        <span class="visually-hidden">Previous</span>
-                                                    </button>
-                                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                        <span class="visually-hidden">Next</span>
-                                                    </button>
+
                                                 </div>
                                                 <!--mobile carousel ends -->
                                                 <!--mobile senction slider end -->
@@ -669,8 +657,7 @@
                                                                 </div><!-- col-lg-4 -->  
                                                             </div><!-- carousel-item end -->
                                                             
-                                                            
-                                                        </div><!-- carousel-item end -->
+                                                    
                                                     </div><!-- carousel inner end -->
                                                     
                                                     
@@ -728,7 +715,7 @@
                                                         </div>
                                                         
                                                         <div class="col-lg-6">
-                                                            <img src="img/id-benefits.png" alt="Real-time transaction monitoring">
+                                                            <img  data-aos="fade-up"  src="img/id-benefits.png" alt="Real-time transaction monitoring">
                                                             <div class="shape">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="78" height="79" viewBox="0 0 78 79" fill="none">
                                                                     <path opacity="0.797991" fill-rule="evenodd" clip-rule="evenodd" d="M51.4568 75.379H51.447C51.0269 75.379 50.6586 75.5449 50.3519 75.7833C50.2928 75.83 50.2189 75.857 50.1659 75.9098C49.8715 76.2047 49.7015 76.6077 49.6645 77.0476C49.6608 77.0968 49.6362 77.1398 49.6362 77.1901C49.6362 77.4138 49.6892 77.6227 49.7643 77.8193C49.7889 77.8831 49.8197 77.9384 49.8505 77.9986C49.9171 78.1277 49.9971 78.2468 50.0932 78.3562C50.14 78.4103 50.1819 78.4656 50.2349 78.5135C50.3802 78.6449 50.5404 78.7604 50.7227 78.8403H50.7239C50.9493 78.9398 51.1957 79 51.4568 79C52.2662 79 52.9277 78.4643 53.1629 77.7332C53.2258 77.5661 53.2689 77.3917 53.2701 77.2C53.2701 77.1963 53.2726 77.1938 53.2726 77.1901C53.2726 76.1888 52.4596 75.379 51.4568 75.379ZM76.8581 53.7893C76.6819 53.7156 76.4861 53.6873 76.2853 53.6738C76.2496 53.6726 76.2212 53.653 76.1843 53.653H76.1744C75.1717 53.653 74.3636 54.4636 74.3636 55.4647C74.3636 55.7079 74.4154 55.9376 74.5028 56.1464C74.5644 56.2962 74.6654 56.4166 74.7603 56.5431C74.7997 56.591 74.8219 56.65 74.8638 56.6942C75.1656 57.0136 75.5819 57.2101 76.0475 57.2469C76.05 57.2469 76.0525 57.2482 76.0549 57.2494V57.2482C76.0993 57.2519 76.1387 57.274 76.1843 57.274C77.187 57.274 78 56.4633 78 55.4647C78 54.7031 77.5257 54.0571 76.8581 53.7893ZM14.3662 21.788H14.3563C13.3536 21.788 12.5455 22.5986 12.5455 23.5985C12.5455 24.5971 13.3635 25.409 14.3662 25.409C15.3677 25.409 16.1819 24.5971 16.1819 23.5985C16.1819 22.5986 15.3677 21.788 14.3662 21.788ZM14.3662 64.516H14.3563C13.3536 64.516 12.5455 65.3257 12.5455 66.3271C12.5455 67.3261 13.3635 68.137 14.3662 68.137C15.3677 68.137 16.1819 67.3261 16.1819 66.3271C16.1819 65.3257 15.3677 64.516 14.3662 64.516ZM26.7299 36.272C27.7326 36.272 28.5456 35.4601 28.5456 34.4615C28.5456 33.4604 27.7326 32.651 26.7299 32.651H26.7213C25.7173 32.651 24.9093 33.4604 24.9093 34.4615C24.9093 35.4601 25.7272 36.272 26.7299 36.272ZM14.3662 10.9249H14.3563C13.3536 10.9249 12.5455 11.7356 12.5455 12.7354C12.5455 13.7353 13.3635 14.5459 14.3662 14.5459C15.3677 14.5459 16.1819 13.7353 16.1819 12.7354C16.1819 11.7356 15.3677 10.9249 14.3662 10.9249ZM14.3662 42.7899H14.3563C13.3536 42.7899 12.5455 43.6006 12.5455 44.6004C12.5455 45.6003 13.3635 46.4109 14.3662 46.4109C15.3677 46.4109 16.1819 45.6003 16.1819 44.6004C16.1819 43.6006 15.3677 42.7899 14.3662 42.7899ZM14.3662 53.653H14.3563C13.3536 53.653 12.5455 54.4636 12.5455 55.4647C12.5455 56.4633 13.3635 57.274 14.3662 57.274C15.3677 57.274 16.1819 56.4633 16.1819 55.4647C16.1819 54.4636 15.3677 53.653 14.3662 53.653ZM26.7299 14.5459C27.7326 14.5459 28.5456 13.7353 28.5456 12.7354C28.5456 11.7356 27.7326 10.9249 26.7299 10.9249H26.7213C25.7173 10.9249 24.9093 11.7356 24.9093 12.7354C24.9093 13.7353 25.7272 14.5459 26.7299 14.5459ZM26.7299 25.409C27.7326 25.409 28.5456 24.5971 28.5456 23.5985C28.5456 22.5986 27.7326 21.788 26.7299 21.788H26.7213C25.7173 21.788 24.9093 22.5986 24.9093 23.5985C24.9093 24.5971 25.7272 25.409 26.7299 25.409ZM26.7299 3.6829C27.7326 3.6829 28.5456 2.87223 28.5456 1.8724C28.5456 0.872564 27.7326 0.0618896 26.7299 0.0618896H26.7213C25.7173 0.0618896 24.9093 0.872564 24.9093 1.8724C24.9093 2.87223 25.7272 3.6829 26.7299 3.6829ZM14.3662 32.651H14.3563C13.3536 32.651 12.5455 33.4604 12.5455 34.4615C12.5455 35.4601 13.3635 36.272 14.3662 36.272C15.3677 36.272 16.1819 35.4601 16.1819 34.4615C16.1819 33.4604 15.3677 32.651 14.3662 32.651ZM2.00352 42.7899H1.99243C0.989721 42.7899 0.181641 43.6005 0.181641 44.6004C0.181641 45.6002 1.00081 46.4109 2.00352 46.4109C3.00623 46.4109 3.818 45.6002 3.818 44.6004C3.818 43.6005 3.00623 42.7899 2.00352 42.7899ZM2.00352 32.651H1.99243C0.989721 32.651 0.181641 33.4605 0.181641 34.4615C0.181641 35.4601 1.00081 36.272 2.00352 36.272C3.00623 36.272 3.818 35.4601 3.818 34.4615C3.818 33.4605 3.00623 32.651 2.00352 32.651ZM2.0029 53.6529H1.99181C1.76385 53.6529 1.55067 53.7045 1.35228 53.7831C1.25123 53.8212 1.16744 53.8826 1.07625 53.9379C0.999853 53.9858 0.922222 54.0288 0.853216 54.089C0.733688 54.186 0.640037 54.299 0.54885 54.4243C0.531599 54.4501 0.514348 54.4734 0.497096 54.5017C0.398516 54.654 0.325814 54.8136 0.276524 54.993L0.275291 54.9942V54.9954C0.233395 55.1477 0.181641 55.2976 0.181641 55.4646C0.181641 56.1771 0.606766 56.7801 1.20934 57.0749V57.0762H1.21057C1.45086 57.1929 1.70963 57.2702 1.99304 57.2715C1.99674 57.2715 1.99921 57.2739 2.0029 57.2739C3.00595 57.2739 3.818 56.4632 3.818 55.4646C3.818 55.2141 3.76748 54.9758 3.67506 54.7596C3.40027 54.1098 2.75457 53.6529 2.0029 53.6529ZM63.8206 32.651H63.8107C62.808 32.651 61.9999 33.4604 61.9999 34.4615C61.9999 35.4601 62.8178 36.272 63.8206 36.272C64.8233 36.272 65.6363 35.4601 65.6363 34.4615C65.6363 33.4604 64.8233 32.651 63.8206 32.651ZM2.0029 21.788H1.99181C1.7848 21.788 1.5938 21.8334 1.41389 21.9047C1.25 21.9612 1.10706 22.0459 0.969047 22.1442C0.967815 22.1442 0.967815 22.1442 0.966583 22.1454C0.502025 22.4734 0.181641 22.9868 0.181641 23.5985C0.181641 23.6759 0.216144 23.741 0.226002 23.8171H0.224769C0.224769 23.8196 0.226002 23.8208 0.227234 23.822C0.283917 24.263 0.482309 24.6524 0.798997 24.9349C0.842125 24.9742 0.896344 24.9963 0.941938 25.0307C1.06639 25.1216 1.18592 25.2162 1.33256 25.2739C1.53835 25.3586 1.76261 25.409 2.0029 25.409C2.75457 25.409 3.40027 24.9533 3.67506 24.3023C3.76748 24.0861 3.818 23.8478 3.818 23.5985C3.818 23.3492 3.76748 23.1109 3.67506 22.8947C3.40027 22.2437 2.75457 21.788 2.0029 21.788ZM63.8206 42.7899H63.8107C62.808 42.7899 61.9999 43.6006 61.9999 44.6004C61.9999 45.6003 62.8178 46.4109 63.8206 46.4109C64.8233 46.4109 65.6363 45.6003 65.6363 44.6004C65.6363 43.6006 64.8233 42.7899 63.8206 42.7899ZM63.8206 21.788H63.8107C62.808 21.788 61.9999 22.5986 61.9999 23.5985C61.9999 24.5971 62.8178 25.409 63.8206 25.409C64.8233 25.409 65.6363 24.5971 65.6363 23.5985C65.6363 22.5986 64.8233 21.788 63.8206 21.788ZM63.8206 64.516H63.8107C62.808 64.516 61.9999 65.3257 61.9999 66.3271C61.9999 67.3261 62.8178 68.137 63.8206 68.137C64.8233 68.137 65.6363 67.3261 65.6363 66.3271C65.6363 65.3257 64.8233 64.516 63.8206 64.516ZM63.8206 53.653H63.8107C62.808 53.653 61.9999 54.4636 61.9999 55.4647C61.9999 56.4633 62.8178 57.274 63.8206 57.274C64.8233 57.274 65.6363 56.4633 65.6363 55.4647C65.6363 54.4636 64.8233 53.653 63.8206 53.653ZM51.4575 3.6829C52.4598 3.6829 53.2726 2.87223 53.2726 1.8724C53.2726 1.8724 53.2713 1.87117 53.2713 1.86994C53.2713 1.57638 53.1851 1.30984 53.0595 1.06418C53.0472 1.04084 53.0312 1.02364 53.0177 1.00154C52.8859 0.769387 52.7061 0.576545 52.4882 0.42178H52.4869C52.1902 0.211742 51.8478 0.0618896 51.4575 0.0618896H51.4476C50.4452 0.0618896 49.6362 0.872564 49.6362 1.8724C49.6362 2.87223 50.4551 3.6829 51.4575 3.6829ZM63.8206 10.9249H63.8107C62.808 10.9249 61.9999 11.7356 61.9999 12.7354C61.9999 13.7353 62.8178 14.5459 63.8206 14.5459C64.8233 14.5459 65.6363 13.7353 65.6363 12.7354C65.6363 11.7356 64.8233 10.9249 63.8206 10.9249ZM51.4568 21.788H51.447C50.4443 21.788 49.6362 22.5986 49.6362 23.5985C49.6362 24.5971 50.4541 25.409 51.4568 25.409C52.4596 25.409 53.2726 24.5971 53.2726 23.5985C53.2726 22.5986 52.4596 21.788 51.4568 21.788ZM51.4568 53.653H51.447C50.4443 53.653 49.6362 54.4636 49.6362 55.4647C49.6362 56.4633 50.4541 57.274 51.4568 57.274C52.4596 57.274 53.2726 56.4633 53.2726 55.4647C53.2726 54.4636 52.4596 53.653 51.4568 53.653ZM51.4568 42.7899H51.447C50.4443 42.7899 49.6362 43.6006 49.6362 44.6004C49.6362 45.6003 50.4541 46.4109 51.4568 46.4109C52.4596 46.4109 53.2726 45.6003 53.2726 44.6004C53.2726 43.6006 52.4596 42.7899 51.4568 42.7899ZM51.4568 32.651H51.447C50.4443 32.651 49.6362 33.4604 49.6362 34.4615C49.6362 35.4601 50.4541 36.272 51.4568 36.272C52.4596 36.272 53.2726 35.4601 53.2726 34.4615C53.2726 33.4604 52.4596 32.651 51.4568 32.651ZM51.4568 64.516H51.447C50.4443 64.516 49.6362 65.3257 49.6362 66.3271C49.6362 67.3261 50.4541 68.137 51.4568 68.137C52.4596 68.137 53.2726 67.3261 53.2726 66.3271C53.2726 65.3257 52.4596 64.516 51.4568 64.516ZM26.7299 46.4109C27.7326 46.4109 28.5456 45.6003 28.5456 44.6004C28.5456 43.6006 27.7326 42.7899 26.7299 42.7899H26.7213C25.7173 42.7899 24.9093 43.6006 24.9093 44.6004C24.9093 45.6003 25.7272 46.4109 26.7299 46.4109ZM28.0135 75.9098C27.9593 75.8558 27.8854 75.8287 27.825 75.7833C27.5183 75.5449 27.15 75.379 26.7299 75.379H26.7201C25.7173 75.379 24.9093 76.1888 24.9093 77.1901C24.9093 77.6816 25.1101 78.124 25.4303 78.4508C25.4316 78.452 25.4316 78.4533 25.4328 78.4533C25.7629 78.7899 26.2212 79 26.7299 79C26.826 79 26.9085 78.9607 27.0009 78.946C27.0021 78.946 27.0034 78.9447 27.0046 78.9447C27.4333 78.8784 27.8078 78.6818 28.08 78.3709C28.1243 78.323 28.1502 78.264 28.1884 78.2112C28.2709 78.0945 28.3584 77.9839 28.4126 77.85C28.4939 77.6497 28.5419 77.431 28.5432 77.1975C28.5432 77.1951 28.5456 77.1938 28.5456 77.1901C28.5456 76.7306 28.3596 76.3227 28.0775 76.0032C28.0517 75.9737 28.0406 75.9356 28.0135 75.9098ZM75.4763 25.2665C75.6945 25.3586 75.9335 25.409 76.1849 25.409C76.4498 25.409 76.6975 25.3464 76.9242 25.2444C76.9316 25.2408 76.9366 25.2346 76.944 25.2309C77.1658 25.1278 77.3568 24.9829 77.5182 24.8036C77.8115 24.4832 78 24.0657 78 23.5991C78 22.5996 77.1867 21.788 76.1849 21.788H76.175C75.172 21.788 74.3636 22.5996 74.3636 23.5991C74.3636 24.3481 74.8233 24.9915 75.4763 25.2665ZM76.1849 36.272C77.1867 36.272 78 35.4601 78 34.4615C78 33.4604 77.1867 32.651 76.1849 32.651H76.175C75.172 32.651 74.3636 33.4604 74.3636 34.4615C74.3636 35.4601 75.1806 36.272 76.1849 36.272ZM76.1849 46.4109C77.1867 46.4109 78 45.6003 78 44.6004C78 43.6006 77.1867 42.7899 76.1849 42.7899H76.175C75.172 42.7899 74.3636 43.6006 74.3636 44.6004C74.3636 45.6003 75.1806 46.4109 76.1849 46.4109ZM39.0931 21.788H39.0845C38.0818 21.788 37.2725 22.5986 37.2725 23.5985C37.2725 24.5971 38.0904 25.409 39.0931 25.409C40.0958 25.409 40.9088 24.5971 40.9088 23.5985C40.9088 22.5986 40.0958 21.788 39.0931 21.788ZM39.0931 10.9249H39.0845C38.0818 10.9249 37.2725 11.7356 37.2725 12.7354C37.2725 13.7353 38.0904 14.5459 39.0931 14.5459C40.0958 14.5459 40.9088 13.7353 40.9088 12.7354C40.9088 11.7356 40.0958 10.9249 39.0931 10.9249ZM39.0931 0.0618896H39.0845C38.0818 0.0618896 37.2725 0.872564 37.2725 1.8724C37.2725 2.87223 38.0904 3.6829 39.0931 3.6829C40.0958 3.6829 40.9088 2.87223 40.9088 1.8724C40.9088 0.872564 40.0958 0.0618896 39.0931 0.0618896ZM26.7299 68.137C27.7326 68.137 28.5456 67.3261 28.5456 66.3271C28.5456 65.3257 27.7326 64.516 26.7299 64.516H26.7213C25.7173 64.516 24.9093 65.3257 24.9093 66.3271C24.9093 67.3261 25.7272 68.137 26.7299 68.137ZM26.7299 57.274C27.7326 57.274 28.5456 56.4633 28.5456 55.4647C28.5456 54.4636 27.7326 53.653 26.7299 53.653H26.7213C25.7173 53.653 24.9093 54.4636 24.9093 55.4647C24.9093 56.4633 25.7272 57.274 26.7299 57.274ZM39.0931 32.651H39.0845C38.0818 32.651 37.2725 33.4604 37.2725 34.4615C37.2725 35.4601 38.0904 36.272 39.0931 36.272C40.0958 36.272 40.9088 35.4601 40.9088 34.4615C40.9088 33.4604 40.0958 32.651 39.0931 32.651ZM51.4568 10.9249H51.447C50.4443 10.9249 49.6362 11.7356 49.6362 12.7354C49.6362 13.7353 50.4541 14.5459 51.4568 14.5459C52.4596 14.5459 53.2726 13.7353 53.2726 12.7354C53.2726 11.7356 52.4596 10.9249 51.4568 10.9249ZM39.0931 64.516H39.0845C38.0818 64.516 37.2725 65.3257 37.2725 66.3271C37.2725 67.3261 38.0904 68.137 39.0931 68.137C40.0958 68.137 40.9088 67.3261 40.9088 66.3271C40.9088 65.3257 40.0958 64.516 39.0931 64.516ZM39.0931 75.379H39.0845C38.0818 75.379 37.2725 76.19 37.2725 77.1901C37.2725 78.1903 38.0904 79 39.0931 79C40.0958 79 40.9088 78.1903 40.9088 77.1901C40.9088 76.19 40.0958 75.379 39.0931 75.379ZM39.0931 53.653H39.0845C38.0818 53.653 37.2725 54.4636 37.2725 55.4647C37.2725 56.4633 38.0904 57.274 39.0931 57.274C40.0958 57.274 40.9088 56.4633 40.9088 55.4647C40.9088 54.4636 40.0958 53.653 39.0931 53.653ZM39.0931 42.7899H39.0845C38.0818 42.7899 37.2725 43.6006 37.2725 44.6004C37.2725 45.6003 38.0904 46.4109 39.0931 46.4109C40.0958 46.4109 40.9088 45.6003 40.9088 44.6004C40.9088 43.6006 40.0958 42.7899 39.0931 42.7899Z" fill="#0066FF"/>
@@ -753,15 +740,18 @@
                                                                 
                                                                 <div class="accordion" id="accordionPanelsStayOpenExample">
                                                                     <div class="accordion-item">
-                                                                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                                                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                                                                                How fast is the ID verification process?
-                                                                            </button>
-                                                                        </h2>
-                                                                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-                                                                            <div class="accordion-body">
-                                                                                The process takes less than 30 seconds per verification, ensuring a smooth user experience.
+                                                                            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                                                                    How fast is the ID verification process?
+                                                                                </button>
+                                                                            </h2>
+                                                                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                                                                                <div class="accordion-body">
+                                                                                    The process takes less than 30 seconds per verification, ensuring a smooth user experience.
+                                                                            </div>
+                                                                          </div>
                                                                         </div>
+
                                                                         <div class="accordion-item">
                                                                             <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
                                                                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
@@ -783,10 +773,11 @@
                                                                             </h2>
                                                                             <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
                                                                                 <div class="accordion-body">
-                                                                                    Absolutely. Our document authentication technology is designed to detect fraudulent IDs with high accuracy.</div>
+                                                                                    Absolutely. Our document authentication technology is designed to detect fraudulent IDs with high accuracy.
+                                                                                  </div>
                                                                                 </div>
                                                                             </div>
-                                                                        </div>
+                                                                      
 
                                                                         <div class="accordion-item">
                                                                             <h2 class="accordion-header" id="panelsStayOpen-headingf">
@@ -796,10 +787,11 @@
                                                                             </h2>
                                                                             <div id="panelsStayOpen-collapsef" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingf">
                                                                                 <div class="accordion-body">
-                                                                                    The liveness check uses real-time detection to ensure the user is physically present and not using a spoof.</div>
+                                                                                    The liveness check uses real-time detection to ensure the user is physically present and not using a spoof.
+                                                                                  </div>
                                                                                 </div>
                                                                             </div>
-                                                                        </div>
+                                                                      
                                                                         
                                                                         
                                                                     </div>
@@ -808,20 +800,20 @@
                                                         </section>
                                                     </div>
                                                     
-                                                    
                                                     <div class="container demo-cont">
                                                         <div class="row">
-                                                            <div class="col-sm-12 col-lg-6">
-                                                                <h6>Ready to secure your business with our state-of-the-art ID Verification solution?   </h6>
-                                                                <p>Request a demo today or contact our sales team to learn more about how kyc.me's advanced Know-Your-Business solution can enhance your compliance and security measures.</p>
-                                                                <a href="demo-request.html" class="request">Request a demo </a>
-                                                            </div>
-                                                            <div class="col-sm-12 col-lg-6" style="position: relative;">
-                                                                <img src="img/demo.png" class="demo-img desk" alt="demo dashboard image">
-                                                                <img src="img/demo-mobile.png" class="mobile" alt="demo dashboard image for mobile">
-                                                            </div>
+                                                          <div class="col-sm-12 col-lg-6">
+                                                            <h6>Secure your business with our cutting-edge verification solutions</h6>
+                                                            <p>Request a demo or contact us for more information on how kyc.me can help you achieve compliance and security effortlessly.</p>
+                                                            <a href="request-demo.html" class="request" style="position: relative;">Request a demo </a>
+                                                          </div>
+                                                          <div class="col-sm-12 col-lg-6" style="position: relative;">
+                                                            <img src="img/return.png"  class="return desk" alt="statics image">
+                                                            <img src="img/demo2.png" class="demo-img desk" alt="demo dashboard image">
+                                                            <img src="img/demo-mobile.png" class="mobile" alt="demo dashboard image for mobile">
+                                                          </div>
                                                         </div>
-                                                    </div>
+                                                      </div>
                                                 </section>
                                                 
                                                 
@@ -894,10 +886,10 @@
                                                     </div>
                                                     <hr>
                                                     <ul class="nav justify-content-center pb-3 mb-3 copyright">
-                                                        <li class="nav-item"><a href="#" class="nav-link px-2">Privacy policy</a></li>
-                                                        <li class="nav-item"><a href="#" class="nav-link px-2">Website privacy policy</a></li>
-                                                        <li class="nav-item"><a href="#" class="nav-link px-2">Terms & Conditions</a></li>
-                                                        <li class="nav-item"><a href="#" class="nav-link px-2">Cookies Policy</a></li>
+                                                        <li class="nav-item"><a href="privacy-policy.html" class="nav-link px-2">Privacy policy</a></li>
+                                                        <li class="nav-item"><a href="website-policy.html" class="nav-link px-2">Website privacy policy</a></li>
+                                                        <li class="nav-item"><a href="terms.html" class="nav-link px-2">Terms & Conditions</a></li>
+                                                        <li class="nav-item"><a href="cookies-policy.html" class="nav-link px-2">Cookies Policy</a></li>
                                                         <p class="copy">"KYC.ME", "KYC ME" are trading names of IQGP Ltd | All Rights Reserved | Copyright © 2024 IQGP LTD<br><br>
                                                             
                                                             IQGP Ltd is a company registered in Cyprus with its registered address at Dimostheni Severi 12, 6th Floor, Office 601, Nicosia, 1080, Cyprus
@@ -914,5 +906,9 @@
                                                 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-53LZQK6T"
                                                     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                     <!-- End Google Tag Manager (noscript) -->
+                                                    <script src="js/aos.js"></script>
+                                                    <script>
+                                                        AOS.init();
+                                                        </script>
                                                 </body>
                                                 </html>
