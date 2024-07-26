@@ -521,6 +521,7 @@ img {max-width:100%;height:auto}
         .cookies tr {border-bottom:1px solid #ffffff}
 
         @media (max-width:1200px) {
+                  footer p {margin-top:30px; font-size:13px}
           .white-cards .col-lg-4 {width: 300px;}
           .blue-cards .col-lg-4 {width: 300px;padding-top:12px;}
           .banner h2 {text-align:center;font-size: 24px;}
@@ -529,6 +530,7 @@ img {max-width:100%;height:auto}
         }
         
         @media (max-width:990px) {
+            .oinx {width:160px;display:block;margin:auto;}
           footer .col-lg-3 {margin-left:-0px}
           section {padding: 45px 0;}
           h1 , .lead{text-align:center;}
@@ -688,7 +690,7 @@ img {max-width:100%;height:auto}
   
         
         @media (max-width: 768px) {
-          .oinx {width:160px;display:block;margin:auto;}
+        
           .cookies tr th, td {width:100%}
           table {margin:20px 0}
           h5 {font-size: 20px;}

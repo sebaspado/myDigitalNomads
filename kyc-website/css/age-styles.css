@@ -98,10 +98,8 @@
       .benefit p strong {position:relative;display:flex;justify-content: center;}
       .benefit p strong:before {position: relative;width:20px;height:20px;content:'';top:0;left: -12px;background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Crect width='20' height='20' rx='10' fill='%231DB491'/%3E%3Cpath d='M8.20826 14C8.02135 13.9999 7.84025 13.9363 7.6957 13.8202L5.27857 11.879C4.94806 11.5976 4.9058 11.1095 5.1832 10.7774C5.46059 10.4454 5.95706 10.3898 6.30369 10.6519L8.17589 12.1541L13.5713 7.28275C13.7741 7.04637 14.0984 6.94685 14.4025 7.02768C14.7066 7.10852 14.9352 7.35502 14.9884 7.65946C15.0415 7.9639 14.9097 8.27093 14.6504 8.44637L8.75859 13.7884C8.60951 13.9254 8.41256 14.0011 8.20826 14Z' fill='white'/%3E%3C/svg%3E");}
       .benefit i {display:none;}
-      
       .white-cards.row {align-items: flex-start;gap: 30px !important;flex: 1 0 0 !important; flex-wrap: wrap;display: flex;justify-content: center;}  
       .white-cards .col-lg-6 {flex-direction: column;height:500px;} 
-      
       .policy h1 {text-align:left;margin-bottom: 40px;text-decoration: underline;}
       .policy p {font-size:16px}  
     }
