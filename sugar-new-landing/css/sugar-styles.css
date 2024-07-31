@@ -9,23 +9,29 @@ header {padding: 80px 0;}
 header h1 {color: #2969FF;font-size: 64px;
   font-style: normal; text-transform: uppercase;
   font-weight: 700;}
-header p {color: #fff;font-size: 25px;margin: 20px 0;}  
+header p {color: #fff;font-size: 25px;margin: 20px 0;text-transform: uppercase;}  
 
 
-.black-button {background: #000;color:#fff;text-transform: uppercase;padding: 10px 30px;text-decoration:none;display: inline-block;}
+header .black-button {text-align:center;width:200px;border-radius:4px;background: #000;color:#fff;font-size: 20px;text-transform: uppercase;padding: 10px 30px;text-decoration:none;display: inline-block;}
+
+section .black-button { text-align:center;background: #000;color:#fff;text-transform: uppercase;padding: 10px 30px;text-decoration:none;
+display:block; width:200px; margin-top:30px !important;border-radius:4px}
 
 section {padding:60px 0;}
- h2 {font-size:20px;color:#6C6C72;width:65% !important;display:block; margin:0 auto 40px;text-align: center;}
+ h2 {font-size:20px;color:#6C6C72;width:65% !important;display:block;margin: 0 auto 40px;text-align: center;}
 
 .pb-0 {padding-bottom: 0 !important;} 
 .blueBox {padding:16px;background:#2969FF;margin-bottom:20px;color:white;border-radius:4px}
 .blueBox strong {display:block}
 
+
 .success p, .success h4 {font-size: 40px;color:white; text-align: center;font-weight: 900; text-transform: uppercase;}
 .success img {margin-bottom: 60px;}
 
-.testimonies .col-lg-4 {background: #2969FF;padding: 20px;color:#fff;border-radius:8px; width: 32%; margin-right:20px; height: 400px;}
+.testimonies .col-lg-4 {background: #2969FF;padding: 20px;color:#fff;border-radius:8px;width: 32%;margin-right:20px;height: 470px;}
 .testimonies .col-lg-4:last-child {margin-right: 0;}
+.testimonies .col-lg-4 .tittle {font-size:31px;margin: 20px auto;}
+.testimonies .col-lg-4 p {font-size:20px;}
 
 .steps strong {display: block;}
 .steps .row { display: flex;}
@@ -45,6 +51,7 @@ section {padding:60px 0;}
 
 @media (min-width:1201px){
   header p {width: 500px;}
+  .pb-0 .col-lg-6:last-child {margin-top:40px !important}
  }
 
 @media (max-width:1200px) {
@@ -58,10 +65,15 @@ section {padding:60px 0;}
 
 
 @media (max-width: 768px) {
+  .success p {line-height:32px; font-size:28px;}
+  header .black-button {margin: 10px auto 30px;display:block;}
+  section .black-button {margin:0 auto 40px;}
 h2 {width:90% !important}
    .testimonies .col-lg-4, .steps .col-lg-4, .steps .col-lg-4:last-child, .testimonies .col-lg-4:last-child {width: 95%;border-radius:16px;margin: 0 auto 20px;}
   .steps .col-lg-4 img {width:100%;}
-.join h3, .join p {text-align:center}
-
+.join h3 {font-size:34px; line-height:30px;}
+  .join p {font-size:24px}
+  .join h3, .join p {text-align:center}
+.success h4 {font-size:26px;}
 }
 
