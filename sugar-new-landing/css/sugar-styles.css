@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+img {max-width:100%;height:auto}
+
+#shadow-host-companion {display:none}
+
+.bg-blue {background: url(../img/bg-blue.jpg) center;}
+.bg-blue-opacity {background: url(../img/bg-blue-opacity.jpg) center;}
+header {padding: 80px 0;}
+header h1 {color: #2969FF;font-size: 64px;
+  font-style: normal; text-transform: uppercase;
+  font-weight: 700;}
+header p {color: #fff;font-size: 25px;margin: 20px 0;}  
+
+
+.black-button {background: #000;color:#fff;text-transform: uppercase;padding: 10px 30px;text-decoration:none;display: inline-block;}
+
+section {padding:60px 0;}
+ h2 {font-size:20px;color:#6C6C72;width:65% !important;display:block; margin:0 auto 40px;text-align: center;}
+
+.pb-0 {padding-bottom: 0 !important;} 
+.blueBox {padding:16px;background:#2969FF;margin-bottom:20px;color:white;border-radius:4px}
+.blueBox strong {display:block}
+
+.success p, .success h4 {font-size: 40px;color:white; text-align: center;font-weight: 900; text-transform: uppercase;}
+.success img {margin-bottom: 60px;}
+
+.testimonies .col-lg-4 {background: #2969FF;padding: 20px;color:#fff;border-radius:8px; width: 32%; margin-right:20px; height: 400px;}
+.testimonies .col-lg-4:last-child {margin-right: 0;}
+
+.steps strong {display: block;}
+.steps .row { display: flex;}
+.steps .col-lg-4 {background: white;padding:0;width: 32%;margin-right:20px; border-radius: 10px;}
+.steps .col-lg-4:last-child {margin: 0;}
+.steps .col-lg-4 p {padding: 20px; }
+
+.join h3 {font-size: 64px;color:#232233; text-transform: uppercase;line-height: 48px;}
+.join p {font-size: 31px;color:#6C6C72;line-height: 30px;margin: 20px 0;}
+
+@media (min-width: 1400px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1110px;
+  }
+}
+
+
+@media (min-width:1201px){
+  header p {width: 500px;}
+ }
+
+@media (max-width:1200px) {
+  
+}
+
+@media (max-width:990px) {
+  header h1 {font-size: 34px;}
+}
+
+
+
+@media (max-width: 768px) {
+  
+}
+
