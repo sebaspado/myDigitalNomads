@@ -48,7 +48,7 @@ section {padding:60px 0;}
  }
 
 @media (max-width:1200px) {
-  
+  .testimonies .col-lg-4, .steps .col-lg-4  {width:31%}
 }
 
 @media (max-width:990px) {
@@ -58,6 +58,8 @@ section {padding:60px 0;}
 
 
 @media (max-width: 768px) {
-  
+
+   .testimonies .col-lg-4, .steps .col-lg-4  {width:100%; margin-bottom:20px;border-radius:16px}
+  .steps .col-lg-4 img {width:100%;}
 }
 
