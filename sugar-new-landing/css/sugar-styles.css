@@ -58,8 +58,10 @@ section {padding:60px 0;}
 
 
 @media (max-width: 768px) {
-
-   .testimonies .col-lg-4, .steps .col-lg-4  {width:100%; margin-bottom:20px;border-radius:16px}
+h2 {width:90% !important}
+   .testimonies .col-lg-4, .steps .col-lg-4, .steps .col-lg-4:last-child, .testimonies .col-lg-4:last-child {width: 95%;border-radius:16px;margin: 0 auto 20px;}
   .steps .col-lg-4 img {width:100%;}
+.join h3, .join p {text-align:center}
+
 }
 
