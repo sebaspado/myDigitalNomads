@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 img {max-width:100%;height:auto}
-
+body {font-family: "Poppins", sans-serif;}
 #shadow-host-companion {display:none}
 
 .bg-blue {background: url(../img/bg-blue.jpg) center;}
@@ -37,10 +37,10 @@ header h1 {color: #2969FF;font-size: 64px;
     .steps .row { display: flex;}
     .steps .col-lg-4 {background: white;padding:0;width: 32%;margin-right:20px; border-radius: 10px;}
     .steps .col-lg-4:last-child {margin: 0;}
-    .steps .col-lg-4 p {padding: 20px; }
+    .steps .col-lg-4 p {padding: 20px;font-size: 20px;}
     
-    .join h3 {font-size: 64px;color:#232233; text-transform: uppercase;line-height: 48px;}
-    .join p {font-size: 31px;color:#6C6C72;line-height: 30px;margin: 20px 0;}
+    .join h3 {font-size: 64px;color:#232233;text-transform: uppercase;line-height: 62px;}
+    .join p {font-size: 31px;color:#6C6C72;line-height: 34px;margin: 20px 0;}
     
     @media (min-width: 1400px) {
       .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
