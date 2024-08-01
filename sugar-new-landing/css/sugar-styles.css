@@ -56,6 +56,8 @@ header h1 {color: #2969FF;font-size: 64px;
     
     @media (max-width:1200px) {
       .testimonies .col-lg-4, .steps .col-lg-4  {width:31%}
+      .testimonies .col-lg-4 {height: auto;}
+
     }
     
     @media (max-width:990px) {
@@ -69,6 +71,8 @@ header h1 {color: #2969FF;font-size: 64px;
       header .black-button {margin: 10px auto 30px;display:block;}
       section .black-button {margin:0 auto 40px;}
       h2 {width:90% !important}
+      .blueBox p, .testimonies .col-lg-4 p, .steps .col-lg-4 p {font-size:16px}
+     .testimonies .col-lg-4 .tittle {font-size:26px;}
       .testimonies .col-lg-4, .steps .col-lg-4, .steps .col-lg-4:last-child, .testimonies .col-lg-4:last-child {width: 95%;border-radius:16px;margin: 0 auto 20px;}
       .steps .col-lg-4 img {width:100%;}
       .join h3 {font-size:34px; line-height:30px;}
