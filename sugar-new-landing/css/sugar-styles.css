@@ -69,12 +69,19 @@ font-weight: 400;margin-top:16px}
 
 .about h4 {font-size:55px; width:75%; margin:0 auto 20px}
 .about .d-flex p {width:75%; margin:0 auto;}
-.about .d-flex { display: flex !important;
-    flex-direction: column;
-    justify-content: center;}
+.about .d-flex { display: flex !important;flex-direction: column;justify-content: center;}
 
 
   .mobile-only {display: none;}  
+
+.slider-section {position:relative}
+.slider h4, .blog h4 {font-size:60px; text-align: center;}
+
+
+
+
+
+
 
   @media (min-width: 1400px) {
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
@@ -99,9 +106,10 @@ font-weight: 400;margin-top:16px}
   }
   
   @media (max-width:990px) {
+    
     .mobile-reverse {display:flex;flex-direction: column-reverse;}
     .about h4 {font-size:32px; width:100%; margin:20px auto}
-.about .d-flex p {width:100%;margin: 0 auto 30px;}
+    .about .d-flex p {width:100%;margin: 0 auto 30px;}
     .sugar-do img {margin-top:15%}
     .mobile-only {display: block;}
     .shape-blue-mobile {position:absolute;top: -406px;z-index: -9;width: 830px !important;}
@@ -110,11 +118,7 @@ font-weight: 400;margin-top:16px}
     background: #3370FF;
     border-radius: 44px;}
     .carousel-control-next, .carousel-control-prev {display:none}
-    .box {
-      border-radius: 16px;
-      border: 1px solid #fff;
-      background: rgba(255, 255, 255, 0.25);
-      padding: 12px;}
+    .box {border-radius: 16px;border: 1px solid #fff;background: rgba(255, 255, 255, 0.25);padding: 12px;}
     .carousel-indicators {bottom: -32px;}
     .desk-only {display:none}
     .sugar-do .shape-blue {display:none}
@@ -124,18 +128,20 @@ font-weight: 400;margin-top:16px}
     h3 {font-size:18px; text-align:center}
     .hero-text {width:100%;margin-bottom:10%}
     header h1 {font-size: 34px;}
-.btn {width:44%;border: 1px solid #f0f7ff;/* background: linear-gradient(90deg, #FFF 0%, #D7E3FF 100%); */font-size: 18px;}
+    .btn {width:44%;border: 1px solid #f0f7ff;font-size: 18px;}
     .form-cont {width:100%; margin:20% auto}
   }
   
+  .only-mobile-slider {display: none;}
   
   @media (max-width: 768px) {
- header {text-align: center;}
+    .slider h4, .blog h4 {font-size:30px;}
+    .blog h4 {text-align:center}
+    .only-mobile-slider {display: block !important;}
+    header {text-align: center;}
     header img {margin-bottom: 18px;width: 120px;}
   }
 
 textarea:focus, input:focus{
     outline: none;
-  border:1px solid #2969ff;
- 
-}
+  border:1px solid #2969ff;}
