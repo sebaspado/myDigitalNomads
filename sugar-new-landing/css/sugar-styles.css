@@ -77,9 +77,11 @@ font-weight: 400;margin-top:16px}
 .slider-section {position:relative}
 .slider h4, .blog h4 {font-size:60px; text-align: center;}
 
-footer {margin-top: 368px;border-top: 1px solid #ececec;padding-top: 70px;z-index: 2;background: white;position: relative;width: 100%;}
-footer:before { content: "";position: absolute;z-index: -2;top: -160px;width: 100%;height: 159px;background: url('../img/bg-footer.png');}
+footer {margin-top: 368px;border-top: 1px solid #2196F3;padding-top: 70px;z-index: 2;background: #e4edfb;position: relative;width: 100%;}
+footer:before {content: "";position: absolute;z-index: -2;top: -160px;width: 100%;height: 159px;background: url('../img/bg-footer.png') top center no-repeat;}
 footer a {color:#555555;font-size: 14px;}
+footer h5 {font-size:16px;color:#212121}
+footer .row {justify-content: space-around;}
 .socials {display: flex;}
 
 
@@ -138,7 +140,10 @@ footer a {color:#555555;font-size: 14px;}
   .only-mobile-slider {display: none;}
   
   @media (max-width: 768px) {
-    footer .col-12 {text-align:center;margin-bottom:40px}
+    .socials {margin-top:20px}
+    footer {padding: 32px 0;margin-top:280px}
+    footer .col-12 {/* text-align:center; */margin-bottom:40px;}
+    .mobile-reverse-margin {margin-top:-80px}
     .slider h4, .blog h4 {font-size:30px;}
     .blog h4 {text-align:center}
     .only-mobile-slider {display: block !important;}

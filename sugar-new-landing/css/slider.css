@@ -348,6 +348,7 @@
   width: 100%;
   padding: 120px 24px 180px;
   text-align: center;
+  overflow: hidden;
 }
 
 .section__entry {
