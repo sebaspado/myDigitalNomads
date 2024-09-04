@@ -315,7 +315,7 @@
   left: 0;
   display: block;
   overflow: hidden;
-  width: 90%;
+  width: 100%;
   opacity: 1;
   cursor: pointer;
 }
