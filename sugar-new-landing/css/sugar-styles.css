@@ -76,7 +76,7 @@ footer a {color:#555555;font-size: 14px;}
 footer h5 {font-size:16px;color:#212121}
 footer .row {justify-content: space-around;}
 
-.city-slider-slide {position: relative;width: 100%;height: 250px !important;margin: 0 2px;}
+.city-slider-slide {position: relative;width: 100%;height: 250px !important;margin: 0 10px;}
 .city-slider-slide a {bottom: 12px;right: 12px;background: white;position: absolute;padding: 12px 20px;border-radius: 40px;text-decoration: none;}
 .city-slider-slide a span {margin-right:10px;color:#000}
 .city-slider-slide img {border-radius: 40px;}
@@ -86,7 +86,7 @@ footer .row {justify-content: space-around;}
   min-height: 1px;
 }
 
-h4 {font-size:60px}
+h4 {font-size:60px;margin: 30px;}
 
 
 .socials {display: flex;}
