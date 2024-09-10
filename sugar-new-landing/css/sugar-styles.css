@@ -36,7 +36,7 @@ header .row {display: flex;justify-content: space-between;align-items: center;}
   font-size: 26px;
   border:none;
   }
-.register .form-cont {background: rgba(255, 255, 255, 0.8);backdrop-filter: blur(10px);border:1px solid #fff;/* background: linear-gradient(208deg, #FFF 44.39%, #BFD2FF 119.81%); */margin-top: 0;}
+.register .form-cont {background: linear-gradient(208deg, #FFF 44.39%, #BFD2FF 119.81%);backdrop-filter: blur(10px);border:1px solid #fff;/* background: linear-gradient(208deg, #FFF 44.39%, #BFD2FF 119.81%); */margin-top: 0;}
 .register .form-cont .title {color: #212121;font-size: 16px;}
 .register form .row {margin-bottom: 18px;/* border-top: 1px solid #fff; */}
 
