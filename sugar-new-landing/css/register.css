@@ -62,13 +62,17 @@
 }
 
 .input-group label {
-    background-color: transparent;
+    background-color: #e4edff;
     padding: 10px;
     margin-top: 0;
+    border: 1px solid #BFD2FF;
     border-right: none
 }
 
 .input-group .form-select {
+    border-left: none;
+    background: #e4edff;
+    border: 1px solid #BFD2FF;
     border-left: none;
 }
 
@@ -99,3 +103,10 @@ fieldset {
     display: block;
     margin: 12px auto
 }
+
+.register input {
+    border-left: none;
+    padding-left: 4px;
+}
+
+.form-cont .back, .form-cont .register {margin:0}
