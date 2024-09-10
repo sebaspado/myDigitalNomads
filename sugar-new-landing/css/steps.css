@@ -1,0 +1,56 @@
+.stepper,
+.stepper * {
+  box-sizing: border-box;
+}
+.stepper {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  width: 100%;
+}
+
+.stepper .number {
+  text-align:center;
+  color: #e1ecff;
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 700;
+  position: relative;
+  align-self: stretch;
+  }
+
+.stepper .active {background: #3d77ff;}
+.stepper .active > .number {color:white}
+
+.line {
+  background: #f0f5ff;
+  flex: 1;
+  height: 4px;
+  position: relative;
+}
+
+.step {
+  background: #c0d5ff;
+  border-radius: 50px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+
+@media(max-width:990px){
+
+    
+}
