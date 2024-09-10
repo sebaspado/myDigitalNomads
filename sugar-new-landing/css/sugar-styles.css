@@ -173,7 +173,7 @@ h4 {font-size:60px;margin: 30px;}
   
   
   @media (max-width:990px) {
-  .register form .row {margin-bottom: 44px;/* border-top: 1px solid #fff; */}
+  .register form .row {margin-bottom: 24px;/* border-top: 1px solid #fff; */}
     .mobile-register {width:96%;left:0;right:0;margin:auto;top:-24px;z-index: 9;}
     .mobile-reverse {display:flex;flex-direction: column-reverse;}
     .about h4 {font-size:32px; width:100%; margin:20px auto}
