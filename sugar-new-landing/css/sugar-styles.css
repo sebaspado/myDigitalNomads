@@ -114,7 +114,7 @@ form .col-6 {/* padding:0; */}
     }
 
 .form-cont .error {border: 1px solid #ff8b8b;box-shadow: none;background: #ffdbdb;}
-.form-cont span.error-text {color:#ff8b8b;text-align:right;font-size:14px;padding: 0;background: none;}
+.form-cont span.error-text {color:#ff8b8b;text-align:right;font-size:14px;padding: 0;background: none;margin-bottom: 10px;}
 
 
  .sugar-do {margin: 80px auto 120px;} 

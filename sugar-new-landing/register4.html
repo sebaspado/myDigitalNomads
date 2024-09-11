@@ -20,23 +20,23 @@ protect daters privacy and comfort.">
 <link href="css/steps.css" rel="stylesheet">
 <script src="js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
-  <div class="bg">
-    <div class="container">
-      <header>
-        <div class="row">
-          <div class="col-sm-12 col-lg-2">
-            <img src="img/logo-sugar.svg" alt="sugar logo">
+  <body class="register-bg">
+    <div>
+      <div class="container">
+        <header>
+          <div class="row">
+            <div class="col-sm-12 col-lg-2">
+              <img src="img/logo-sugar.svg" alt="sugar logo">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 loginCol">
+              <a href="" class="btn">Sign in</a>
+              <a href="" class="btn">Login</a>
+            </div>
           </div>
-          <div class="col-sm-12 col-md-6 col-lg-3 loginCol">
-            <a href="" class="btn">Sign in</a>
-            <a href="" class="btn">Login</a>
-          </div>
-        </div>
-      </header>
-      
-      
-      <div class="row register">
+        </header>
+        
+        
+        <div class="row register">
         
         <div class="col-lg-7 mobile-register m-auto">  
           <div class="form-cont">
@@ -90,20 +90,23 @@ protect daters privacy and comfort.">
                                 <textarea class="form-control" cols="20" rows="3" placeholder="Write something about you" id="story" name="story"></textarea> 
                               </div>
                               
-                              
-                              <div class="col-sm-12 col-lg-12">
-                                <input placeholder="My education" type="number" class="form-control ethnicity-input" id="Ethnicity" name="" aria-describedby="" required="">  
-                              </div>
-    
-                              <div class="col-sm-12 col-lg-12">
-                                <input placeholder="Languages" type="number" class="form-control hair-input" id="hair" name="" aria-describedby="" required="">  
-                              </div>
-                           
-                      
-        
 
-                          
-                          
+                              <div class="col-sm-12 col-lg-12"></div>
+                              <div class="input-group">
+                                  <label class="input-group-text" for="Tattoo">  
+                                       <i><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M5 21V4H14L14.4 6H20V16H13L12.6 14H7V21H5ZM14.65 14H18V8H12.75L12.35 6H7V12H14.25L14.65 14Z" fill="#5F6368"></path>
+                                      </svg>
+                                  </i>
+                              </label>
+                              <select class="form-select" id="Tattoo" aria-label="Filter select">
+                                <option selected>Languages</option>
+                                <option value="1">Yes</option>
+                                <option value="2">No</option>
+                                <option value="3">Another option</option>
+                              </select>                                </div>                        
+                             </div>
+
                      
                           
                         </div><!--row ends-->
