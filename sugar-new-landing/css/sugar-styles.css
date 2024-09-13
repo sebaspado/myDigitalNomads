@@ -182,7 +182,7 @@ h4 {font-size:60px;margin: 30px;}
     .mobile-only {display: block;}
     .shape-blue-mobile {position:absolute;top: -403px;z-index: -9;width: 830px !important;}
     .carousel-indicators [data-bs-target] {height: 10px;background: #3370FF;border-radius: 44px;}
-
+.logo-mobile {width:40px;}
     .carousel-control-next, .carousel-control-prev {display:none}
     .box {border-radius: 16px;border: 1px solid #ecedff;background: rgb(244 247 255);padding: 12px;height: 244px;display: flex;align-items: center;}
     .carousel-indicators {bottom: -32px;}
