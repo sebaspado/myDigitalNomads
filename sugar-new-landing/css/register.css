@@ -80,8 +80,6 @@ fieldset {
 .notice i svg {opacity:0.5;width: 18px;}
 
 select { background:url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M10 6L16 12L10 18L8.6 16.6L13.2 12L8.6 7.4L10 6Z" fill="%235F6368"/></svg>') !important;
-  
-  
     -moz-appearance: none;
     -webkit-appearance: none;
     -webkit-border-radius: 0px;
@@ -93,3 +91,10 @@ select { background:url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/s
     display: block;
     width: 10em;
     border: none;}
+.chips {display:flex;justify-content: space-between;margin: 10px 0 27px;gap: 5px;}
+.chips .col-4 {width:30%;padding: 5px;}
+.chip {border: 1px solid #9fd5ff;border-radius:8px;padding: 7px 0;background: #edf7ff;}
+.chip label {margin:0;display:flex;align-items: center;align-content: center;margin:0px;/* justify-content: left; */gap: 6px;}
+.chip span {font-size: 10px !important;display:inline;background: #0951f9 !important;color: #fff !important;text-align: center;border-radius: 36px !important;margin-left: 1px;padding: 3px 5px !important;width: auto !important;}
+
+    

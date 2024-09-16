@@ -49,7 +49,7 @@ background: linear-gradient(90deg, #FFF 0%, #D7E3FF 100%);padding:8px 30px}
   border-radius: 0;
   background: transparent;
   display: block;
-  padding:20px 30px 0;
+  padding: 20px 20px 16px;
   margin-bottom:0;
   font-size: 26px;
   border:none;
@@ -62,7 +62,7 @@ form .col-6 {/* padding:0; */}
   border-radius: 0;
   background: transparent;
   display: block;
-  padding: 20px 12px;
+  padding: 20px 0px;
   margin-bottom:0;
   font-size: 20px;
   font-weight: 600;
@@ -82,8 +82,8 @@ form .col-6 {/* padding:0; */}
   border-top: 1px solid #fff;
   border-right: 1px solid #fff;}
 
-.form-cont form {padding: 14px 30px 30px;}
-.form-cont label {color: #878787;font-size: 14px;font-weight: 400;margin-top:16px}
+.form-cont form {padding: 14px 20px 20px;}
+.form-cont label {color: #878787;font-size: 13px;font-weight: 400;margin-top:16px}
 
 .buttons {display: flex; gap: 10px;}
 .buttons a {width: 100%;}
