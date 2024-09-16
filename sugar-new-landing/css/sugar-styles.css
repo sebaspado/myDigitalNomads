@@ -123,8 +123,8 @@ form .col-6 {/* padding:0; */}
 .form-cont .error {border: 1px solid #ff8b8b;box-shadow: none;background: #ffdbdb;}
 .form-cont span.error-text {color:#ff8b8b;text-align:right;font-size:14px;padding: 0;background: none;margin-bottom: 10px;}
 
-
- .sugar-do {margin: 80px auto 120px;} 
+.align-center {display: flex;align-items: center;}
+.sugar-do {margin: 80px auto 120px;} 
 .sugar-do .row {display:flex;justify-content: center;}
 .box i.blue {background:#2969FF;border-radius: 16px;display:block;width: 50px;height: 50px;display:flex;justify-content: center;align-items: center;}
 .sugar-do h3 {margin:104px 0 52px;}
@@ -133,7 +133,7 @@ form .col-6 {/* padding:0; */}
 .p-relative {position:relative;}
 .sugar-do .shape-blue {position:absolute;right: 100px;top: -84px;width: 500px;height: auto;}
 .box {margin-bottom:30px}
-.box p {font-size:15px;margin-bottom: 4px;}
+.box p {font-size: 14px;margin-bottom: 4px;}
 
 .about h4 {font-size:55px; width:75%; margin:0 auto 20px}
 .about .d-flex p {width:75%; margin:0 auto;}
