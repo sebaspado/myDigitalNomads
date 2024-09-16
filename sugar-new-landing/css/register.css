@@ -1,5 +1,5 @@
 .input-group label {
-    background-color: #e4edff;
+    background-color: transparent;
     padding: 10px;
     margin-top: 0;
     border: 1px solid #BFD2FF;
@@ -77,3 +77,18 @@ fieldset {
 
 .notice i {margin-right:12px}
 .notice i svg {opacity:0.5;width: 18px;}
+
+select { background:url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M10 6L16 12L10 18L8.6 16.6L13.2 12L8.6 7.4L10 6Z" fill="%235F6368"/></svg>') !important;
+  
+  
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    appearance: none;
+    outline-width: 0;
+    background-repeat:no-repeat !important;
+    background-position:right !important;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 10em;
+    border: none;}

@@ -23,7 +23,7 @@ background: linear-gradient(90deg, #FFF 0%, #D7E3FF 100%);padding:8px 30px}
 .signup {background:#2969FF;font-size:14px;color:white;padding:6px 20px;border-radius:1000px;border:none;-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
 .signup:hover {color:white;opacity:0.8}
 .blue-button {border:1px solid transparent;border-radius:50px;background: #2969FF;color:#fff;width: 130px;padding: 12px 18px;margin: auto;display: flex;justify-content: space-between;text-decoration: none;-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;align-items: center;}
-.blue-button:hover, .form-cont .register:hover {background:#6291ff;border:1px solid #0951f9;color:#fff;}
+.blue-button:hover, .form-cont .register:hover {background:#6291ff;color:#fff;}
 .hero-text {width:690px; margin:auto;}
 .loginCol {display: flex;justify-content: space-evenly;align-items: center;}
 
