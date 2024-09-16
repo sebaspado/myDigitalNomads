@@ -17,7 +17,11 @@ h2 {font-size:60px; text-align:center;}
 h3 {font-size:23px}
 header {background: white;border-radius:8px;padding:20px;margin-bottom: 75px;}
 header .row {display: flex;justify-content: space-between;align-items: center;}
-.btn { background: white;font-size:14px;color:#2969FF;}
+.btn { background: white;font-size:14px;color:#2969FF;border-radius: 50px;
+border: 1px solid #DAE5FF;
+background: linear-gradient(90deg, #FFF 0%, #D7E3FF 100%);padding:8px 30px}
+.signup {background:#2969FF;font-size:14px;color:white;padding:6px 20px;border-radius:1000px;border:none;-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
+.signup:hover {color:white;opacity:0.8}
 .blue-button {border:1px solid transparent;border-radius:50px;background: #2969FF;color:#fff;width: 130px;padding: 12px 18px;margin: auto;display: flex;justify-content: space-between;text-decoration: none;-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;align-items: center;}
 .blue-button:hover, .form-cont .register:hover {background:#6291ff;border:1px solid #0951f9;color:#fff;}
 .hero-text {width:690px; margin:auto;}
@@ -85,17 +89,20 @@ form .col-6 {/* padding:0; */}
 .buttons a {width: 100%;}
 
 .form-cont .register {
-  -webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   border-radius: 10px;
   border:none;
-  border: 1px solid #FFF;
+  /* border: 1px solid #FFF; */
   background:#2969FF;
   color:#fff;
   text-decoration: none;
   padding: 12px;
   display: block;
   margin-top: 20px;
-  text-align: center;}
+  text-align: center;
+  }
 
   .form-cont .back {
     -webkit-transition: all 0.3s ease-in-out;
@@ -182,7 +189,7 @@ h4 {font-size:60px;margin: 30px;}
     .mobile-only {display: block;}
     .shape-blue-mobile {position:absolute;top: -403px;z-index: -9;width: 830px !important;}
     .carousel-indicators [data-bs-target] {height: 10px;background: #3370FF;border-radius: 44px;}
-.logo-mobile {width:40px;}
+.logo-mobile {width:40px;margin: -2px 0 0 0;}
     .carousel-control-next, .carousel-control-prev {display:none}
     .box {border-radius: 16px;border: 1px solid #ecedff;background: rgb(244 247 255);padding: 12px;height: 244px;display: flex;align-items: center;}
     .carousel-indicators {bottom: -32px;}
@@ -195,7 +202,7 @@ h4 {font-size:60px;margin: 30px;}
     h3 {font-size:18px; text-align:center}
     .hero-text {width:100%;margin-bottom:10%}
     header h1 {font-size: 34px;}
-    .btn {width:44%;border: 1px solid #f0f7ff;font-size: 18px;}
+    .btn {width:44%;border: 1px solid #f0f7ff;font-size: 14px;}
     .form-cont {width:100%; margin:20% auto}
     .register .form-cont {
     background: linear-gradient(208deg, #FFF 44.39%, #BFD2FF 119.81%);
@@ -205,6 +212,7 @@ h4 {font-size:60px;margin: 30px;}
   .only-mobile-slider {display: none;}
   
   @media (max-width: 768px) {
+    .signup {padding:6px 2px;}
     .slider-citys .container {margin:0;padding:0;}
     .section {padding: 120px 0 !important;}
     .sugar-do { margin: 80px auto;}

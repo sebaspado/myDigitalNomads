@@ -16,8 +16,9 @@ protect daters privacy and comfort.">
 <link rel="manifest" href="site.webmanifest">
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/sugar-styles.css" rel="stylesheet">
-<link href="css/register.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bs-stepper/dist/css/bs-stepper.min.css" rel="stylesheet">
 <link href="css/steps.css" rel="stylesheet">
+<link href="css/register.css" rel="stylesheet">
 <script src="js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
@@ -48,20 +49,20 @@ protect daters privacy and comfort.">
                 <div class="step active">
                   <div class="number">1</div>
                 </div>
-                <div class="line active"></div>
-                <div class="step active">
+                <div class="line"></div>
+                <div class="step">
                   <div class="number">2</div>
                 </div>
-                <div class="line active"></div>
-                <div class="step active">
+                <div class="line"></div>
+                <div class="step">
                   <div class="number">3</div>
                 </div>
-                <div class="line active"></div>
-                <div class="step active">
+                <div class="line"></div>
+                <div class="step">
                   <div class="number">4</div>
                 </div>
-                <div class="line active"></div>
-                <div class="step active">
+                <div class="line"></div>
+                <div class="step">
                   <div class="number">5</div>
                 </div>
                 <div class="line"></div>
@@ -71,54 +72,88 @@ protect daters privacy and comfort.">
               </div>
               
               <div class="row">
-                <p>My photos</p>
+                <p>Personal data</p>
                 
                 <div class="col-12 col-lg-12">
+                  <span class="title">Gender</span>
+                  
                   <div class="row">
-<div class="notice"><i><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2.033 16.01c.564-1.789 1.632-3.932 1.821-4.474.273-.787-.211-1.136-1.74.209l-.34-.64c1.744-1.897 5.335-2.326 4.113.613-.763 1.835-1.309 3.074-1.621 4.03-.455 1.393.694.828 1.819-.211.153.25.203.331.356.619-2.498 2.378-5.271 2.588-4.408-.146zm4.742-8.169c-.532.453-1.32.443-1.761-.022-.441-.465-.367-1.208.164-1.661.532-.453 1.32-.442 1.761.022.439.466.367 1.209-.164 1.661z"/></svg></i>Please no nudity or explicit photos.</div>
-                        <div class="col-sm-12 col-lg-12 mb-4">
-                          <span class="title mb-2">Profile picture</span>
-                            <fieldset class="upload_dropZone text-center">
-                                <legend class="visually-hidden">Image uploader</legend>
-                                <input id="upload_image_background" data-post-name="image_background" data-post-url="https://someplace.com/image/uploads/backgrounds/" class="position-absolute invisible" type="file" multiple accept="image/jpeg, image/png, image/svg+xml" />
-                                <label class="btn" for="upload_image_background">Drag or Upload your pictureChoose file(s)</label>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
-                                <path d="M16.0413 27.7087H18.958V21.6201L21.2913 23.9534L23.333 21.8753L17.4997 16.042L11.6663 21.8753L13.7445 23.917L16.0413 21.6201V27.7087ZM8.74967 32.0837C7.94759 32.0837 7.26096 31.7981 6.68978 31.2269C6.1186 30.6557 5.83301 29.9691 5.83301 29.167V5.83366C5.83301 5.03158 6.1186 4.34494 6.68978 3.77376C7.26096 3.20258 7.94759 2.91699 8.74967 2.91699H20.4163L29.1663 11.667V29.167C29.1663 29.9691 28.8808 30.6557 28.3096 31.2269C27.7384 31.7981 27.0518 32.0837 26.2497 32.0837H8.74967ZM18.958 13.1253V5.83366H8.74967V29.167H26.2497V13.1253H18.958Z" fill="#3F78FF"/>
-                                </svg>
-                                <p class="small">JPG or PDF and Max 25 gb</p>
-                                <div class="upload_gallery d-flex flex-wrap justify-content-center gap-3 mb-0"></div>
-                            </fieldset>
-                        </div>
-
-
-                        <div class="col-sm-12 col-lg-12">
-                            <span class="title mb-2">Secret photos</span>
-                              <fieldset class="upload_dropZone text-center">
-                                  <legend class="visually-hidden">Image uploader</legend>
-                                  <input id="upload_image_background" data-post-name="image_background" data-post-url="https://someplace.com/image/uploads/backgrounds/" class="position-absolute invisible" type="file" multiple accept="image/jpeg, image/png, image/svg+xml" />
-                                  <label class="btn" for="upload_image_background">Drag or Upload your pictureChoose file(s)</label>
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
-                                  <path d="M16.0413 27.7087H18.958V21.6201L21.2913 23.9534L23.333 21.8753L17.4997 16.042L11.6663 21.8753L13.7445 23.917L16.0413 21.6201V27.7087ZM8.74967 32.0837C7.94759 32.0837 7.26096 31.7981 6.68978 31.2269C6.1186 30.6557 5.83301 29.9691 5.83301 29.167V5.83366C5.83301 5.03158 6.1186 4.34494 6.68978 3.77376C7.26096 3.20258 7.94759 2.91699 8.74967 2.91699H20.4163L29.1663 11.667V29.167C29.1663 29.9691 28.8808 30.6557 28.3096 31.2269C27.7384 31.7981 27.0518 32.0837 26.2497 32.0837H8.74967ZM18.958 13.1253V5.83366H8.74967V29.167H26.2497V13.1253H18.958Z" fill="#3F78FF"/>
-                                  </svg>
-                                  <p class="small">JPG or PDF and Max 25 gb</p>
-                                  <div class="upload_gallery d-flex flex-wrap justify-content-center gap-3 mb-0"></div>
-                              </fieldset>
-                          </div>
-
+                    
+                    <div class="col-4 col-lg-4">
+                      <input type="radio" id="female" name="" value="" class="radio">
+                      <label for="frmale">Female</label>
+                    </div>
+                    
+                    <div class="col-4 col-lg-4">
+                      <input type="radio" id="male" name="" value="" class="radio">
+                      <label for="male">Male</label>
+                    </div>
+                    <div class="col-4 col-lg-4">
+                      <input type="radio" id="other" name="" value="" class="radio">
+                      <label for="other">Other</label>
+                    </div>
+                    
+                  </div>
+                  
+                  <div class="col-12 col-lg-12">
+                    <span class="title">Who are you?</span>
+                    
+                    <div class="row">
+                      <div class="col-6">
                         
-        
+                        <label for="age1">    <input type="radio" id="baby" name="" value="" class="radio"> Sugar baby</label></div>
+                        <div class="col-6">
+                          <input type="radio" id="daddy" name="" value="" class="radio">
+                          <label for="daddy">Sugar Daddy</label>
+                        </div>
+                        
+                        <div class="col-6">
+                          <input type="radio" id="mommy" name="" value="" class="radio">
+                          <label for="mommy">Sugar Mommy</label>
+                        </div>
+                        
+                      </div>
+                      
+                      
+                      
+                      <div class="col-12 col-lg-12">
+                        <span class="title">Interested in</span>
+                        
+                        <div class="row">
+                          <div class="col-6">
+                            
+                            <label for="men">
+                              <input type="radio" id="men" name="" value="" class="radio"> Men</label>
+                            </div>
 
+                            <div class="col-6">
+                              <input type="radio" id="woman" name="" value="" class="radio">
+                              <label for="woman">Woman</label>
+                            </div>
+                            
+                            <div class="col-6">
+                              <input type="radio" id="all" name="" value="" class="radio">
+                              <label for="all">All</label>
+                            </div>  
+                          </div>
                           
                           
-                     
+                          
+                          <div class="col-sm-12 col-lg-12">
+                            <label for="birth" class="form-label">Birthday</label>
+                            <input type="text" class="form-control" style="border:1px solid #BFD2FF" id="birth" name="" aria-describedby="" required="">  
+                          </div>
+                          
+                          
+                          
+                          <div class="col-sm-12 col-lg-12">
+                            <label for="country" class="form-label">Live in</label>
+                            <input style="border:1px solid #BFD2FF" type="text" class="form-control" id="country" name="country" aria-describedby="countryHelp" required="">  
+                          </div>
                           
                         </div><!--row ends-->
                         
-                        <div class="buttons">
-                           <a href="" class="back">Back</a>
-                           <a href="" class="register">Next</a>
-                        </div>
-
+                        <a href="register2.html" class="register mt-3">Next</a>
                       </form>
                     </div>
                     
@@ -221,7 +256,6 @@ protect daters privacy and comfort.">
 
         </main>
         
-        <script src="js/file-upload.js"></script>
-
+        
       </body>
       </html>
